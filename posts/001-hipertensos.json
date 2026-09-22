@@ -1,0 +1,71 @@
+{
+  "slug": "001-hipertensos",
+  "legenda": "\"Musculação aumenta a pressão.\" Aumenta — durante a série. E é justamente isso que confunde muita gente.\n\nO pico agudo durante o esforço é fisiologia normal, acontece com qualquer pessoa e não é o que define o risco. O que interessa para a saúde é o que acontece com a pressão de REPOUSO depois de semanas treinando. E aí os números são bons.\n\nUma meta-análise reunindo 12 ensaios clínicos randomizados encontrou redução consistente da pressão sistólica em adultos hipertensos (SMD −0,77; IC 95%: −1,06 a −0,48), com todo o intervalo de confiança abaixo de zero. Na diastólica, SMD −0,43.\n\nA diretriz da Sociedade Brasileira de Hipertensão prescreve:\n• 2 a 3 sessões por semana\n• ~60% de 1RM\n• 1 a 3 séries de 10 a 15 repetições\n• 8 a 10 exercícios, priorizando unilaterais\n• 90 a 120 segundos de pausa\n\nE o detalhe que muda tudo: interromper na FADIGA MODERADA, não na falha, e sem prender a respiração. É a apneia somada à falha que transforma um exercício seguro em pico pressórico desnecessário.\n\nHipertenso não precisa fugir da musculação. Precisa de prescrição.\n\nTem uma condição a respeitar e quer treinar com segurança? Chama no direct — consultoria de treino online pelo Método Musculação Estratégica.\n\nSalva para consultar depois e marca alguém que precisa ler isso.\n\n#musculacao #treino #academia #saude #vidasaudavel #fitness",
+  "serie": "GRUPOS ESPECIAIS",
+  "edicao": "01",
+  "handle": "@coach_neto",
+  "slides": [
+    {
+      "tipo": "capa",
+      "eyebrow": "GRUPOS ESPECIAIS · 01",
+      "titulo": "Hipertenso pode fazer [musculação]?",
+      "sub": "A resposta curta é sim. A resposta longa tem números — e eles são melhores do que você imagina.",
+      "rodape": "arraste"
+    },
+    {
+      "tipo": "conteudo",
+      "titulo": "O medo [tem fundamento]",
+      "grafico": "pressao",
+      "corpo": "Durante a série a pressão sobe mesmo. Isso é fisiologia normal e não é o que define o risco.",
+      "destaque": "O que importa para a saúde é a linha tracejada: a pressão de repouso, que cai ao longo das semanas."
+    },
+    {
+      "tipo": "dado",
+      "kicker": "META-ANÁLISE · 12 ENSAIOS CLÍNICOS RANDOMIZADOS",
+      "grafico": "forest",
+      "legenda": "Todo o intervalo de confiança fica abaixo de zero. O efeito existe e é de magnitude grande.",
+      "nota": "Pressão sistólica: SMD −0,77 (IC 95%: −1,06 a −0,48) · p < 0,00001 · I² = 35%. Diastólica: SMD −0,43 (IC 95%: −0,67 a −0,19)."
+    },
+    {
+      "tipo": "conteudo",
+      "titulo": "A prescrição da [diretriz brasileira]",
+      "lista": [
+        "2 a 3 sessões por semana",
+        "Intensidade em torno de 60% de 1RM",
+        "1 a 3 séries de 10 a 15 repetições",
+        "8 a 10 exercícios, priorizando unilaterais",
+        "Pausa de 90 a 120 segundos entre séries"
+      ]
+    },
+    {
+      "tipo": "conteudo",
+      "titulo": "O detalhe que [muda tudo]",
+      "grafico": "escala",
+      "corpo": "A diretriz pede para interromper a série na fadiga moderada — não na falha — e reduzir a velocidade do movimento.",
+      "destaque": "Treinar até a falha prendendo a respiração é o que transforma um exercício seguro em um pico pressórico desnecessário."
+    },
+    {
+      "tipo": "referencia",
+      "titulo": "De onde saíram [esses números]",
+      "refs": [
+        {
+          "rot": "META-ANÁLISE",
+          "txt": "Effects of Resistance Training on Systolic and Diastolic Blood Pressure in Hypertensive Adults: A Systematic Review and Meta-Analysis of RCTs. PMC, 2025."
+        },
+        {
+          "rot": "DIRETRIZ",
+          "txt": "Recomendações de exercício físico na hipertensão arterial. Revista Hipertensão, Sociedade Brasileira de Hipertensão, vol. 24, n. 1."
+        }
+      ],
+      "aviso": "Conteúdo educativo. A prescrição é individual e deve considerar medicação, comorbidades e avaliação clínica."
+    },
+    {
+      "tipo": "cta",
+      "metodo": "Método",
+      "titulo": "[Musculação]\nEstratégica",
+      "oferta": "Consultoria de treino online para quem tem uma condição a respeitar. Prescrição individual, com base em evidência.",
+      "acao": "Chama no direct",
+      "handle": "@coach_neto"
+    }
+  ]
+}
