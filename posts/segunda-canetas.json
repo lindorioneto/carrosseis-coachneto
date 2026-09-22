@@ -1,0 +1,78 @@
+{
+  "slug": "004-sarcopenia-canetas",
+  "cor": "verde",
+  "legenda": "SARCOPENIA NÃO É MAIS SÓ DOS IDOSOS\n\nEra assunto de geriatra. Hoje é assunto de quem está emagrecendo com caneta — e quase ninguém avisa.\n\nO QUE A CANETA FAZ BEM\nSemaglutida e tirzepatida funcionam. O peso cai, e cai rápido. Não sou eu quem vai dizer para largar um tratamento que o médico prescreveu.\n\nO QUE QUASE NINGUÉM CONTA\nPeso não é só gordura.\n\nNos ensaios que mediram composição corporal, cerca de 30% do peso perdido com semaglutida era massa magra. Com tirzepatida, cerca de 25%.\n\nTraduzindo: quem perdeu 20 kg perdeu, em média, de 5 a 6 kg que não eram gordura.\n\nE DEPOIS DOS 60 A CONTA PIORA\nCom a idade o corpo responde menos ao estímulo da proteína e do treino — é a chamada resistência anabólica. Estudos mostram que usuários mais velhos perdem proporcionalmente mais massa magra que os mais jovens.\n\nSome isso ao que já acontece sem remédio nenhum: depois dos 50, a força cai de 2 a 5 vezes mais rápido que o músculo.\n\nMAS O VILÃO NÃO É A CANETA\nAqui está a parte que quase nenhum perfil conta, porque assustar rende mais.\n\nEssas proporções são parecidas com as de qualquer emagrecimento por dieta. Não é o remédio que come músculo. É emagrecer rápido sem treinar.\n\nA caneta não criou o problema. Ela só fez muita gente emagrecer ao mesmo tempo, quase ninguém treinando.\n\nO QUE PROTEGE\nO que a literatura recomenda para preservar massa magra enquanto se emagrece:\n\n1. Treino de força, 2 a 3 vezes por semana.\n2. De 1,2 a 1,6 g de proteína por quilo, distribuídos no dia.\n3. Não pular o treino porque o apetite sumiu. Sem fome não é o mesmo que sem necessidade.\n\nEmagrecer ficou fácil. Emagrecer sem virar um magro fraco é que dá trabalho — e é exatamente aí que entra a musculação.\n\nEstá usando caneta e quer manter o músculo? Chama no direct — consultoria pelo Método Musculação Estratégica.\n\nSalva e manda para quem está na caneta sem treinar.\n\n#musculacao #treino #academia #saude #emagrecimento #fitness #sarcopenia #ozempic #mounjaro #gruposespeciais",
+  "serie": "GRUPOS ESPECIAIS",
+  "edicao": "04",
+  "handle": "@coach_neto",
+  "slides": [
+    {
+      "tipo": "capa",
+      "eyebrow": "GRUPOS ESPECIAIS · 04",
+      "titulo": "[Sarcopenia]\nNão é mais só dos idosos",
+      "sub": "Agora é uma preocupação entre as pessoas que usam as canetas emagrecedoras.",
+      "foto": "caneta.png"
+    },
+    {
+      "tipo": "conteudo",
+      "titulo": "A caneta [funciona]",
+      "corpo": "Semaglutida e tirzepatida derrubam o peso, e derrubam rápido. Não sou eu quem vai dizer para largar um tratamento que o médico prescreveu.",
+      "destaque": "O problema não é o remédio. É o que ninguém conta sobre o que vai embora junto.",
+      "foto": "senhora.png"
+    },
+    {
+      "tipo": "dado",
+      "kicker": "DO PESO PERDIDO, QUANTO ERA MASSA MAGRA",
+      "grafico": "composicao",
+      "legenda": "Peso não é só gordura. Em quem perdeu 20 kg, de 5 a 6 kg não eram gordura.",
+      "nota": "Ensaios que mediram composição corporal. STEP 1 (semaglutida) e SURMOUNT-1 (tirzepatida). Acta Diabetologica, 2025."
+    },
+    {
+      "tipo": "conteudo",
+      "titulo": "Depois dos 60, [a conta piora]",
+      "corpo": "Com a idade o corpo responde menos à proteína e ao treino — é a resistência anabólica. Usuários mais velhos perdem proporcionalmente mais massa magra.",
+      "destaque": "E isso soma ao que já acontece sem remédio nenhum: depois dos 50, a força cai de 2 a 5 vezes mais rápido que o músculo.",
+      "foto": "bengala.png"
+    },
+    {
+      "tipo": "conteudo",
+      "titulo": "Mas o vilão [não é a caneta]",
+      "corpo": "Essas proporções são parecidas com as de qualquer emagrecimento por dieta. Não é o remédio que come músculo — é emagrecer rápido sem treinar.",
+      "destaque": "A caneta não criou o problema. Ela só fez muita gente emagrecer ao mesmo tempo, quase ninguém treinando."
+    },
+    {
+      "tipo": "conteudo",
+      "titulo": "O que [protege]",
+      "lista": [
+        "Treino de força, 2 a 3x por semana",
+        "1,2 a 1,6 g de proteína por quilo",
+        "Não pular o treino porque o apetite sumiu"
+      ],
+      "destaque": "Emagrecer ficou fácil. Emagrecer sem virar um magro fraco é que dá trabalho.",
+      "foto": "forte.png"
+    },
+    {
+      "tipo": "referencia",
+      "titulo": "De onde vêm [esses números]",
+      "refs": [
+        {
+          "rot": "REVISÃO · 2025",
+          "txt": "Muscle loss and GLP-1 receptor agonist use. Acta Diabetologica, 2025;63(2):333-342. Analisa a composição corporal nos ensaios STEP 1 e SURMOUNT-1."
+        },
+        {
+          "rot": "REVISÃO · 2012",
+          "txt": "Narici MV, Maffulli N et al. Sarcopenia: characteristics, mechanisms and functional significance. Frontiers in Physiology, 2012;3:260."
+        }
+      ],
+      "aviso": "Conteúdo educativo. Não interrompa nem altere medicação por conta própria — isso é decisão do seu médico."
+    },
+    {
+      "tipo": "cta",
+      "metodo": "Método",
+      "titulo": "[Musculação]\nEstratégica",
+      "oferta": "Treino montado para quem está emagrecendo e quer chegar do outro lado com músculo, não só com menos peso.",
+      "acao": "Chama no direct",
+      "handle": "@coach_neto"
+    }
+  ]
+}
