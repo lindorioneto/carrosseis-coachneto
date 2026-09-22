@@ -1,0 +1,82 @@
+{
+  "slug": "003-hipertensao-destreino",
+  "legenda": "SE EU PARAR DE TREINAR, PERCO TUDO?\n\nFechando a semana da hipertensão. O resumo em três frases:\n\n1. Hipertenso pode treinar musculação sim.\n2. Não existe grupo muscular proibido.\n3. Pausa para descanso e respiração são tão importantes quanto a carga.\n\nQUANTO O TREINO BAIXA\nPesquisadores da Unesp e da USP reuniram 14 ensaios clínicos, somando 253 hipertensos com média de 60 anos, e juntaram os resultados numa metanálise — o que é bem mais confiável do que olhar um estudo isolado.\n\nA sistólica caiu 9,52 mmHg e a diastólica, 5,19. E não foi na primeira semana: a queda se firmou por volta do vigésimo treino. Treinando 3x por semana, um mês e meio.\n\nVale dizer: isso não substitui remédio nem autoriza mexer na dose. Quem faz isso é o médico.\n\nE SE EU PARAR?\nUm estudo brasileiro acompanhou 12 mulheres idosas hipertensas: 14 semanas treinando, depois 14 semanas paradas. No fim das 14 paradas, a sistólica ainda estava mais baixa do que antes de começarem.\n\nO corpo não zera na primeira falta. Viagem, gripe, semana impossível — acontece, e não põe tudo a perder.\n\nMAS TEM O OUTRO LADO\nUma revisão que reuniu outras 40 revisões, somando mais de 3,7 milhões de pessoas, encontrou algo que costuma passar batido: o tempo sentado quase não mexe no número do aparelho. O que ele mexe é no desfecho — mais infarto, mais AVC, mais problema cardiovascular.\n\nTraduzindo: dá para a pressão estar controlada e o risco seguir crescendo por outro caminho.\n\nA PARTE QUE ME SURPREENDEU\nUm ensaio clínico pegou 271 pessoas de escritório com pressão elevada e cortou 1 hora de tempo sentado por dia, trocando a cadeira por ficar em pé. Três meses depois: pressão praticamente igual.\n\nOs próprios autores explicaram o motivo — ficar em pé parado não é se mover. E não é treino.\n\nQuer um profissional montando os seus treinos? Chama no direct — consultoria pelo Método Musculação Estratégica.\n\nSalva para ler no dia em que bater a vontade de parar.\n\n#musculacao #treino #academia #saude #vidasaudavel #fitness #hipertensao #pressaoalta #saudedocoracao #sedentarismo",
+  "serie": "GRUPOS ESPECIAIS",
+  "edicao": "03",
+  "handle": "@coach_neto",
+  "slides": [
+    {
+      "tipo": "capa",
+      "eyebrow": "GRUPOS ESPECIAIS · 03",
+      "titulo": "[Hipertensão arterial]\nE se eu parar de treinar?",
+      "sub": "Fechamento da semana: a boa notícia, a má, e uma que me surpreendeu.",
+      "foto": "halter3d.png"
+    },
+    {
+      "tipo": "conteudo",
+      "titulo": "A semana em [três frases]",
+      "lista": [
+        "Hipertenso pode treinar musculação sim",
+        "Não existe grupo muscular proibido",
+        "Pausa para descanso e respiração são tão importantes quanto a carga"
+      ],
+      "destaque": "O que muda a pressão não é o nome do exercício. É a intensidade bem dosada, repetida com constância.",
+      "foto": "circulacao.png"
+    },
+    {
+      "tipo": "dado",
+      "kicker": "METANÁLISE UNESP/USP · 14 ENSAIOS, 253 HIPERTENSOS",
+      "grafico": "pressao",
+      "legenda": "A pressão sobe durante as séries e volta. O que desce, semana após semana, é a de repouso.",
+      "nota": "Queda de 9,52 mmHg na sistólica e 5,19 mmHg na diastólica, firmada por volta da 20ª sessão. Scientific Reports, 2023."
+    },
+    {
+      "tipo": "conteudo",
+      "titulo": "A boa notícia: [não zera na primeira falta]",
+      "corpo": "Estudo piloto com 12 mulheres idosas hipertensas: 14 semanas treinando, depois 14 semanas paradas. No fim das 14 paradas, a sistólica ainda estava mais baixa que no começo.",
+      "destaque": "O corpo não zera na primeira falta. É margem para a vida real: uma viagem, uma gripe, uma semana impossível.",
+      "foto": "levantamento.png"
+    },
+    {
+      "tipo": "conteudo",
+      "titulo": "A má notícia: [sentado cobra caro]",
+      "corpo": "Revisão na Sports Medicine, 2024, reunindo 40 revisões anteriores e mais de 3,7 milhões de pessoas, para medir o preço de passar o dia sentado.",
+      "destaque": "O tempo sentado quase não mexe no número do aparelho. O que ele mexe é no desfecho: mais doença cardiovascular e mais morte.",
+      "foto": "costas.png"
+    },
+    {
+      "tipo": "conteudo",
+      "titulo": "E a que me [surpreendeu]",
+      "corpo": "Ensaio RESET-BP, Circulation 2024: 271 pessoas de escritório com pressão elevada trocaram 1 hora sentada por dia por ficar em pé, durante 3 meses.",
+      "destaque": "Efeito na sistólica: 0,22 mmHg. Nada. Ficar em pé parado não é movimento — e não substitui treino.",
+      "foto": "remada.png"
+    },
+    {
+      "tipo": "referencia",
+      "titulo": "De onde vêm [esses números]",
+      "refs": [
+        {
+          "rot": "METANÁLISE · 2023",
+          "txt": "Strength training for arterial hypertension treatment: a systematic review and meta-analysis of randomized clinical trials. Scientific Reports, 2023;13:201. Unesp e USP."
+        },
+        {
+          "rot": "ESTUDO PILOTO · 2014",
+          "txt": "Nascimento DC et al. Sustained effect of resistance training on blood pressure and hand grip strength following a detraining period in elderly hypertensive women. Clinical Interventions in Aging, 2014;9."
+        },
+        {
+          "rot": "REVISÃO E ENSAIO · 2024",
+          "txt": "Umbrella Review of Sedentary Behaviors, Blood Pressure and Cardiovascular Disease. Sports Medicine, 2024;54. E o ensaio RESET-BP, Circulation, 2024."
+        }
+      ],
+      "aviso": "Conteúdo educativo. A prescrição é individual e deve considerar medicação, comorbidades e avaliação clínica."
+    },
+    {
+      "tipo": "cta",
+      "metodo": "Método",
+      "titulo": "[Musculação]\nEstratégica",
+      "oferta": "Treinar é o que baixa a pressão. Mover-se no dia protege o resto. Uma coisa não substitui a outra — e eu monto as duas com você.",
+      "acao": "Chama no direct",
+      "handle": "@coach_neto"
+    }
+  ]
+}
