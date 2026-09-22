@@ -1,0 +1,81 @@
+{
+  "slug": "002-hipertensos-exercicios",
+  "legenda": "Na segunda eu mostrei que hipertenso pode treinar. Hoje é o como — e o \"como\" é mais simples do que costumam dizer.\n\nQUAL EXERCÍCIO ESCOLHER\nUm estudo publicado nos Arquivos Brasileiros de Cardiologia acompanhou 25 hipertensos controlados, com média de 64 anos, exercitando três grupos musculares diferentes: quadríceps, grande dorsal e bíceps.\n\nO resultado: a pressão sistólica subiu de forma SEMELHANTE e dentro de limites seguros em todos eles. A diastólica não mudou de forma significativa em nenhum.\n\nOu seja: não existe grupo muscular proibido. O que apareceu foi uma tendência a resposta maior quando se trabalhou grande grupo muscular com carga alta. A variável que importa é a INTENSIDADE, não qual músculo você escolheu nem se o exercício é feito com um lado por vez.\n\nENTÃO MONTE UM TREINO NORMAL\nMultiarticulares: leg press, supino na máquina, remada na máquina, puxada frontal, desenvolvimento na máquina.\nUniarticulares: cadeira extensora, mesa flexora, rosca direta, tríceps na polia, elevação lateral.\n\nTreino completo, tempo otimizado, sem invenção.\n\nO QUE O TREINO ENTREGA\nUma metanálise publicada na Hypertension Research reuniu ensaios clínicos com hipertensos e pré-hipertensos treinando 3x por semana, por 12 semanas, só com musculação — sem aeróbio associado.\n\nQueda de 8,2 mmHg na sistólica (IC 95%: 10,9 a 5,5) e 4,1 mmHg na diastólica (IC 95%: 6,3 a 1,9). Isso na pressão de REPOUSO, que é a que importa.\n\nAS TRÊS REGRAS QUE VALEM MAIS QUE A CARGA\n1. Pausa de 90 a 120 segundos entre séries.\n2. Expire na fase de esforço. Nunca prenda a respiração.\n3. Pare na fadiga moderada, com reserva. Não na falha.\n\nCada caso pede ajuste. Medicação, comorbidade e nível de treino mudam a prescrição.\n\nQuer um treino montado para a sua condição? Chama no direct — consultoria pelo Método Musculação Estratégica.\n\nSalva para lembrar na hora do treino.\n\n#musculacao #treino #academia #saude #vidasaudavel #fitness #hipertensao #pressaoalta #saudedocoracao #gruposespeciais",
+  "serie": "GRUPOS ESPECIAIS",
+  "edicao": "02",
+  "handle": "@coach_neto",
+  "slides": [
+    {
+      "tipo": "capa",
+      "eyebrow": "GRUPOS ESPECIAIS · 02",
+      "titulo": "O que treinar quando a [pressão é alta]",
+      "sub": "Na segunda ficou claro que pode. Hoje é o como.",
+      "foto": "circulacao.jpg"
+    },
+    {
+      "tipo": "conteudo",
+      "titulo": "Não existe grupo muscular [proibido]",
+      "corpo": "Um estudo dos Arquivos Brasileiros de Cardiologia testou quadríceps, grande dorsal e bíceps em 25 hipertensos controlados, com média de 64 anos.",
+      "destaque": "A sistólica subiu de forma semelhante e dentro de limites seguros em todos os grupos. A diastólica não mudou de forma significativa em nenhum.",
+      "foto": "costas.jpg"
+    },
+    {
+      "tipo": "conteudo",
+      "titulo": "Então monte um [treino normal]",
+      "lista": [
+        "Leg press",
+        "Remada na máquina",
+        "Puxada frontal",
+        "Cadeira extensora",
+        "Rosca direta"
+      ],
+      "destaque": "Multiarticulares e uniarticulares, como em qualquer treino. Tempo otimizado, sem invenção.",
+      "foto": "remada.jpg"
+    },
+    {
+      "tipo": "dado",
+      "kicker": "METANÁLISE · MUSCULAÇÃO SOZINHA, SEM AERÓBIO",
+      "grafico": "mmhg",
+      "legenda": "Queda na pressão de repouso após 12 semanas treinando 3x por semana.",
+      "nota": "Hipertensos e pré-hipertensos. Intensidade progressiva, pausas de 60 a 180 s entre séries. Publicado na Hypertension Research, 2017."
+    },
+    {
+      "tipo": "conteudo",
+      "titulo": "O que importa é a [intensidade]",
+      "grafico": "escala",
+      "corpo": "A única tendência a resposta pressórica maior apareceu com grande grupo muscular em carga alta. É aí que se controla — não no nome do exercício.",
+      "destaque": "Pare na fadiga moderada, com reserva. A falha não é meta em nenhum treino de hipertenso.",
+      "foto": "levantamento.jpg"
+    },
+    {
+      "tipo": "conteudo",
+      "titulo": "E respire. [Sempre]",
+      "corpo": "Expire na fase de esforço. A manobra de Valsalva dispara mais o pico pressórico do que o peso na barra.",
+      "destaque": "É também por isso que exercício isométrico sustentado não entra aqui: ele favorece a apneia justamente em quem não pode.",
+      "foto": "pulmoes.jpg"
+    },
+    {
+      "tipo": "referencia",
+      "titulo": "De onde vem [essa prescrição]",
+      "refs": [
+        {
+          "rot": "ESTUDO CLÍNICO",
+          "txt": "Battagin AM et al. Resposta pressórica após exercício resistido de diferentes segmentos corporais em hipertensos. Arquivos Brasileiros de Cardiologia, 2010; 95(3)."
+        },
+        {
+          "rot": "METANÁLISE",
+          "txt": "Resistance training alone reduces systolic and diastolic blood pressure in prehypertensive and hypertensive individuals. Hypertension Research, 2017."
+        }
+      ],
+      "aviso": "Conteúdo educativo. A prescrição é individual e deve considerar medicação, comorbidades e avaliação clínica."
+    },
+    {
+      "tipo": "cta",
+      "metodo": "Método",
+      "titulo": "[Musculação]\nEstratégica",
+      "oferta": "Treino montado para a sua condição, com carga, pausa e progressão definidas caso a caso.",
+      "acao": "Chama no direct",
+      "handle": "@coach_neto"
+    }
+  ]
+}
