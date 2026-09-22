@@ -1,0 +1,82 @@
+{
+  "slug": "003-hipertensos-semana",
+  "legenda": "Fechando a semana dos hipertensos. Segunda foi o porquê, quarta foi o como. Hoje é a pergunta que todo mundo faz na avaliação: EM QUANTO TEMPO ISSO FAZ EFEITO?\n\nA SEMANA EM TRÊS FRASES\n1. Hipertenso controlado pode e deve treinar força.\n2. Não existe grupo muscular proibido — existe intensidade mal dosada.\n3. Pausa, respiração e reserva valem mais que a carga na barra.\n\nO PRAZO\nUma revisão sistemática com metanálise conduzida por pesquisadores da Unesp e da USP, publicada na Scientific Reports em 2023, reuniu 14 ensaios clínicos randomizados com 253 hipertensos, idade média de 60 anos.\n\nQueda de 9,52 mmHg na sistólica (IC 95%: 12,89 a 6,14) e 5,19 mmHg na diastólica (IC 95%: 7,98 a 2,39).\n\nE o dado que mais me interessa na prática: a queda apareceu por volta da 20ª sessão de treino. Treinando 3x por semana, isso é pouco mais de um mês e meio. Não é imediato — e também não é uma vida inteira.\n\nA DOSE QUE APARECE NOS ESTUDOS\nCarga acima de 60% de 1RM. Pelo menos 2 vezes por semana. No mínimo 8 semanas.\n\nRepare que nada disso é exótico. É treino de musculação bem feito, com progressão. O erro mais comum que vejo não é treinar pesado demais — é treinar leve demais por medo, por tempo indeterminado, e nunca chegar na dose que a literatura testou.\n\nE SE EU PARAR?\nA mesma revisão relata que o efeito hipotensor ainda se mantém por cerca de 14 semanas após a interrupção. Isso não é licença para parar. É margem para a vida real: uma viagem, uma gripe, uma semana impossível. O prejuízo de faltar duas semanas é menor do que o de nunca começar.\n\nCada caso pede ajuste. Medicação, comorbidade e nível de treino mudam a prescrição — e quem tem pressão alta merece um treino pensado, não um treino genérico.\n\nQuer alguém montando e acompanhando essas 20 primeiras sessões com você? Chama no direct — consultoria pelo Método Musculação Estratégica.\n\nSalva para lembrar quando bater a pressa por resultado.\n\n#musculacao #treino #academia #saude #vidasaudavel #fitness #hipertensao #pressaoalta #saudedocoracao #gruposespeciais",
+  "serie": "GRUPOS ESPECIAIS",
+  "edicao": "03",
+  "handle": "@coach_neto",
+  "slides": [
+    {
+      "tipo": "capa",
+      "eyebrow": "GRUPOS ESPECIAIS · 03",
+      "titulo": "Em quanto tempo a [pressão começa a cair]",
+      "sub": "Fechamento da semana: o prazo, a dose e o que acontece se você parar.",
+      "foto": "halter3d.png"
+    },
+    {
+      "tipo": "conteudo",
+      "titulo": "A semana em [três frases]",
+      "lista": [
+        "Hipertenso controlado pode treinar força",
+        "Não existe grupo muscular proibido",
+        "Pausa e respiração valem mais que a carga"
+      ],
+      "destaque": "O que muda a pressão não é o nome do exercício. É a intensidade bem dosada, repetida com constância.",
+      "foto": "circulacao.png"
+    },
+    {
+      "tipo": "dado",
+      "kicker": "METANÁLISE UNESP/USP · 14 ENSAIOS, 253 HIPERTENSOS",
+      "grafico": "pressao",
+      "legenda": "A pressão sobe durante as séries e volta. O que desce, semana após semana, é a de repouso.",
+      "nota": "Queda de 9,52 mmHg na sistólica (IC 95%: 12,89 a 6,14) e 5,19 mmHg na diastólica (IC 95%: 7,98 a 2,39). Publicado na Scientific Reports, 2023."
+    },
+    {
+      "tipo": "conteudo",
+      "titulo": "Apareceu na [20ª sessão]",
+      "corpo": "Foi por volta da vigésima sessão que a queda se firmou nos estudos. Treinando 3x por semana, isso é pouco mais de um mês e meio.",
+      "destaque": "Não é imediato. Também não é uma vida inteira. É um prazo que cabe num compromisso.",
+      "foto": "remada.png"
+    },
+    {
+      "tipo": "conteudo",
+      "titulo": "A dose que [aparece nos estudos]",
+      "lista": [
+        "Carga acima de 60% de 1RM",
+        "Pelo menos 2x por semana",
+        "No mínimo 8 semanas"
+      ],
+      "destaque": "O erro mais comum não é treinar pesado demais. É treinar leve demais, por medo, e nunca chegar na dose que foi testada.",
+      "foto": "levantamento.png"
+    },
+    {
+      "tipo": "conteudo",
+      "titulo": "E se eu [parar]?",
+      "corpo": "A mesma revisão relata que o efeito sobre a pressão ainda se mantém por cerca de 14 semanas após a interrupção do treino.",
+      "destaque": "Isso não é licença para parar. É margem para a vida real: uma viagem, uma gripe, uma semana impossível.",
+      "foto": "costas.png"
+    },
+    {
+      "tipo": "referencia",
+      "titulo": "De onde vêm [esses números]",
+      "refs": [
+        {
+          "rot": "METANÁLISE · 2023",
+          "txt": "Strength training for arterial hypertension treatment: a systematic review and meta-analysis of randomized clinical trials. Scientific Reports, 2023;13:201. Pesquisadores da Unesp e da USP."
+        },
+        {
+          "rot": "METANÁLISE · 2017",
+          "txt": "Resistance training alone reduces systolic and diastolic blood pressure in prehypertensive and hypertensive individuals. Hypertension Research, 2017."
+        }
+      ],
+      "aviso": "Conteúdo educativo. A prescrição é individual e deve considerar medicação, comorbidades e avaliação clínica."
+    },
+    {
+      "tipo": "cta",
+      "metodo": "Método",
+      "titulo": "[Musculação]\nEstratégica",
+      "oferta": "Alguém montando e acompanhando as suas primeiras 20 sessões, com carga, pausa e progressão definidas para a sua condição.",
+      "acao": "Chama no direct",
+      "handle": "@coach_neto"
+    }
+  ]
+}
