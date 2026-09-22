@@ -306,7 +306,7 @@ def svg_composicao(w=820, h=340):
     return f'''<svg viewBox="0 0 {w} {h}" width="100%">
   {"".join(out)}
   <text x="{x0}" y="{h-26}" fill="{C['dim']}" font-family="Mono" font-size="21"
-        letter-spacing="1">EM LARANJA, O QUE SE PERDEU DE MASSA MAGRA</text>
+        letter-spacing="1">A FAIXA CLARA É O QUE SE PERDEU DE MASSA MAGRA</text>
 </svg>'''
 
 
