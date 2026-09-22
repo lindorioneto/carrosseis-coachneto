@@ -113,6 +113,39 @@ def svg_escala(w=820, h=250):
 </svg>'''
 
 
+def svg_protocolo(w=820, h=290):
+    """Linha do tempo de uma sessao de handgrip isometrico: 4 x 2 min, 30% CVM."""
+    x0, x1 = 70, w - 40
+    n, larg_c, larg_d = 4, 0.14, 0.115   # proporcoes de contracao e descanso
+    total = n * larg_c + (n - 1) * larg_d
+    esc = (x1 - x0) / total
+    y, alt = 110, 56
+    partes, x = [], x0
+    for i in range(n):
+        partes.append(f'<rect x="{x:.1f}" y="{y}" width="{larg_c*esc:.1f}" height="{alt}" '
+                      f'fill="{C["orange"]}"/>')
+        partes.append(f'<text x="{x + larg_c*esc/2:.1f}" y="{y+37}" fill="{C["black"]}" '
+                      f'font-family="Archivo" font-weight="800" font-size="26" '
+                      f'text-anchor="middle">2 min</text>')
+        x += larg_c * esc
+        if i < n - 1:
+            partes.append(f'<rect x="{x:.1f}" y="{y+18}" width="{larg_d*esc:.1f}" height="{alt-36}" '
+                          f'fill="{C["line"]}"/>')
+            x += larg_d * esc
+    return f'''<svg viewBox="0 0 {w} {h}" width="100%">
+  <text x="{x0}" y="70" fill="{C['orange']}" font-family="Mono" font-size="23"
+        letter-spacing="2">UMA SESSÃO</text>
+  {"".join(partes)}
+  <text x="{x0}" y="{y+108}" fill="{C['dim']}" font-family="Mono" font-size="22"
+        letter-spacing="1">30% DA FORÇA MÁXIMA</text>
+  <text x="{x1}" y="{y+108}" fill="{C['dim']}" font-family="Mono" font-size="22"
+        letter-spacing="1" text-anchor="end">4 MIN DE INTERVALO</text>
+  <line x1="{x0}" y1="{y+130}" x2="{x1}" y2="{y+130}" stroke="{C['line']}" stroke-width="1"/>
+  <text x="{x0}" y="{y+168}" fill="{C['white']}" font-family="Archivo" font-weight="800"
+        font-size="30">3 SESSÕES POR SEMANA</text>
+</svg>'''
+
+
 def svg_mmhg(w=820, h=330):
     """Queda da pressao de repouso em mmHg, com intervalo de confianca."""
     x0, x1 = 78, w - 150
@@ -140,5 +173,71 @@ def svg_mmhg(w=820, h=330):
 </svg>'''
 
 
-GRAPHICS = {"pressao": svg_pressao, "forest": svg_forest,
-            "escala": svg_escala, "mmhg": svg_mmhg}
+def svg_manometro(w=440, h=620):
+    """Manometro com ponteiro na faixa alta, e o traco do pulso abaixo."""
+    import math
+    t, cx, cy, r = C["orange"], 220, 300, 150
+
+    def pt(ang, raio):
+        a = math.radians(180 - ang)
+        return cx + raio * math.cos(a), cy - raio * math.sin(a)
+
+    arco_base = f'M{pt(0, r)[0]:.1f},{pt(0, r)[1]:.1f} A{r},{r} 0 0 1 {pt(180, r)[0]:.1f},{pt(180, r)[1]:.1f}'
+    x1, y1 = pt(118, r); x2, y2 = pt(180, r)
+    arco_alto = f'M{x1:.1f},{y1:.1f} A{r},{r} 0 0 1 {x2:.1f},{y2:.1f}'
+    ticks = ""
+    for a in range(0, 181, 20):
+        xa, ya = pt(a, r - 26); xb, yb = pt(a, r - 6)
+        ticks += (f'<line x1="{xa:.1f}" y1="{ya:.1f}" x2="{xb:.1f}" y2="{yb:.1f}" '
+                  f'stroke="{C["white"]}" stroke-width="4" opacity=".45"/>')
+    px, py = pt(142, r - 40)
+    pulso = ("M60,470 L118,470 L140,432 L162,516 L186,452 L208,470 L268,470 "
+             "L290,440 L312,500 L334,470 L392,470")
+    return f'''<svg viewBox="0 0 {w} {h}" width="100%" fill="none"
+     stroke-linecap="round" stroke-linejoin="round">
+  <path d="{arco_base}" stroke="{C['white']}" stroke-width="8" opacity=".30"/>
+  <path d="{arco_alto}" stroke="{t}" stroke-width="12"/>
+  {ticks}
+  <line x1="{cx}" y1="{cy}" x2="{px:.1f}" y2="{py:.1f}" stroke="{C['white']}" stroke-width="9"/>
+  <circle cx="{cx}" cy="{cy}" r="17" fill="{t}"/>
+  <path d="{pulso}" stroke="{t}" stroke-width="7"/>
+</svg>'''
+
+
+def svg_halter(w=440, h=620):
+    """Halter e disco — ilustracao de apoio para slides de exercicio."""
+    t = C["orange"]
+    return f'''<svg viewBox="0 0 {w} {h}" width="100%" fill="none"
+     stroke-linecap="round" stroke-linejoin="round">
+  <line x1="96" y1="310" x2="344" y2="310" stroke="{C['white']}" stroke-width="10"/>
+  <rect x="120" y="248" width="30" height="124" rx="10" stroke="{t}" stroke-width="7"/>
+  <rect x="78" y="272" width="26" height="76" rx="9" stroke="{t}" stroke-width="7"/>
+  <rect x="290" y="248" width="30" height="124" rx="10" stroke="{t}" stroke-width="7"/>
+  <rect x="336" y="272" width="26" height="76" rx="9" stroke="{t}" stroke-width="7"/>
+  <path d="M150 200 C190 164 250 164 290 200" stroke="{C['white']}" stroke-width="4" opacity=".4"/>
+  <path d="M150 420 C190 456 250 456 290 420" stroke="{C['white']}" stroke-width="4" opacity=".4"/>
+</svg>'''
+
+
+def svg_pulmao(w=440, h=620):
+    """Pulmoes e via aerea — ilustracao para o slide de respiracao."""
+    t = C["orange"]
+    return f'''<svg viewBox="0 0 {w} {h}" width="100%" fill="none"
+     stroke-linecap="round" stroke-linejoin="round">
+  <line x1="220" y1="150" x2="220" y2="268" stroke="{t}" stroke-width="8"/>
+  <path d="M220 268 C220 268 176 282 160 300" stroke="{t}" stroke-width="7"/>
+  <path d="M220 268 C220 268 264 282 280 300" stroke="{t}" stroke-width="7"/>
+  <path d="M158 302 C112 330 96 404 116 452 C132 490 176 496 194 466
+           C208 442 210 360 200 306 Z" stroke="{C['white']}" stroke-width="7"/>
+  <path d="M282 302 C328 330 344 404 324 452 C308 490 264 496 246 466
+           C232 442 230 360 240 306 Z" stroke="{C['white']}" stroke-width="7"/>
+  <path d="M170 340 C176 384 178 424 172 452" stroke="{C['white']}" stroke-width="4" opacity=".45"/>
+  <path d="M270 340 C264 384 262 424 268 452" stroke="{C['white']}" stroke-width="4" opacity=".45"/>
+  <circle cx="220" cy="140" r="12" fill="{t}"/>
+</svg>'''
+
+
+GRAPHICS = {"pressao": svg_pressao, "forest": svg_forest, "escala": svg_escala,
+            "protocolo": svg_protocolo, "mmhg": svg_mmhg}
+
+ILUSTRA = {"manometro": svg_manometro, "halter": svg_halter, "pulmao": svg_pulmao}

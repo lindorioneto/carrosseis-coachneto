@@ -3,7 +3,7 @@
 Identidade @coach_neto: preto, laranja #FF6D00, branco, chevron e grade."""
 import base64, html, json, pathlib
 
-from brand import C, W, H, GRAPHICS
+from brand import C, W, H, GRAPHICS, ILUSTRA
 
 BASE = pathlib.Path(__file__).parent
 FONTS = BASE / "fonts"
@@ -55,6 +55,12 @@ body{{background:{C['black']};color:{C['white']};font-family:'Plex',sans-serif;
   background:linear-gradient(90deg,{C['black']} 12%,rgba(7,7,7,.78) 44%,rgba(7,7,7,.12) 86%,rgba(7,7,7,0) 100%)}}
 .slide.com-foto .body{{padding-right:300px}}
 .slide.com-foto h1{{font-size:88px}}
+
+/* ilustracao de apoio, a direita — como a coluna na arte de marca */
+.ilustra{{position:absolute;right:-30px;top:50%;transform:translateY(-50%);
+  width:400px;opacity:.9;z-index:2}}
+.ilustra svg{{width:100%;height:auto}}
+.slide.com-ilustra .body{{padding-right:330px}}
 
 .topbar{{display:flex;justify-content:space-between;align-items:center;
   font-family:'Mono',monospace;font-weight:500;font-size:22px;letter-spacing:.16em;
@@ -178,11 +184,15 @@ def slide_html(s, i, total, meta):
                 f'<div class="lock"><small>{esc(s["handle"])}</small></div>')
 
     ilus = ""
+    if s.get("ilustracao"):
+        ilus = f'<div class="ilustra">{ILUSTRA[s["ilustracao"]]()}</div>'
     if s.get("foto"):
         dados = base64.b64encode((BASE / "assets" / s["foto"]).read_bytes()).decode()
-        ilus += f'<div class="foto"><img src="data:image/jpeg;base64,{dados}"></div>'
+        ilus += f'<div class="foto"><img src="data:image/png;base64,{dados}"></div>'
 
     cls = "slide cta" if t == "cta" else "slide"
+    if s.get("ilustracao"):
+        cls += " com-ilustra"
     if s.get("foto"):
         cls += " com-foto"
     return (f'<!doctype html><meta charset="utf-8"><style>{FACES}{CSS}</style>'
