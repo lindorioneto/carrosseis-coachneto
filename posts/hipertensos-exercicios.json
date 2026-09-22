@@ -10,14 +10,14 @@
       "eyebrow": "GRUPOS ESPECIAIS · 02",
       "titulo": "O que treinar quando a [pressão é alta]",
       "sub": "Na segunda ficou claro que pode. Hoje é o como.",
-      "foto": "circulacao.jpg"
+      "foto": "circulacao.png"
     },
     {
       "tipo": "conteudo",
       "titulo": "Não existe grupo muscular [proibido]",
       "corpo": "Um estudo dos Arquivos Brasileiros de Cardiologia testou quadríceps, grande dorsal e bíceps em 25 hipertensos controlados, com média de 64 anos.",
       "destaque": "A sistólica subiu de forma semelhante e dentro de limites seguros em todos os grupos. A diastólica não mudou de forma significativa em nenhum.",
-      "foto": "costas.jpg"
+      "foto": "costas.png"
     },
     {
       "tipo": "conteudo",
@@ -30,7 +30,7 @@
         "Rosca direta"
       ],
       "destaque": "Multiarticulares e uniarticulares, como em qualquer treino. Tempo otimizado, sem invenção.",
-      "foto": "remada.jpg"
+      "foto": "remada.png"
     },
     {
       "tipo": "dado",
@@ -45,14 +45,14 @@
       "grafico": "escala",
       "corpo": "A única tendência a resposta pressórica maior apareceu com grande grupo muscular em carga alta. É aí que se controla — não no nome do exercício.",
       "destaque": "Pare na fadiga moderada, com reserva. A falha não é meta em nenhum treino de hipertenso.",
-      "foto": "levantamento.jpg"
+      "foto": "levantamento.png"
     },
     {
       "tipo": "conteudo",
       "titulo": "E respire. [Sempre]",
       "corpo": "Expire na fase de esforço. A manobra de Valsalva dispara mais o pico pressórico do que o peso na barra.",
       "destaque": "É também por isso que exercício isométrico sustentado não entra aqui: ele favorece a apneia justamente em quem não pode.",
-      "foto": "pulmoes.jpg"
+      "foto": "pulmoes.png"
     },
     {
       "tipo": "referencia",
