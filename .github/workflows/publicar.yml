@@ -1,0 +1,78 @@
+name: Publicar carrossel
+
+on:
+  workflow_dispatch:
+    inputs:
+      post:
+        description: "Arquivo do post (ex.: posts/001-hipertensos.json)"
+        required: true
+        default: "posts/001-hipertensos.json"
+      modo:
+        description: "ensaio = gera e valida sem publicar | publicar = vai ao ar"
+        required: true
+        default: "ensaio"
+        type: choice
+        options: [ensaio, publicar]
+
+permissions:
+  contents: write
+
+jobs:
+  publicar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Instalar dependências
+        run: |
+          python -m pip install --upgrade pip
+          pip install playwright
+          playwright install --with-deps chromium
+
+      - name: Baixar as fontes
+        run: |
+          mkdir -p fonts
+          for p in archivo ibm-plex-sans ibm-plex-mono; do
+            npm pack @fontsource/$p --silent > /dev/null
+            tar xzf fontsource-$p-*.tgz
+            cp package/files/$p-latin-*00-normal.woff2 fonts/
+            rm -rf package fontsource-$p-*.tgz
+          done
+          ls fonts
+
+      - name: Gerar as artes
+        run: python render.py "${{ inputs.post }}"
+
+      - name: Publicar as imagens no repositório
+        id: media
+        run: |
+          git config user.name  "coachneto-bot"
+          git config user.email "actions@github.com"
+          git add media
+          if git diff --cached --quiet; then
+            echo "Nenhuma arte mudou; reaproveitando as que já estão no repositório."
+          else
+            git commit -m "artes: ${{ inputs.post }}"
+            git push
+          fi
+          echo "sha=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
+
+      - name: Esperar o CDN do GitHub
+        run: sleep 25
+
+      - name: Publicar no Instagram
+        env:
+          IG_TOKEN: ${{ secrets.IG_TOKEN }}
+          MEDIA_REF: ${{ steps.media.outputs.sha }}
+          MODO: ${{ inputs.modo }}
+        run: python publicar.py "${{ inputs.post }}"
+
+      - name: Guardar as artes como anexo da execução
+        uses: actions/upload-artifact@v4
+        with:
+          name: artes
+          path: media/
