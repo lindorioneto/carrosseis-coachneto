@@ -1,9 +1,16 @@
-name: Gerar as artes pela agenda
+name: Publicar pela agenda
 
-# Roda sozinho no GitHub, segunda, quarta e sexta as 15h UTC = 11h em Cuiaba.
-# Le agenda.json, renderiza as artes do post do dia e para por ai.
-# NAO publica: este workflow nao recebe o segredo IG_TOKEN.
-# Quem decide publicar e o Lindorio, depois de ver as artes.
+# Roda sozinho nos servidores do GitHub, segunda, quarta e sexta as 15h UTC
+# = 11h em Cuiaba. Nao depende do computador do Lindorio estar ligado.
+#
+# Le agenda.json, renderiza as artes do post do dia, guarda no repositorio e
+# publica no Instagram.
+#
+# O portao de aprovacao e a agenda: so entra em agenda.json post que o Lindorio
+# ja aprovou, slide por slide, na conversa. Nada chega aqui sem esse "ok".
+#
+# Publicar so acontece no horario agendado (event_name == schedule). Se alguem
+# rodar este workflow pelo botao, ele apenas gera as artes, sem publicar.
 
 on:
   schedule:
@@ -23,7 +30,7 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: O que a agenda manda gerar hoje
+      - name: O que a agenda manda publicar hoje
         id: hoje
         run: |
           POST="$(python agenda.py)"
@@ -57,17 +64,31 @@ jobs:
         run: python render.py "${{ steps.hoje.outputs.post }}"
 
       - name: Guardar as artes no repositorio
+        id: media
         if: steps.hoje.outputs.post != ''
         run: |
           git config user.name  "coachneto-bot"
           git config user.email "actions@github.com"
           git add media
           if git diff --cached --quiet; then
-            echo "Nenhuma arte mudou."
+            echo "Nenhuma arte mudou; reaproveitando as que ja estao no repositorio."
           else
             git commit -m "artes geradas pela agenda: ${{ steps.hoje.outputs.post }}"
             git push
           fi
+          echo "sha=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
+
+      - name: Esperar o CDN do GitHub servir as artes
+        if: steps.hoje.outputs.post != '' && github.event_name == 'schedule'
+        run: sleep 30
+
+      - name: Publicar no Instagram
+        if: steps.hoje.outputs.post != '' && github.event_name == 'schedule'
+        env:
+          IG_TOKEN: ${{ secrets.IG_TOKEN }}
+          MEDIA_REF: ${{ steps.media.outputs.sha }}
+          MODO: publicar
+        run: python publicar.py "${{ steps.hoje.outputs.post }}"
 
       - name: Guardar as artes como anexo da execucao
         if: steps.hoje.outputs.post != ''
