@@ -1,0 +1,78 @@
+{
+  "slug": "005-treino-que-segura-musculo",
+  "cor": "verde",
+  "legenda": "PESO PERDIDO, MAS MASSA MUSCULAR MANTIDA\n\nNa segunda eu mostrei que boa parte do peso que a caneta derruba não é só de gordura. Hoje, o que muda essa conta.\n\nO ENSAIO\n160 pessoas de cerca de 70 anos, com obesidade, 6 meses de dieta. A única diferença entre os grupos era o treino. Todos os que treinaram perderam o mesmo peso: cerca de 9 kg.\n\nMAS NÃO PERDERAM A MESMA COISA\nMassa magra perdida em 6 meses:\n\n· só aeróbio: 2,7 kg\n· só musculação: 1,0 kg\n· os dois juntos: 1,7 kg\n\nQuase três vezes mais músculo perdido no aeróbio, com a balança marcando igual.\n\nO osso conta a mesma história: a densidade do quadril caiu 2,6% em quem só fez aeróbio, e menos de 1% em quem fez musculação.\n\nE no teste de vida real — levantar da cadeira, subir escada, andar — quem fez os dois melhorou 21%. Cada um sozinho, 14%.\n\nA DOSE QUE FOI USADA\n· 3 sessões por semana, corpo todo\n· 8 a 12 repetições perto de 65% da carga máxima\n· progredindo até 2 ou 3 séries perto de 85%\n\nNada exótico. Carga sempre desafiadora, que vai subindo semanalmente.\n\nSe você está emagrecendo, com ou sem caneta, é isso que decide se você chega do outro lado forte e magro, ou só magro.\n\nQuer esse treino montado para o seu caso? Chama no direct — Método Musculação Estratégica.\n\n#musculacao #treino #academia #saude #emagrecimento #fitness #sarcopenia #ozempic #massamagra #gruposespeciais",
+  "serie": "GRUPOS ESPECIAIS",
+  "edicao": "05",
+  "handle": "@coach_neto",
+  "slides": [
+    {
+      "tipo": "capa",
+      "eyebrow": "GRUPOS ESPECIAIS · 05",
+      "titulo": "[Peso perdido,]\nmas massa muscular mantida",
+      "sub": "O treino que decidirá se você chegará do outro lado forte e magro, ou só magro.",
+      "foto": "levantamento.png"
+    },
+    {
+      "tipo": "conteudo",
+      "titulo": "O ensaio que [responde isso]",
+      "corpo": "160 pessoas de cerca de 70 anos, com obesidade, 6 meses de dieta. A única diferença entre os grupos era o treino: só aeróbio, só musculação, os dois, ou nenhum.",
+      "destaque": "Todos os que treinaram perderam o mesmo peso: cerca de 9 kg. A balança não separou ninguém.",
+      "foto": "halter3d.png"
+    },
+    {
+      "tipo": "dado",
+      "kicker": "MASSA MAGRA PERDIDA EM 6 MESES",
+      "grafico": "perdamagra",
+      "legenda": "Mesmo peso na balança, resultado diferente no corpo. Quem só fez aeróbio perdeu quase 3x mais músculo.",
+      "nota": "Ensaio clínico randomizado com 160 idosos com obesidade. New England Journal of Medicine, 2017."
+    },
+    {
+      "tipo": "conteudo",
+      "titulo": "O osso conta [a mesma história]",
+      "corpo": "A densidade do osso do quadril caiu 2,6% no grupo que só fez aeróbio, e menos de 1% no que fez musculação.",
+      "destaque": "Emagrecer tira osso também. A musculação é o que segura — e isso importa muito depois dos 60.",
+      "foto": "costas.png"
+    },
+    {
+      "tipo": "conteudo",
+      "titulo": "E no [teste de vida real]",
+      "corpo": "Levantar da cadeira, subir escada, andar, pegar peso do chão. Quem fez os dois tipos de treino melhorou 21% no teste de desempenho físico; cada um sozinho, 14%.",
+      "destaque": "A musculação protege o que você tem. O aeróbio soma na função. Não é escolher um — é que a musculação não é opcional.",
+      "foto": "remada.png"
+    },
+    {
+      "tipo": "conteudo",
+      "titulo": "A dose [que foi usada]",
+      "lista": [
+        "3 sessões por semana, corpo todo, 9 exercícios",
+        "Começa com 8 a 12 repetições perto de 65% da carga máxima",
+        "Progride até 2 ou 3 séries perto de 85%"
+      ],
+      "destaque": "Nada exótico: carga que exige, subindo com o tempo. Uma revisão de 2026 com 1.302 idosos chegou no mesmo lugar."
+    },
+    {
+      "tipo": "referencia",
+      "titulo": "De onde vêm [esses números]",
+      "refs": [
+        {
+          "rot": "ENSAIO CLÍNICO · 2017",
+          "txt": "Villareal DT et al. Aerobic or Resistance Exercise, or Both, in Dieting Obese Older Adults. New England Journal of Medicine, 2017;376:1943-1955. 160 participantes, 70±5 anos, 26 semanas."
+        },
+        {
+          "rot": "REVISÃO · 2026",
+          "txt": "Optimizing prescription of resistance training in sarcopenia. European Review of Aging and Physical Activity, 2026;23:8. 25 ensaios, 1.302 idosos de 60 a 87 anos."
+        }
+      ],
+      "aviso": "Conteúdo educativo. A prescrição é individual e deve considerar medicação, comorbidades e avaliação clínica."
+    },
+    {
+      "tipo": "cta",
+      "metodo": "Método",
+      "titulo": "[Musculação]\nEstratégica",
+      "oferta": "Treino de corpo todo, com carga que evolui, montado para quem está emagrecendo e quer manter músculo, osso e função.",
+      "acao": "Chama no direct",
+      "handle": "@coach_neto"
+    }
+  ]
+}
