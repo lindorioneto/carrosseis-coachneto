@@ -1,0 +1,83 @@
+{
+  "slug": "006-emagreceu-e-agora",
+  "cor": "verde",
+  "legenda": "VOCÊ EMAGRECEU. E AGORA?\n\nFechando a semana. O resumo em três frases:\n\n1. Boa parte do peso que a caneta derruba não é só de gordura.\n2. Quem faz musculação perde cerca de três vezes menos músculo que quem só faz aeróbio.\n3. O problema nunca foi o remédio. É emagrecer rápido sem treinar.\n\nO QUE A BALANÇA NÃO MEDE\nDepois dos 50, o músculo some devagar: de 0,6 a 1% ao ano. A força some bem mais rápido: de 2,5 a 4% ao ano.\n\nOu seja, você perde força de duas a cinco vezes mais rápido do que perde músculo. O espelho demora a contar essa história. A vida conta antes.\n\nONDE ISSO APARECE\nNão é na academia. É em levantar da poltrona sem apoiar as duas mãos. Subir um lance de escada sem parar. Carregar a compra do carro até a cozinha de uma vez só.\n\nQuando isso começa a ficar difícil, já faz tempo que estava acontecendo.\n\nA BOA NOTÍCIA\nA força responde antes do tamanho.\n\nUma revisão de 2026 juntou 25 ensaios com 1.302 pessoas de 60 a 87 anos. O efeito do treino sobre a força foi cerca de três vezes maior que sobre a massa magra. E apareceu em 8 a 12 semanas.\n\nTraduzindo: você fica mais forte bem antes de ficar maior.\n\nENTÃO FICA ASSIM\nEmagrecer é a parte fácil hoje. Chegar do outro lado com força é o que dá trabalho — e é o que decide como vão ser os seus próximos vinte anos.\n\nQuer começar com alguém montando e acompanhando? Chama no direct — Método Musculação Estratégica.\n\nSalva e manda para quem está emagrecendo sem treinar.\n\n#musculacao #treino #academia #saude #emagrecimento #fitness #sarcopenia #forca #envelhecimento #gruposespeciais",
+  "serie": "GRUPOS ESPECIAIS",
+  "edicao": "06",
+  "handle": "@coach_neto",
+  "slides": [
+    {
+      "tipo": "capa",
+      "eyebrow": "GRUPOS ESPECIAIS · 06",
+      "titulo": "[Você emagreceu.]\nE agora?",
+      "sub": "Fechamento da semana: o que a balança não mede, e por que isso decide os próximos vinte anos.",
+      "foto": "calca.png"
+    },
+    {
+      "tipo": "conteudo",
+      "titulo": "A semana em [três frases]",
+      "lista": [
+        "Boa parte do peso perdido não é só de gordura",
+        "Musculação perde cerca de 3x menos músculo que só aeróbio",
+        "O problema não é o remédio, é emagrecer rápido sem treinar"
+      ],
+      "destaque": "Nenhuma dessas frases é contra a caneta. São sobre o que você faz enquanto ela trabalha.",
+      "foto": "preensao.png"
+    },
+    {
+      "tipo": "dado",
+      "kicker": "O QUE SE PERDE DOS 50 AOS 80",
+      "grafico": "forcamassa",
+      "legenda": "O músculo some devagar. A força some rápido. São duas curvas diferentes, e só uma aparece no espelho.",
+      "nota": "Depois dos 50: massa cai de 0,6 a 1% ao ano; força, de 2,5 a 4%. Frontiers in Physiology, 2012."
+    },
+    {
+      "tipo": "conteudo",
+      "titulo": "Onde isso [aparece]",
+      "corpo": "Não é na academia. É levantar da poltrona sem apoiar as duas mãos, subir um lance de escada sem parar, carregar a compra do carro até a cozinha de uma vez só.",
+      "destaque": "Quando isso começa a ficar difícil, a musculação poderá te ajudar.",
+      "foto": "cadeira.png"
+    },
+    {
+      "tipo": "conteudo",
+      "titulo": "A boa notícia: [a força vem antes]",
+      "corpo": "Revisão de 2026 com 25 ensaios e 1.302 pessoas de 60 a 87 anos: o efeito do treino sobre a força foi cerca de três vezes maior que sobre a massa magra, e apareceu em 8 a 12 semanas.",
+      "destaque": "Você fica mais forte bem antes de ficar maior.",
+      "foto": "bracohalter.png"
+    },
+    {
+      "tipo": "conteudo",
+      "titulo": "Por onde [começar]",
+      "lista": [
+        "Treino de força 2 a 3x por semana, corpo todo",
+        "Carga que desafia de verdade, aumentando durante as semanas",
+        "1,2 a 1,6 g de proteína por quilo, no dia todo"
+      ],
+      "destaque": "Em 8 semanas você sentirá os resultados.",
+      "foto": "escada.png"
+    },
+    {
+      "tipo": "referencia",
+      "titulo": "De onde vêm [esses números]",
+      "refs": [
+        {
+          "rot": "REVISÃO · 2012",
+          "txt": "Narici MV, Maffulli N et al. Sarcopenia: characteristics, mechanisms and functional significance. Frontiers in Physiology, 2012;3:260."
+        },
+        {
+          "rot": "METANÁLISE · 2026",
+          "txt": "Optimizing prescription of resistance training in sarcopenia. European Review of Aging and Physical Activity, 2026;23:8. 25 ensaios, 1.302 idosos. Tamanhos de efeito: força 0,71; massa magra 0,22."
+        }
+      ],
+      "aviso": "Conteúdo educativo. A prescrição é individual e deve considerar medicação, comorbidades e avaliação clínica."
+    },
+    {
+      "tipo": "cta",
+      "metodo": "Método",
+      "titulo": "[Musculação]\nEstratégica",
+      "oferta": "Emagrecer é a parte fácil hoje. Chegar do outro lado com força é o que dá trabalho — e é isso que eu monto com você.",
+      "acao": "Chama no direct",
+      "handle": "@coach_neto"
+    }
+  ]
+}
