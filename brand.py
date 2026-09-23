@@ -332,3 +332,31 @@ def aplicar_cor(nome):
     """Troca o acento do carrossel. Sem efeito sobre MARCA."""
     C.update(PALETAS.get(nome, PALETAS["laranja"]))
     return nome if nome in PALETAS else "laranja"
+
+def svg_perdamagra(w=820, h=404):
+    """Quanto de massa magra se perdeu em 6 meses, com o mesmo peso perdido (LITOE, 2017)."""
+    x0 = 78
+    larg = (w - 150) - x0
+    topo = 2.7
+    linhas = [("SÓ AERÓBIO", 2.7, 58, False),
+              ("SÓ MUSCULAÇÃO", 1.0, 174, True),
+              ("OS DOIS JUNTOS", 1.7, 290, False)]
+    out = []
+    for rot, kg, y, destaque in linhas:
+        wb = larg * kg / topo
+        cor = C["orange"] if destaque else C["ember"]
+        out.append(f'<text x="{x0}" y="{y-22}" fill="{C["dim"]}" font-family="Mono" '
+                   f'font-size="22" letter-spacing="2">{rot}</text>')
+        out.append(f'<rect x="{x0}" y="{y}" width="{wb:.1f}" height="58" fill="{cor}"/>')
+        txt = f'{kg:.1f}'.replace(".", ",") + " kg"
+        cv = C["white"] if destaque else C["muted"]
+        out.append(f'<text x="{x0+wb+18:.1f}" y="{y+41}" fill="{cv}" font-family="Archivo" '
+                   f'font-weight="800" font-size="34">{txt}</text>')
+    return f'''<svg viewBox="0 0 {w} {h}" width="100%">
+  {"".join(out)}
+  <text x="{x0}" y="{h-16}" fill="{C['dim']}" font-family="Mono" font-size="21"
+        letter-spacing="1">TODOS OS GRUPOS PERDERAM O MESMO PESO: CERCA DE 9%</text>
+</svg>'''
+
+
+GRAPHICS["perdamagra"] = svg_perdamagra
