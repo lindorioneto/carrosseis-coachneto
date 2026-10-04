@@ -54,6 +54,8 @@ body{{background:{C['black']};color:{C['white']};font-family:'Plex',sans-serif;
 .foto img{{height:100%;width:100%;object-fit:cover;object-position:52% 50%;opacity:.92}}
 .foto::after{{content:"";position:absolute;inset:0;
   background:linear-gradient(90deg,{C['black']} 12%,rgba(7,7,7,.78) 44%,rgba(7,7,7,.12) 86%,rgba(7,7,7,0) 100%)}}
+.foto.clara img{{opacity:1}}
+.foto.clara::after{{background:linear-gradient(90deg,{C['black']} 1%,rgba(7,7,7,.44) 26%,rgba(7,7,7,.06) 70%,rgba(7,7,7,0) 100%)}}
 .slide.com-foto .body{{padding-right:300px}}
 .slide.com-foto h1{{font-size:88px}}
 
@@ -189,7 +191,8 @@ def slide_html(s, i, total, meta):
         ilus = f'<div class="ilustra">{ILUSTRA[s["ilustracao"]]()}</div>'
     if s.get("foto"):
         dados = base64.b64encode((BASE / "assets" / s["foto"]).read_bytes()).decode()
-        ilus += f'<div class="foto"><img src="data:image/png;base64,{dados}"></div>'
+        cls_foto = "foto clara" if s.get("foto_clara") else "foto"
+        ilus += f'<div class="{cls_foto}"><img src="data:image/png;base64,{dados}"></div>'
 
     cls = "slide cta" if t == "cta" else "slide"
     if s.get("ilustracao"):
