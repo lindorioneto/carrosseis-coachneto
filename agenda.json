@@ -1,27 +1,7 @@
 [
   {
-    "data": "2026-09-23",
-    "post": "posts/hipertensos-exercicios.json",
-    "nota": "Quarta — exercicios para hipertensos. Aprovado em 22/09."
-  },
-  {
-    "data": "2026-09-25",
-    "post": "posts/sexta-hipertensao.json",
-    "nota": "Sexta — fechamento da semana de hipertensao. Aprovado em 22/09."
-  },
-  {
-    "data": "2026-09-28",
-    "post": "posts/segunda-canetas.json",
-    "nota": "Segunda — sarcopenia e canetas emagrecedoras. Aprovado em 22/09."
-  },
-  {
-    "data": "2026-09-30",
-    "post": "posts/quarta-treino-canetas.json",
-    "nota": "Quarta — o treino que segura o musculo. Aprovado em 22/09."
-  },
-  {
-    "data": "2026-10-02",
-    "post": "posts/sexta-fechamento-sarcopenia.json",
-    "nota": "Sexta — fechamento do ciclo da sarcopenia. Aprovado em 22/09."
+    "data": "2026-10-05",
+    "post": "posts/segunda-diabetes.json",
+    "nota": "Segunda — diabetes tipo 2, para onde vai o acucar. Aprovado em 04/10."
   }
 ]
