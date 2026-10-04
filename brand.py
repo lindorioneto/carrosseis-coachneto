@@ -360,3 +360,22 @@ def svg_perdamagra(w=820, h=404):
 
 
 GRAPHICS["perdamagra"] = svg_perdamagra
+
+def svg_destino(w=820, h=210):
+    """Para onde vai a glicose de uma refeicao: cerca de 80% vai para o musculo."""
+    x0 = 70
+    larg = (w - 60) - x0
+    wm = larg * 0.80
+    return f'''<svg viewBox="0 0 {w} {h}" width="100%">
+  <rect x="{x0}" y="26" width="{wm:.1f}" height="96" fill="{C['orange']}"/>
+  <rect x="{x0+wm:.1f}" y="26" width="{larg-wm:.1f}" height="96" fill="{C['ember']}"/>
+  <text x="{x0+34}" y="94" fill="{C['black']}" font-family="Archivo"
+        font-weight="800" font-size="54">80% MÚSCULO</text>
+  <text x="{x0}" y="166" fill="{C['orange']}" font-family="Mono" font-size="23"
+        letter-spacing="1">O MAIOR DESTINO</text>
+  <text x="{x0+larg}" y="166" fill="{C['dim']}" font-family="Mono" font-size="23"
+        letter-spacing="1" text-anchor="end">O RESTO DO CORPO</text>
+</svg>'''
+
+
+GRAPHICS["destino"] = svg_destino
