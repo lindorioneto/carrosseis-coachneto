@@ -1,0 +1,77 @@
+{
+  "slug": "007-destino-do-acucar",
+  "cor": "azul",
+  "legenda": "PARA ONDE VAI O AÇÚCAR DA SUA REFEIÇÃO\n\nSemana nova, assunto novo: diabetes tipo 2. E começo pelo lugar para onde o açúcar vai depois que você come.\n\nO MAIOR DESTINO É O MÚSCULO\nCerca de 80% da glicose que entra na corrente sanguínea depois de uma refeição é captada pelo músculo esquelético. Nenhum outro tecido chega perto.\n\nMúsculo não é estética. É o maior reservatório de açúcar que você tem — e quanto menos músculo, menos lugar para o açúcar ir.\n\nA PARTE QUE SURPREENDE\nQuem carrega a glicose para dentro do músculo é um transportador chamado GLUT4. A insulina é um dos jeitos de trazer esse transportador até a superfície da célula — e no diabetes tipo 2 esse caminho emperra.\n\nA contração muscular é o outro jeito. Ela puxa o GLUT4 para a superfície sem passar pela insulina, e esse caminho continua funcionando em quem tem resistência ao hormônio.\n\nO músculo que não responde bem ao hormônio responde ao treino.\n\nCADA TREINO COMPRA 48 HORAS\nA sensibilidade à insulina fica melhor por até dois dias depois da sessão. Por isso, aqui, frequência vale mais que duração: três treinos espalhados na semana cobrem mais dias que um treino longo no sábado.\n\nE NO EXAME\nRevisão com 20 ensaios e 1.172 pessoas: só musculação derrubou a hemoglobina glicada em 0,39 ponto.\n\nE o detalhe mais interessante: quanto maior o ganho de força, maior a queda da glicada. Não é a presença na academia que conta, é ficar mais forte.\n\nNada disso substitui remédio nem autoriza mexer na dose — quem faz isso é o médico.\n\nQuer um treino montado para o seu caso? Chama no direct — Método Musculação Estratégica.\n\n#musculacao #treino #academia #saude #diabetes #fitness #glicemia #diabetestipo2 #resistenciainsulina #gruposespeciais",
+  "serie": "GRUPOS ESPECIAIS",
+  "edicao": "07",
+  "handle": "@coach_neto",
+  "slides": [
+    {
+      "tipo": "capa",
+      "eyebrow": "GRUPOS ESPECIAIS · 07",
+      "titulo": "[Diabetes tipo 2]\nPara onde vai o açúcar",
+      "sub": "O maior consumidor de açúcar do seu corpo não é o cérebro. É o músculo.",
+      "foto": "glicopirulito.png"
+    },
+    {
+      "tipo": "conteudo",
+      "titulo": "O maior destino é [o músculo]",
+      "corpo": "Depois de uma refeição, cerca de 80% da glicose que entra na corrente sanguínea é captada pelo músculo esquelético. Nenhum outro tecido chega perto.",
+      "destaque": "Músculo não é estética. É o maior reservatório de açúcar que você tem.",
+      "foto": "pose.png"
+    },
+    {
+      "tipo": "dado",
+      "kicker": "PARA ONDE VAI A GLICOSE DEPOIS DE COMER",
+      "grafico": "destino",
+      "legenda": "Por isso perder massa muscular piora o controle da glicemia, mesmo sem mudar nada na alimentação.",
+      "nota": "Captação de glicose pelo músculo esquelético. Ferrannini et al., 1988; Merz e Thurmond, 2020."
+    },
+    {
+      "tipo": "conteudo",
+      "titulo": "A segunda [porta]",
+      "corpo": "O transportador que leva a glicose para dentro do músculo se chama GLUT4. A insulina é um dos jeitos de trazer esse transportador até a superfície da célula — e no diabetes tipo 2 esse caminho emperra.",
+      "destaque": "A contração muscular é o outro jeito: ela puxa o GLUT4 para a superfície sem passar pela insulina. E esse caminho continua funcionando em quem tem resistência ao hormônio.",
+      "foto": "molecula.png"
+    },
+    {
+      "tipo": "conteudo",
+      "titulo": "Cada treino compra [48 horas]",
+      "corpo": "O efeito não termina quando a sessão acaba: a sensibilidade à insulina fica melhor por até 48 horas depois do exercício.",
+      "destaque": "Por isso a frequência vale mais que a duração. Três sessões espalhadas na semana cobrem mais dias do que uma sessão longa no sábado.",
+      "foto": "rosca.png"
+    },
+    {
+      "tipo": "conteudo",
+      "titulo": "E no [exame]",
+      "corpo": "Revisão com 20 ensaios e 1.172 pessoas: só musculação, sem mudar mais nada, derrubou a hemoglobina glicada em 0,39 ponto.",
+      "destaque": "E quanto maior o ganho de força, maior a queda da glicada. Não é a presença na academia que conta — é ficar mais forte.",
+      "foto": "levantamento.png"
+    },
+    {
+      "tipo": "referencia",
+      "titulo": "De onde vêm [esses números]",
+      "refs": [
+        {
+          "rot": "REVISÃO · 2017",
+          "txt": "Sylow L, Kleinert M, Richter EA, Jensen TE. Exercise-stimulated glucose uptake: regulation and implications for glycaemic control. Nature Reviews Endocrinology, 2017;13:133-148."
+        },
+        {
+          "rot": "METANÁLISE · 2022",
+          "txt": "Jansson AK et al. Effect of resistance training on HbA1c in adults with type 2 diabetes. BMJ Open Diabetes Research & Care, 2022;10:e002595. 20 ensaios, 1.172 pessoas; HbA1c −0,39 (IC 95% −0,60 a −0,18)."
+        }
+      ],
+      "aviso": "Conteúdo educativo. Não interrompa nem altere medicação por conta própria — isso é decisão do seu médico."
+    },
+    {
+      "tipo": "cta",
+      "metodo": "Método",
+      "titulo": "[Musculação]\nEstratégica",
+      "oferta": "Treino montado para quem tem diabetes tipo 2 e quer usar o músculo a favor do controle da glicemia, com segurança.",
+      "acao": "Chama no direct",
+      "handle": "@coach_neto",
+      "foto": "neto.png",
+      "foto_clara": true
+    }
+  ]
+}
