@@ -1,0 +1,90 @@
+{
+  "slug": "009-mitos-e-verdades-diabetes",
+  "cor": "azul",
+  "legenda": "DIABETES E MUSCULAÇÃO: 5 MITOS E VERDADES\n\nFechando a semana do jeito mais direto que eu consigo. Cinco frases que eu escuto toda semana, e o que a evidência diz sobre cada uma.\n\n1. \"QUEM TEM DIABETES NÃO PODE PEGAR PESO\"\nMITO. Diabetes não é contraindicação para musculação — é um dos motivos mais fortes para fazer. O músculo é o maior destino do açúcar da sua refeição, e a contração muscular abre uma porta de entrada que não depende da insulina.\n\n2. \"PARA BAIXAR O AÇÚCAR, SÓ O AERÓBIO RESOLVE\"\nMITO. Revisão com 20 ensaios e 1.172 pessoas: só musculação, sem mudar mais nada, derrubou a hemoglobina glicada em 0,39 ponto.\n\nE o detalhe que importa: quanto maior o ganho de força, maior a queda. Frequentar academia não é treinar — o treino precisa ser bem elaborado para progredir a carga de acordo com o seu nível.\n\n3. \"A GLICOSE SÓ BAIXA DURANTE O TREINO\"\nMITO. A sensibilidade à insulina fica melhor por até 48 horas depois da sessão. Por isso treinar segunda, quarta e sexta é o ideal para manter as taxas de glicose baixas: cobre seis dos sete dias da semana.\n\nOs mesmos três treinos em dias seguidos cobrem quatro. Mesmo esforço, outro resultado.\n\n4. \"TREINAR DEPOIS DE COMER AJUDA A SEGURAR O PICO\"\nVERDADE. Revisão com 31 estudos: o exercício feito no período após a refeição reduz o pico de glicose e também a média das 24 horas. Sessões acima de 30 minutos funcionaram melhor.\n\nMas atenção: o melhor horário continua sendo o que cabe na sua rotina.\n\n5. \"QUEM PERDE MÚSCULO PERDE CONTROLE DA GLICEMIA\"\nVERDADE. O músculo é o maior reservatório de açúcar que você tem. Quanto menos músculo, menos lugar para a glicose ir — mesmo sem mudar nada na alimentação.\n\nE depois dos 50 a massa muscular diminui todo ano, de 0,6 a 1%, em quem não treina — e não para mais. Por isso musculação aqui não é só para baixar a glicada deste mês: é para não perder o tecido que faz esse trabalho.\n\nNada aqui substitui remédio nem autoriza mexer na dose — quem faz isso é o seu médico.\n\nQuer um treino montado para o seu caso? Chama no direct — Método Musculação Estratégica.\n\nSalva e manda para quem tem diabetes e ainda acha que não pode treinar.\n\n#musculacao #treino #academia #saude #diabetes #fitness #glicemia #diabetestipo2 #mitoseverdades #gruposespeciais",
+  "serie": "GRUPOS ESPECIAIS",
+  "edicao": "09",
+  "handle": "@coach_neto",
+  "slides": [
+    {
+      "tipo": "capa",
+      "eyebrow": "GRUPOS ESPECIAIS · 09",
+      "titulo": "[Mito ou verdade?]\nDiabetes e musculação",
+      "sub": "Cinco frases que eu escuto toda semana, e o que a evidência diz sobre cada uma.",
+      "foto": "professor.png"
+    },
+    {
+      "tipo": "mito",
+      "veredito": "MITO",
+      "fala": "Quem tem diabetes não pode pegar peso",
+      "corpo": "Diabetes não é contraindicação para musculação. É um dos motivos mais fortes para fazer.",
+      "destaque": "O músculo é o maior destino do açúcar da sua refeição, e a contração muscular abre uma porta que não depende da insulina.",
+      "foto": "remadahalter.png"
+    },
+    {
+      "tipo": "mito",
+      "veredito": "MITO",
+      "fala": "Para baixar o açúcar, só o aeróbio resolve",
+      "corpo": "Revisão com 20 ensaios e 1.172 pessoas: só musculação, sem mudar mais nada, derrubou a hemoglobina glicada em 0,39 ponto.",
+      "destaque": "Frequentar academia não é treinar. O treino precisa ser bem elaborado para progredir a carga de acordo com o seu nível.",
+      "foto": "supino.png"
+    },
+    {
+      "tipo": "mito",
+      "veredito": "MITO",
+      "fala": "A glicose só baixa durante o treino",
+      "corpo": "A sensibilidade à insulina fica melhor por até 48 horas depois da sessão. O efeito não termina quando você sai da academia.",
+      "destaque": "Por isso treinar segunda, quarta e sexta é o ideal para manter as taxas de glicose baixas.",
+      "foto": "barraacima.png"
+    },
+    {
+      "tipo": "mito",
+      "veredito": "VERDADE",
+      "fala": "Treinar depois de comer ajuda a segurar o pico",
+      "corpo": "Revisão com 31 estudos: o exercício feito depois da refeição reduz o pico de glicose e também a média das 24 horas. Sessões acima de 30 minutos funcionaram melhor.",
+      "destaque": "Mas o melhor horário continua sendo o que cabe na sua rotina.",
+      "foto": "legpress.png"
+    },
+    {
+      "tipo": "mito",
+      "veredito": "VERDADE",
+      "fala": "Quem perde músculo perde controle da glicemia",
+      "corpo": "O músculo é o maior reservatório de açúcar que você tem. Quanto menos músculo, menos lugar para a glicose ir — mesmo sem mudar nada na alimentação.",
+      "destaque": "Depois dos 50 a massa muscular diminui todo ano, de 0,6 a 1%, e não para mais. Mais um motivo para fazer musculação.",
+      "foto": "remadat.png"
+    },
+    {
+      "tipo": "referencia",
+      "titulo": "De onde vêm [esses números]",
+      "refs": [
+        {
+          "rot": "METANÁLISE · 2022",
+          "txt": "Jansson AK et al. Effect of resistance training on HbA1c in adults with type 2 diabetes. BMJ Open Diabetes Research & Care, 2022;10:e002595. 20 ensaios, 1.172 pessoas; HbA1c −0,39."
+        },
+        {
+          "rot": "REVISÃO · 2017",
+          "txt": "Sylow L et al. Exercise-stimulated glucose uptake. Nature Reviews Endocrinology, 2017;13:133-148. Contração muscular, GLUT4 e as 48 horas de sensibilidade."
+        },
+        {
+          "rot": "METANÁLISE · 2023",
+          "txt": "Kang J et al. Efficacy of postprandial exercise in mitigating glycemic responses. Nutrients, 2023;15(20):4489. 31 estudos, 516 participantes."
+        },
+        {
+          "rot": "MÚSCULO E GLICOSE",
+          "txt": "Ferrannini et al., 1988; Merz e Thurmond, 2020. Perda de massa após os 50: Narici MV et al., Frontiers in Physiology, 2012;3:260."
+        }
+      ],
+      "aviso": "Conteúdo educativo. A prescrição é individual. Não interrompa nem altere medicação por conta própria — isso é decisão do seu médico."
+    },
+    {
+      "tipo": "cta",
+      "metodo": "Método",
+      "titulo": "[Musculação]\nEstratégica",
+      "oferta": "Treino montado para quem tem diabetes tipo 2: a dose certa, a progressão certa e os cuidados já dentro da prescrição.",
+      "acao": "Chama no direct",
+      "handle": "@coach_neto",
+      "foto": "netohalter.png",
+      "foto_clara": true
+    }
+  ]
+}
