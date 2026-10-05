@@ -379,3 +379,78 @@ def svg_destino(w=820, h=210):
 
 
 GRAPHICS["destino"] = svg_destino
+
+
+
+def svg_semana48(w=820, h=300):
+    """Treinar seg/qua/sex cobre a semana quase inteira, porque cada sessao
+    deixa a sensibilidade a insulina melhor por ate 48 h."""
+    x0 = 70
+    larg = (w - 60) - x0
+    cel = larg / 7.0
+    dias = ["SEG", "TER", "QUA", "QUI", "SEX", "SAB", "DOM"]
+    treino = {0, 2, 4}
+    coberto = {0, 1, 2, 3, 4, 5}
+    out = []
+    for i, d in enumerate(dias):
+        x = x0 + i * cel
+        cor = C["orange"] if i in coberto else C["line"]
+        out.append(f'<rect x="{x+3:.1f}" y="118" width="{cel-6:.1f}" height="54" fill="{cor}"/>')
+        rot = C["white"] if i in coberto else C["dim"]
+        out.append(f'<text x="{x+cel/2:.1f}" y="206" fill="{rot}" font-family="Mono" '
+                   f'font-size="24" letter-spacing="1" text-anchor="middle">{d}</text>')
+        if i in treino:
+            out.append(f'<circle cx="{x+cel/2:.1f}" cy="86" r="13" fill="{C["white"]}"/>')
+    return f'''<svg viewBox="0 0 {w} {h}" width="100%">
+  <text x="{x0}" y="48" fill="{C['dim']}" font-family="Mono" font-size="23"
+        letter-spacing="2">O PONTO BRANCO É UM TREINO</text>
+  {"".join(out)}
+  <text x="{x0}" y="268" fill="{C['white']}" font-family="Archivo" font-weight="800"
+        font-size="30">Três sessões cobrem seis dos sete dias.</text>
+</svg>'''
+
+
+GRAPHICS["semana48"] = svg_semana48
+
+
+def svg_semanadupla(w=820, h=452):
+    """Os mesmos tres treinos na semana, arrumados de dois jeitos. Cada sessao
+    deixa a sensibilidade a insulina melhor por ate 48 h: o dia do treino e o
+    seguinte. Alternado cobre 6 dias; tudo seguido cobre 4."""
+    dias = ["SEG", "TER", "QUA", "QUI", "SEX", "SAB", "DOM"]
+    x0 = 56
+    larg = 520
+    cel = larg / 7.0
+    out = []
+
+    def linha(y_rot, y_dot, y_cel, y_dia, rotulo, treino, coberto, total):
+        out.append(f'<text x="{x0}" y="{y_rot}" fill="{C["white"]}" font-family="Mono" '
+                   f'font-size="24" letter-spacing="2">{rotulo}</text>')
+        for i, d in enumerate(dias):
+            x = x0 + i * cel
+            cor = C["orange"] if i in coberto else C["line"]
+            out.append(f'<rect x="{x+3:.1f}" y="{y_cel}" width="{cel-6:.1f}" height="52" '
+                       f'fill="{cor}"/>')
+            rot = C["white"] if i in coberto else C["dim"]
+            out.append(f'<text x="{x+cel/2:.1f}" y="{y_dia}" fill="{rot}" font-family="Mono" '
+                       f'font-size="20" letter-spacing="1" text-anchor="middle">{d}</text>')
+            if i in treino:
+                out.append(f'<circle cx="{x+cel/2:.1f}" cy="{y_dot}" r="12" '
+                           f'fill="{C["white"]}"/>')
+        out.append(f'<text x="{w-24}" y="{y_cel+30}" fill="{C["white"]}" font-family="Archivo" '
+                   f'font-weight="800" font-size="52" text-anchor="end">{total}</text>')
+        out.append(f'<text x="{w-24}" y="{y_cel+58}" fill="{C["dim"]}" font-family="Mono" '
+                   f'font-size="20" letter-spacing="2" text-anchor="end">DIAS COBERTOS</text>')
+
+    linha(66, 100, 118, 198, "TREINO SEG \u00b7 QUA \u00b7 SEX", {0, 2, 4}, {0, 1, 2, 3, 4, 5}, "6")
+    linha(284, 318, 336, 416, "TREINO SEG \u00b7 TER \u00b7 QUA", {0, 1, 2}, {0, 1, 2, 3}, "4")
+
+    return f'''<svg viewBox="0 0 {w} {h}" width="100%">
+  <text x="{x0}" y="22" fill="{C['dim']}" font-family="Mono" font-size="21"
+        letter-spacing="2">CADA TREINO PROTEGE O DIA DELE E O SEGUINTE</text>
+  {"".join(out)}
+  <line x1="{x0}" y1="234" x2="{w-24}" y2="234" stroke="{C['line']}" stroke-width="2"/>
+</svg>'''
+
+
+GRAPHICS["semanadupla"] = svg_semanadupla
