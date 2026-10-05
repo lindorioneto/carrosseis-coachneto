@@ -1,0 +1,81 @@
+{
+  "slug": "008-a-dose-que-derruba",
+  "cor": "azul",
+  "legenda": "A DOSE QUE DERRUBA A HEMOGLOBINA GLICADA\n\nNa segunda eu mostrei por que o músculo é o maior destino do açúcar, e que a contração abre uma porta que não depende da insulina. Hoje, a parte prática: quanto, quando e como.\n\nQUANTO\nAs diretrizes são chatas de tão simples: musculação 2 a 3 vezes por semana, em dias não consecutivos, com intensidade moderada a vigorosa. Corpo todo.\n\nNão tem protocolo secreto. Tem O BÁSICO BEM FEITO, repetido.\n\nPOR QUE DIAS ALTERNADOS\nPorque cada sessão deixa a sensibilidade à insulina melhor por até 48 horas: o dia do treino e o dia seguinte.\n\nTrês treinos na segunda, quarta e sexta cobrem seis dos sete dias. Os mesmos três treinos na segunda, terça e quarta cobrem quatro.\n\nMesmo treino, mesma semana, mesmo esforço. Muda só o dia.\n\nO QUE DECIDE O TAMANHO DA QUEDA\nAquela revisão com 20 ensaios trouxe um achado que eu não canso de repetir: quanto maior o ganho de força, maior a queda da glicada.\n\nQuem passou o ano inteiro na mesma carga não ganhou força — e sem ganho de força o resultado encolhe. Frequentar não é treinar: a intensidade precisa evoluir para continuar dando resultado.\n\nE O MOMENTO DO DIA?\nAqui tem uma vantagem que quase ninguém usa: treinar depois de comer.\n\nUma revisão com 31 estudos mostrou que o exercício feito no período após a refeição reduz o pico de glicose e também a média das 24 horas. Sessões acima de 30 minutos funcionaram melhor.\n\nSe a sua rotina deixa, treinar uma hora depois do almoço ou do jantar aproveita duas coisas ao mesmo tempo: o treino e a janela em que o açúcar está subindo.\n\nSe a sua rotina não deixa, treine no horário que você consegue manter. O melhor horário continua sendo o que cabe na sua vida.\n\nQuer essa dose montada para o seu caso? Chama no direct — Método Musculação Estratégica.\n\n#musculacao #treino #academia #saude #diabetes #fitness #glicemia #diabetestipo2 #hemoglobinaglicada #gruposespeciais",
+  "serie": "GRUPOS ESPECIAIS",
+  "edicao": "08",
+  "handle": "@coach_neto",
+  "slides": [
+    {
+      "tipo": "capa",
+      "eyebrow": "GRUPOS ESPECIAIS · 08",
+      "titulo": "[A dose]\nque derruba a hemoglobina glicada",
+      "sub": "Quanto, quando e como treinar quando se tem diabetes tipo 2.",
+      "foto": "agachamento.png"
+    },
+    {
+      "tipo": "conteudo",
+      "titulo": "O quanto é [chato de tão simples]",
+      "lista": [
+        "2 a 3 vezes por semana, em dias não consecutivos",
+        "Intensidade moderada a vigorosa",
+        "Corpo todo, não um grupo por dia"
+      ],
+      "destaque": "Não existe protocolo secreto para diabetes. Existe O BÁSICO BEM FEITO, repetido.",
+      "foto": "remadamaq.png"
+    },
+    {
+      "tipo": "dado",
+      "kicker": "MESMOS 3 TREINOS, DUAS SEMANAS DIFERENTES",
+      "grafico": "semanadupla",
+      "legenda": "Não mudou nada no treino. Mudou só o dia — e a glicemia fica protegida em dois dias a mais.",
+      "nota": "Cada sessão melhora a sensibilidade à insulina por até 48 horas. Nature Reviews Endocrinology, 2017."
+    },
+    {
+      "tipo": "conteudo",
+      "titulo": "[O que decide]\no tamanho da queda da glicemia",
+      "corpo": "Na revisão com 20 ensaios e 1.172 pessoas, quanto maior foi o ganho de força, maior foi a queda da hemoglobina glicada.",
+      "destaque": "Quem passou o ano inteiro na mesma carga não ganhou força — e sem ganho de força o resultado encolhe. A intensidade precisa evoluir.",
+      "foto": "supino.png"
+    },
+    {
+      "tipo": "conteudo",
+      "titulo": "E o [momento do dia]?",
+      "corpo": "Revisão com 31 estudos: o exercício feito depois da refeição reduz o pico de glicose e também a média das 24 horas. Sessões acima de 30 minutos funcionaram melhor.",
+      "destaque": "Treinar uma hora depois do almoço ou do jantar aproveita o treino e a janela em que o açúcar está subindo.",
+      "foto": "avanco.png"
+    },
+    {
+      "tipo": "conteudo",
+      "titulo": "Mas o melhor horário [é o que cabe]",
+      "corpo": "Se a sua rotina não permite treinar depois de comer, treine no horário que você consegue manter. A diferença entre treinar na hora boa e treinar na hora possível é pequena.",
+      "destaque": "A diferença entre treinar e não treinar é que é enorme.",
+      "foto": "barrafrente.png"
+    },
+    {
+      "tipo": "referencia",
+      "titulo": "De onde vêm [esses números]",
+      "refs": [
+        {
+          "rot": "DIRETRIZES · ADA / ACSM",
+          "txt": "Revisão sistemática de diretrizes de atividade física para adultos com diabetes tipo 2. Diabetes Research and Clinical Practice, 2024. Treino resistido 2 a 3x/semana, dias não consecutivos, intensidade moderada a vigorosa."
+        },
+        {
+          "rot": "METANÁLISE · 2023",
+          "txt": "Kang J et al. Efficacy of postprandial exercise in mitigating glycemic responses. Nutrients, 2023;15(20):4489. 31 estudos, 516 participantes."
+        }
+      ],
+      "aviso": "Conteúdo educativo. A prescrição é individual e deve considerar medicação, risco de hipoglicemia e avaliação clínica."
+    },
+    {
+      "tipo": "cta",
+      "metodo": "Método",
+      "titulo": "[Musculação]\nEstratégica",
+      "oferta": "Treino montado para quem tem diabetes tipo 2: a dose certa, a progressão certa e o horário que cabe na sua rotina.",
+      "acao": "Chama no direct",
+      "handle": "@coach_neto",
+      "foto": "netohalter.png",
+      "foto_clara": true
+    }
+  ]
+}
