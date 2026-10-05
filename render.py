@@ -56,6 +56,16 @@ body{{background:{C['black']};color:{C['white']};font-family:'Plex',sans-serif;
   background:linear-gradient(90deg,{C['black']} 12%,rgba(7,7,7,.78) 44%,rgba(7,7,7,.12) 86%,rgba(7,7,7,0) 100%)}}
 .foto.clara img{{opacity:1}}
 .foto.clara::after{{background:linear-gradient(90deg,{C['black']} 1%,rgba(7,7,7,.44) 26%,rgba(7,7,7,.06) 70%,rgba(7,7,7,0) 100%)}}
+
+/* mito e verdade */
+.selo{{display:inline-block;align-self:flex-start;width:fit-content;
+  font-family:Mono;font-size:30px;font-weight:700;letter-spacing:6px;
+  padding:14px 30px 12px;margin-bottom:38px}}
+.selo.mito{{color:{C['black']};background:{C['white']}}}
+.selo.verdade{{color:{C['black']};background:{C['orange']}}}
+.fala{{font-family:Archivo;font-weight:800;font-size:62px;line-height:1.08;
+  color:{C['white']};margin:0 0 30px;max-width:15ch}}
+.slide.com-foto .fala{{font-size:54px}}
 .slide.com-foto .body{{padding-right:300px}}
 .slide.com-foto h1{{font-size:88px}}
 
@@ -171,6 +181,15 @@ def slide_html(s, i, total, meta):
                 f'<div class="graf">{GRAPHICS[s["grafico"]]()}</div>'
                 f'<p class="legenda">{esc(s["legenda"])}</p>'
                 f'<p class="nota">{esc(s["nota"])}</p>')
+
+    elif t == "mito":
+        v = s.get("veredito", "MITO").upper()
+        cls_selo = "selo verdade" if v.startswith("VERDADE") else "selo mito"
+        body = (f'<div class="{cls_selo}">{esc(v)}</div>'
+                f'<p class="fala">&#8220;{esc(s["fala"])}&#8221;</p>'
+                f'<p class="corpo">{esc(s["corpo"])}</p>')
+        if s.get("destaque"):
+            body += f'<div class="destaque">{esc(s["destaque"])}</div>'
 
     elif t == "referencia":
         body = f'<h2>{esc(s["titulo"])}</h2><div class="refs">'
