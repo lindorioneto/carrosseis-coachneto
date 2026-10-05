@@ -3,5 +3,10 @@
     "data": "2026-10-05",
     "post": "posts/segunda-diabetes.json",
     "nota": "Segunda — diabetes tipo 2, para onde vai o acucar. Aprovado em 04/10."
+  },
+  {
+    "data": "2026-10-07",
+    "post": "posts/quarta-diabetes-dose.json",
+    "nota": "Quarta — a dose que derruba a hemoglobina glicada. Aprovado em 04/10."
   }
 ]
