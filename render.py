@@ -130,6 +130,9 @@ li b{{flex:none;width:52px;height:52px;background:{C['orange']};color:{C['black'
   padding:24px 38px;margin-top:46px}}
 .acao i{{font-style:normal;font-size:38px;line-height:1}}
 .oferta{{font-size:33px;line-height:1.4;color:#D8D8D8;margin-top:36px;max-width:23ch}}
+.cupom{{font-family:'Archivo',sans-serif;font-weight:800;font-size:30px;line-height:1.25;
+  text-transform:uppercase;color:{C['white']};margin-top:30px;max-width:24ch;
+  padding-left:22px;border-left:6px solid {C['orange']}}}
 .lock{{margin-top:30px}}
 .lock small{{display:block;font-family:'Mono',monospace;font-weight:500;font-size:25px;
   letter-spacing:.3em;color:{C['muted']}}}
@@ -202,7 +205,8 @@ def slide_html(s, i, total, meta):
         body = (f'<div class="metodo">{esc(s["metodo"])}</div>'
                 f'<h1>{esc(s["titulo"])}</h1><div class="rule" style="margin:34px 0 0"></div>'
                 f'<p class="oferta">{esc(s["oferta"])}</p>'
-                f'<div class="acao">{esc(s["acao"])}<i>&#8594;</i></div>'
+                + (f'<div class="cupom">{esc(s["cupom"])}</div>' if s.get("cupom") else '')
+                + f'<div class="acao">{esc(s["acao"])}<i>&#8594;</i></div>'
                 f'<div class="lock"><small>{esc(s["handle"])}</small></div>')
 
     ilus = ""
