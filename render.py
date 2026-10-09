@@ -9,6 +9,10 @@ BASE = pathlib.Path(__file__).parent
 FONTS = BASE / "fonts"
 OUT = BASE / "out"
 
+# Limite de caracteres da legenda no Instagram. Passar disso faz a API
+# recusar o carrossel inteiro, na hora de publicar.
+LIMITE_LEGENDA = 2200
+
 
 def face(family, file, weight):
     b64 = base64.b64encode((FONTS / file).read_bytes()).decode()
@@ -232,6 +236,14 @@ def main():
     import sys
     post = pathlib.Path(sys.argv[1]) if len(sys.argv) > 1 else BASE / "posts" / "exemplo.json"
     data = json.loads(post.read_text(encoding="utf-8"))
+    legenda = data.get("legenda", "")
+    if len(legenda) > LIMITE_LEGENDA:
+        raise SystemExit(
+            f"ERRO: a legenda de {post} tem {len(legenda)} caracteres. "
+            f"O limite do Instagram e {LIMITE_LEGENDA}. "
+            f"Corte {len(legenda) - LIMITE_LEGENDA} caracteres."
+        )
+    print(f"legenda: {len(legenda)} de {LIMITE_LEGENDA} caracteres")
     aplicar_cor(data.get("cor", "laranja"))
     meta = {k: data[k] for k in ("serie", "edicao", "handle")}
     slides = data["slides"]
