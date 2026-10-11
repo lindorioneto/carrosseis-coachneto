@@ -324,6 +324,7 @@ PALETAS = {
     "ambar":   {"orange": "#E9A13B", "orange2": "#F3C888", "ember": "#6B4413"},
     "verde":   {"orange": "#46A88C", "orange2": "#84CBB6", "ember": "#1B4A3D"},
     "azul":    {"orange": "#5090C6", "orange2": "#93BDE0", "ember": "#1E3E5A"},
+    "amarelo": {"orange": "#F2C53C", "orange2": "#F8E09A", "ember": "#6B5111"},
     "vinho":   {"orange": "#C2566A", "orange2": "#DD8E9C", "ember": "#5A1E29"},
 }
 
@@ -454,3 +455,56 @@ def svg_semanadupla(w=820, h=452):
 
 
 GRAPHICS["semanadupla"] = svg_semanadupla
+
+
+def svg_janela(w=820, h=430):
+    """SWAN: nas tres fases da transicao, o ganho de gordura dobra de ritmo e a
+    massa magra passa a cair. Antes e depois, as duas curvas ficam paradas."""
+    fases = [("ANTES", "8 a 2 anos antes", 1.0, 0.2),
+             ("TRANSI\u00c7\u00c3O", "2 antes a 1,5 depois", 1.7, -0.2),
+             ("DEPOIS", "pos-menopausa", 0.0, 0.0)]
+    x0, larg = 70, w - 150
+    passo = larg / 3.0
+    zero, esc = 250, 95.0          # y do zero e pixels por % ao ano
+    out = [f'<line x1="{x0-10}" y1="{zero}" x2="{w-60}" y2="{zero}" '
+           f'stroke="{C["line"]}" stroke-width="2"/>']
+    for i, (nome, periodo, gord, magra) in enumerate(fases):
+        cx = x0 + passo * i + passo / 2
+        for k, (val, cor, lado) in enumerate(((gord, C["orange"], -1), (magra, C["white"], 1))):
+            bw = 54
+            bx = cx + lado * 6 + (bw + 2) * (0 if lado < 0 else 1) - bw
+            alt = abs(val) * esc
+            by = zero - alt if val >= 0 else zero
+            if alt < 2:
+                out.append(f'<rect x="{bx:.0f}" y="{zero-3}" width="{bw}" height="3" '
+                           f'fill="{C["line"]}"/>')
+            else:
+                out.append(f'<rect x="{bx:.0f}" y="{by:.0f}" width="{bw}" height="{alt:.0f}" '
+                           f'fill="{cor}"/>')
+            if alt >= 2:
+                rot = "+" if val > 0 else "\u2212"
+                num = f"{abs(val):.1f}".replace(".", ",")
+                ty = by - 12 if val >= 0 else by + alt + 26
+                out.append(f'<text x="{bx+bw/2:.0f}" y="{ty:.0f}" fill="{cor}" '
+                           f'font-family="Archivo" font-weight="800" font-size="26" '
+                           f'text-anchor="middle">{rot}{num}%</text>')
+        if abs(gord) < 0.05 and abs(magra) < 0.05:
+            out.append(f'<text x="{cx:.0f}" y="{zero-18}" fill="{C["muted"]}" '
+                       f'font-family="Archivo" font-weight="800" font-size="24" '
+                       f'text-anchor="middle">sem mudan\u00e7a</text>')
+        out.append(f'<text x="{cx:.0f}" y="{zero+78}" fill="{C["white"]}" font-family="Mono" '
+                   f'font-size="22" letter-spacing="2" text-anchor="middle">{nome}</text>')
+        out.append(f'<text x="{cx:.0f}" y="{zero+104}" fill="{C["dim"]}" font-family="Mono" '
+                   f'font-size="17" text-anchor="middle">{periodo}</text>')
+    return f'''<svg viewBox="0 0 {w} {h}" width="100%">
+  <text x="{x0}" y="30" fill="{C['dim']}" font-family="Mono" font-size="20"
+        letter-spacing="2">MUDAN\u00c7A POR ANO</text>
+  <rect x="{w-200}" y="54" width="22" height="22" fill="{C['orange']}"/>
+  <text x="{w-170}" y="72" fill="{C['orange']}" font-family="Mono" font-size="20">GORDURA</text>
+  <rect x="{w-200}" y="88" width="22" height="22" fill="{C['white']}"/>
+  <text x="{w-170}" y="106" fill="{C['white']}" font-family="Mono" font-size="20">MASSA MAGRA</text>
+  {"".join(out)}
+</svg>'''
+
+
+GRAPHICS["janela"] = svg_janela
