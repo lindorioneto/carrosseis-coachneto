@@ -508,3 +508,43 @@ def svg_janela(w=820, h=430):
 
 
 GRAPHICS["janela"] = svg_janela
+
+
+def svg_osso(w=820, h=420):
+    """LIFTMOR: mudanca na densidade ossea em 8 meses, carga pesada contra
+    exercicio leve em casa."""
+    locais = [("COLUNA LOMBAR", 2.9, -1.2), ("COLO DO F\u00caMUR", 0.3, -1.9)]
+    x0, larg = 70, w - 150
+    passo = larg / 2.0
+    zero, esc = 215, 40.0
+    out = [f'<line x1="{x0-10}" y1="{zero}" x2="{w-60}" y2="{zero}" '
+           f'stroke="{C["line"]}" stroke-width="2"/>']
+    for i, (nome, pesado, leve) in enumerate(locais):
+        cx = x0 + passo * i + passo / 2
+        for val, cor, lado in ((pesado, C["orange"], -1), (leve, C["muted"], 1)):
+            bw = 60
+            bx = cx + lado * 7 + (bw + 2) * (0 if lado < 0 else 1) - bw
+            alt = abs(val) * esc
+            by = zero - alt if val >= 0 else zero
+            out.append(f'<rect x="{bx:.0f}" y="{by:.0f}" width="{bw}" height="{alt:.0f}" '
+                       f'fill="{cor}"/>')
+            rot = "+" if val > 0 else "\u2212"
+            num = f"{abs(val):.1f}".replace(".", ",")
+            ty = by - 12 if val >= 0 else by + alt + 28
+            out.append(f'<text x="{bx+bw/2:.0f}" y="{ty:.0f}" fill="{cor}" '
+                       f'font-family="Archivo" font-weight="800" font-size="30" '
+                       f'text-anchor="middle">{rot}{num}%</text>')
+        out.append(f'<text x="{cx:.0f}" y="{zero+150}" fill="{C["white"]}" font-family="Mono" '
+                   f'font-size="22" letter-spacing="2" text-anchor="middle">{nome}</text>')
+    return f'''<svg viewBox="0 0 {w} {h}" width="100%">
+  <text x="{x0}" y="30" fill="{C['dim']}" font-family="Mono" font-size="20"
+        letter-spacing="2">DENSIDADE \u00d3SSEA EM 8 MESES</text>
+  <rect x="{w-230}" y="52" width="22" height="22" fill="{C['orange']}"/>
+  <text x="{w-200}" y="70" fill="{C['orange']}" font-family="Mono" font-size="20">CARGA PESADA</text>
+  <rect x="{w-230}" y="86" width="22" height="22" fill="{C['muted']}"/>
+  <text x="{w-200}" y="104" fill="{C['muted']}" font-family="Mono" font-size="20">LEVE, EM CASA</text>
+  {"".join(out)}
+</svg>'''
+
+
+GRAPHICS["osso"] = svg_osso
