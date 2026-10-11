@@ -1,0 +1,91 @@
+{
+  "slug": "012-mitos-e-verdades-menopausa",
+  "cor": "amarelo",
+  "legenda": "MENOPAUSA E MUSCULAÇÃO: 5 MITOS E VERDADES\n\nFechando a semana da menopausa. Cinco frases que eu escuto de mulheres nessa fase, e o que os estudos mediram sobre cada uma.\n\n1. \"HIDROGINÁSTICA É MELHOR QUE MUSCULAÇÃO\"\nMITO. Uma revisão com 11 estudos e 629 mulheres na pós-menopausa mostrou que exercício na água é melhor do que ficar parada — mas o exercício fora da água protegeu mais o osso da coluna. Na água o corpo pesa menos: ótimo para a articulação, pouco estímulo para o osso. Hidroginástica soma, mas não substitui.\n\n2. \"QUEM TEM OSTEOPOROSE NÃO PODE FAZER MUSCULAÇÃO\"\nMITO. No LIFTMOR, mulheres com média de 65 anos e osteopenia ou osteoporose treinaram pesado por oito meses e ganharam 2,9% de densidade óssea na coluna. A musculação é aliada do tratamento, com carga planejada e acompanhamento.\n\n3. \"EXERCÍCIO LEVE NÃO BASTA PARA O OSSO\"\nVERDADE. No mesmo estudo, o grupo do exercício leve em casa perdeu densidade na coluna e no fêmur. Para o osso, o que conta é a carga.\n\n4. \"PEGAR PESO PESADO NESSA IDADE É PERIGOSO\"\nMITO. Foram oito meses de agachamento, levantamento terra e desenvolvimento acima de 85% de 1RM, com acompanhamento: nenhuma fratura e 92% de adesão. O risco maior é chegar aos 70 sem força e sem osso.\n\n5. \"A BALANÇA NÃO MOSTRA O QUE A MENOPAUSA MUDA\"\nVERDADE. O SWAN, que acompanha mais de 3 mil mulheres, mostrou que na transição a gordura sobe e a massa magra cai sem que o peso acompanhe no mesmo ritmo. O que vale acompanhar é força, medidas e composição corporal.\n\nA SEMANA EM UMA FRASE\nA menopausa abre uma janela em que o corpo muda rápido — e a musculação, com carga de verdade e progressão planejada, protege músculo e osso nesse período.\n\nNada aqui substitui o acompanhamento médico: a prescrição considera a sua densitometria e o seu histórico.\n\nQuer atravessar essa fase com músculo e osso? Consultoria on-line, link na bio — até 05/11 o plano trimestral sai com 15% off no cupom COMECE15.\n\nSalva e manda para uma mulher que precisa ouvir isso.\n\n#musculacao #treino #academia #saude #menopausa #osteoporose #climaterio #saudedamulher #mitoseverdades #gruposespeciais",
+  "serie": "GRUPOS ESPECIAIS",
+  "edicao": "12",
+  "handle": "@coach_neto",
+  "slides": [
+    {
+      "tipo": "capa",
+      "eyebrow": "GRUPOS ESPECIAIS · 12",
+      "titulo": "[Mito ou verdade?]\nMenopausa",
+      "sub": "Cinco frases sobre musculação que eu escuto de mulheres nessa fase, e o que os estudos mediram sobre cada uma.",
+      "foto": "atleta.png"
+    },
+    {
+      "tipo": "mito",
+      "veredito": "MITO",
+      "fala": "Hidroginástica é melhor que musculação",
+      "corpo": "Revisão com 11 estudos e 629 mulheres na pós-menopausa: exercício na água é melhor do que ficar parada, mas o exercício fora da água protegeu mais o osso da coluna.",
+      "destaque": "Na água o corpo pesa menos: ótimo para a articulação, pouco estímulo para o osso. Hidroginástica soma, mas não substitui.",
+      "foto": "remadahalter.png"
+    },
+    {
+      "tipo": "mito",
+      "veredito": "MITO",
+      "fala": "Quem tem osteoporose não pode fazer musculação",
+      "corpo": "No LIFTMOR, mulheres com média de 65 anos e osteopenia ou osteoporose treinaram pesado por oito meses e ganharam 2,9% de densidade óssea na coluna.",
+      "destaque": "Com osteoporose, a musculação não é proibida. É aliada do tratamento, com carga planejada e acompanhamento.",
+      "foto": "barraacima.png"
+    },
+    {
+      "tipo": "mito",
+      "veredito": "VERDADE",
+      "fala": "Exercício leve não basta para o osso",
+      "corpo": "No mesmo estudo, o grupo que fez exercício leve em casa — o que normalmente se recomenda nessa idade — perdeu densidade na coluna e no fêmur.",
+      "destaque": "Para o osso, o que conta é a carga. Leve demais não é estímulo.",
+      "foto": "legpress.png"
+    },
+    {
+      "tipo": "mito",
+      "veredito": "MITO",
+      "fala": "Pegar peso pesado nessa idade é perigoso",
+      "corpo": "Foram oito meses de agachamento, terra e desenvolvimento acima de 85% de 1RM, com acompanhamento: nenhuma fratura e 92% de adesão.",
+      "destaque": "O risco maior é chegar aos 70 sem força e sem osso.",
+      "foto": "professor.png"
+    },
+    {
+      "tipo": "mito",
+      "veredito": "VERDADE",
+      "fala": "A balança não mostra o que a menopausa muda",
+      "corpo": "O SWAN acompanha mais de 3 mil mulheres: na transição, a gordura sobe e a massa magra cai sem que o peso acompanhe no mesmo ritmo.",
+      "destaque": "O que vale acompanhar é força, medidas e composição corporal — não só o peso.",
+      "foto": "avanco.png"
+    },
+    {
+      "tipo": "referencia",
+      "titulo": "De onde vêm [esses números]",
+      "refs": [
+        {
+          "rot": "REVISÃO · EXERCÍCIO NA ÁGUA · 2017",
+          "txt": "Simas V et al. Effects of water-based exercise on bone health of middle-aged and older adults. Open Access J Sports Med, 2017;8:39-60."
+        },
+        {
+          "rot": "ENSAIO CLÍNICO · LIFTMOR · 2018",
+          "txt": "Watson SL, Weeks BK, Weis LJ, et al. The LIFTMOR randomized controlled trial. J Bone Miner Res, 2018;33(2):211-220."
+        },
+        {
+          "rot": "COORTE · SWAN · 2019",
+          "txt": "Greendale GA et al. Changes in body composition and weight during the menopause transition. JCI Insight, 2019;4(5):e124865."
+        },
+        {
+          "rot": "RESSALVAS DOS ESTUDOS",
+          "txt": "O LIFTMOR teve 101 participantes, não foi desenhado para avaliar segurança e excluiu doença musculoesquelética ou cardiovascular relevante. Na revisão sobre água, os estudos variaram bastante entre si."
+        }
+      ],
+      "aviso": "Conteúdo educativo. A prescrição é individual e deve considerar densitometria, histórico de fraturas, medicação e avaliação médica."
+    },
+    {
+      "tipo": "cta",
+      "metodo": "Método",
+      "titulo": "[Musculação]\nEstratégica",
+      "oferta": "Consultoria on-line: treino de força montado para atravessar a menopausa com músculo e osso preservados, com progressão de carga planejada e acompanhada de perto.",
+      "acao": "Link na bio",
+      "handle": "@coach_neto",
+      "foto": "netohalter.png",
+      "foto_clara": true,
+      "cupom": "15% OFF no plano trimestral com o cupom COMECE15, até 05/11."
+    }
+  ]
+}
