@@ -1,0 +1,82 @@
+{
+  "slug": "011-pesado-e-o-que-funciona",
+  "cor": "amarelo",
+  "legenda": "MUSCULAÇÃO X MENOPAUSA\n\nNa segunda eu mostrei a janela: o período em torno da última menstruação em que a gordura sobe mais rápido e a massa magra começa a cair.\n\nHoje, a pesquisa que mostra o que fazer com isso. E ela testou justamente aquilo que todo mundo manda não fazer.\n\nA PESQUISA\nChama-se LIFTMOR, feita na Universidade Griffith, na Austrália. 101 mulheres, média de 65 anos, todas com osteopenia ou osteoporose diagnosticada.\n\nSorteadas em dois grupos, por oito meses:\n\nGRUPO PESADO — duas vezes por semana, 30 minutos, acompanhado. Agachamento, levantamento terra e desenvolvimento, 5 séries de 5 repetições acima de 85% de 1RM.\n\nGRUPO LEVE — exercício em casa, 10 a 15 repetições, abaixo de 60% de 1RM, equilíbrio e mobilidade.\n\nO RESULTADO\nDensidade óssea da coluna: +2,9% no grupo pesado, contra −1,2% no leve.\n\nNo colo do fêmur: +0,3% contra −1,9%.\n\nOu seja: o grupo pesado ganhou osso onde o outro perdeu.\n\nNÃO FOI SÓ O OSSO\nForça de pernas subiu 35% no grupo pesado, contra 8% no leve. E elas terminaram 2 mm mais altas, enquanto o grupo leve encolheu.\n\nE NO DIA A DIA\nO grupo pesado foi melhor em todos os testes de função: levantar da cadeira, levantar e caminhar, alcance com o corpo à frente. São os testes que mais se relacionam com risco de queda.\n\nOito meses, duas sessões por semana, acompanhadas do começo ao fim — e 92% de adesão.\n\nO QUE ISSO SIGNIFICA\nQue depois da menopausa o osso ainda responde. Mas responde a carga de verdade, planejada e que progride — e a prescrição precisa considerar a sua densitometria e o seu histórico.\n\nQuer esse treino montado para o seu caso? Consultoria on-line, link na bio — até 05/11 o plano trimestral sai com 15% off no cupom COMECE15.\n\n#musculacao #treino #academia #saude #menopausa #osteoporose #osteopenia #saudedamulher #densidadeossea #gruposespeciais",
+  "serie": "GRUPOS ESPECIAIS",
+  "edicao": "11",
+  "handle": "@coach_neto",
+  "slides": [
+    {
+      "tipo": "capa",
+      "eyebrow": "GRUPOS ESPECIAIS · 11",
+      "titulo": "[Musculação]\nx Menopausa",
+      "sub": "A pesquisa que colocou mulheres com osteoporose para levantar peso de verdade.",
+      "foto": "avanco.png"
+    },
+    {
+      "tipo": "conteudo",
+      "titulo": "O que foi [testado]",
+      "corpo": "101 mulheres, média de 65 anos, todas com osteopenia ou osteoporose. Sorteadas em dois grupos por oito meses, na Universidade Griffith, na Austrália.",
+      "destaque": "Um grupo levantou carga pesada, supervisionado. O outro fez exercício leve em casa — o que normalmente se recomenda nessa idade.",
+      "foto": "legpress.png"
+    },
+    {
+      "tipo": "dado",
+      "kicker": "O QUE ACONTECEU COM O OSSO",
+      "grafico": "osso",
+      "legenda": "O grupo pesado ganhou densidade óssea na coluna. O grupo leve perdeu, nos dois locais medidos.",
+      "nota": "Watson SL et al. The LIFTMOR randomized controlled trial. Journal of Bone and Mineral Research, 2018;33(2):211-220."
+    },
+    {
+      "tipo": "conteudo",
+      "titulo": "Quais exercícios [elas fizeram]",
+      "lista": [
+        "Agachamento, levantamento terra e desenvolvimento",
+        "5 séries de 5 repetições, acima de 85% de 1RM",
+        "Duas vezes por semana, 30 minutos, supervisionado"
+      ],
+      "destaque": "Não foi caminhada, não foi hidroginástica e não foi halter de um quilo. Foi treino de força de verdade.",
+      "foto": "barraacima.png"
+    },
+    {
+      "tipo": "conteudo",
+      "titulo": "E não foi [só o osso]",
+      "corpo": "A força de pernas subiu 35% no grupo pesado, contra 8% no grupo leve. E elas terminaram 2 milímetros mais altas, enquanto o grupo leve encolheu.",
+      "destaque": "Ganhar altura aos 65 anos não é detalhe: é postura e coluna respondendo à carga.",
+      "foto": "remadahalter.png"
+    },
+    {
+      "tipo": "conteudo",
+      "titulo": "E no [dia a dia]",
+      "corpo": "O grupo pesado também foi melhor em todos os testes de função: levantar da cadeira, levantar e caminhar, e o alcance com o corpo à frente. São os testes que mais se relacionam com risco de queda.",
+      "destaque": "Duas sessões por semana, acompanhadas do começo ao fim, com 92% de adesão ao longo de oito meses.",
+      "foto": "professor.png"
+    },
+    {
+      "tipo": "referencia",
+      "titulo": "De onde vêm [esses números]",
+      "refs": [
+        {
+          "rot": "ENSAIO CLÍNICO · 2018",
+          "txt": "Watson SL, Weeks BK, Weis LJ, Harding AT, Horan SA, Beck BR. High-Intensity Resistance and Impact Training Improves Bone Mineral Density and Physical Function in Postmenopausal Women With Osteopenia and Osteoporosis: The LIFTMOR Randomized Controlled Trial. J Bone Miner Res, 2018;33(2):211-220."
+        },
+        {
+          "rot": "RESSALVAS DO PRÓPRIO ESTUDO",
+          "txt": "O ganho no colo do fêmur foi pequeno (+0,3%); o resultado expressivo foi na coluna. O ensaio não foi desenhado para avaliar segurança e excluiu pessoas com doença musculoesquelética ou cardiovascular relevante."
+        }
+      ],
+      "aviso": "Conteúdo educativo. A prescrição é individual e deve considerar densitometria, histórico de fraturas, medicação e avaliação médica."
+    },
+    {
+      "tipo": "cta",
+      "metodo": "Método",
+      "titulo": "[Musculação]\nEstratégica",
+      "oferta": "Consultoria on-line: treino de força montado para quem tem osteopenia ou osteoporose, com progressão de carga planejada e acompanhada de perto.",
+      "acao": "Link na bio",
+      "handle": "@coach_neto",
+      "foto": "netohalter.png",
+      "foto_clara": true,
+      "cupom": "15% OFF no plano trimestral com o cupom COMECE15, até 05/11."
+    }
+  ]
+}
