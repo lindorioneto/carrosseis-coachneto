@@ -1,0 +1,78 @@
+{
+  "slug": "010-a-janela-de-tres-anos",
+  "cor": "amarelo",
+  "legenda": "A JANELA DE TRÊS ANOS\n\nSemana nova, assunto novo: menopausa. E começo por uma coisa que quase ninguém conta direito.\n\nA ideia de que \"depois dos 40 o corpo desanda\" está errada. O que existe é uma janela — e ela tem data.\n\nO QUE É O SWAN\nUm estudo americano que acompanha 3.302 mulheres desde 1996, em sete centros de pesquisa. Elas entraram entre 42 e 52 anos e já passaram por 16 reavaliações, quase sempre de ano em ano.\n\nNão é enquete nem balança de farmácia: é a mesma mulher medida por exame de imagem, ano após ano, atravessando a menopausa. É daí que vêm os números abaixo.\n\nO resultado dividiu a vida em três fases.\n\nANTES (de 8 a 2 anos antes da última menstruação)\nA gordura subia cerca de 1% ao ano. A massa magra ainda subia um pouco.\n\nNA TRANSIÇÃO (de 2 anos antes até 1 ano e meio depois)\nO ganho de gordura quase dobrou de ritmo: 1,7% ao ano. E a massa magra inverteu o sinal — passou a cair.\n\nDEPOIS\nAs duas estabilizaram. A velocidade da transição não continuou.\n\nOU SEJA\nNão é um declínio sem fim. É uma janela de cerca de três anos e meio em que o corpo muda mais rápido do que mudou a vida inteira.\n\nE a conta não aparece na balança. Nessa janela dá para o peso ficar igual enquanto a composição muda por dentro: mais gordura, menos músculo, mesmo número no visor.\n\nPOR QUE ISSO IMPORTA\nPorque o que você perde nessa janela, você perde de um estoque que já ia diminuir com a idade. E porque músculo aqui não é estética: é osso protegido, é força para os próximos vinte anos, é metabolismo.\n\nA boa notícia é que esse é um dos poucos processos do envelhecimento em que o treino não só reduz a perda — ele reverte parte dela. Quarta eu mostro o estudo que provou isso, em mulheres com osteoporose.\n\nSe você está nessa janela agora, ou perto dela, chama no direct. Método Musculação Estratégica, link na bio — até 05/11 o plano trimestral sai com 15% off no cupom COMECE15.\n\n#musculacao #treino #academia #saude #menopausa #fitness #climaterio #saudedamulher #massamagra #gruposespeciais",
+  "serie": "GRUPOS ESPECIAIS",
+  "edicao": "10",
+  "handle": "@coach_neto",
+  "slides": [
+    {
+      "tipo": "capa",
+      "eyebrow": "GRUPOS ESPECIAIS · 10",
+      "titulo": "[Menopausa]\nO que muda no corpo",
+      "sub": "O que esperar na transição, na pré e na pós-menopausa — medido, não achismo.",
+      "foto": "barraacima.png"
+    },
+    {
+      "tipo": "conteudo",
+      "titulo": "O que é [o SWAN]",
+      "corpo": "Estudo americano que acompanha 3.302 mulheres desde 1996, em sete centros de pesquisa. Entraram entre 42 e 52 anos e já passaram por 16 reavaliações, quase sempre de ano em ano.",
+      "destaque": "Não é enquete nem balança de farmácia: é a mesma mulher medida por exame de imagem, ano após ano, atravessando a menopausa.",
+      "foto": "atleta.png"
+    },
+    {
+      "tipo": "dado",
+      "kicker": "O QUE MUDA, E EM QUE FASE",
+      "grafico": "janela",
+      "legenda": "Na transição o ganho de gordura quase dobra de ritmo, e a massa magra inverte o sinal. Antes e depois, as duas ficam quase paradas.",
+      "nota": "Greendale GA et al. Changes in body composition and weight during the menopause transition. JCI Insight, 2019;4(5):e124865."
+    },
+    {
+      "tipo": "conteudo",
+      "titulo": "Três anos e meio, [não a vida inteira]",
+      "corpo": "A janela vai de cerca de 2 anos antes da última menstruação até 1 ano e meio depois. Nela o corpo muda mais rápido do que mudou a vida toda.",
+      "destaque": "Depois que ela passa, a velocidade cai. O que foi perdido ali, porém, não volta sozinho.",
+      "foto": "avanco.png"
+    },
+    {
+      "tipo": "conteudo",
+      "titulo": "E a balança [não mostra]",
+      "corpo": "Nessa fase dá para o peso ficar parado enquanto a composição muda por dentro: mais gordura, menos músculo, mesmo número no visor.",
+      "destaque": "Quem acompanha só o peso atravessa a janela inteira achando que está tudo bem.",
+      "foto": "remadahalter.png"
+    },
+    {
+      "tipo": "conteudo",
+      "titulo": "Músculo aqui [não é estética]",
+      "lista": [
+        "É o osso protegido, que é o que mais se perde nessa fase",
+        "É a força que decide os seus próximos vinte anos",
+        "É o maior destino do açúcar da sua refeição"
+      ],
+      "destaque": "Na quarta eu mostro o que mulheres nessa fase fizeram para ganhar densidade óssea e prevenir osteoporose. Spoiler: envolve pegar peso pesado.",
+      "foto": "legpress.png"
+    },
+    {
+      "tipo": "referencia",
+      "titulo": "De onde vêm [esses números]",
+      "refs": [
+        {
+          "rot": "COORTE · SWAN · 2019",
+          "txt": "Greendale GA, Sternfeld B, Huang M, et al. Changes in body composition and weight during the menopause transition. JCI Insight, 2019;4(5):e124865. Gordura: +1,0%/ano antes, +1,7%/ano na transição. Massa magra: +0,2%/ano antes, −0,2%/ano na transição. Depois, sem diferença significativa de zero."
+        }
+      ],
+      "aviso": "Conteúdo educativo. A prescrição é individual e deve considerar histórico clínico, medicação e avaliação médica."
+    },
+    {
+      "tipo": "cta",
+      "metodo": "Método",
+      "titulo": "[Musculação]\nEstratégica",
+      "oferta": "Treino montado para atravessar essa janela com músculo e osso preservados, com a progressão acompanhada de perto.",
+      "acao": "Link na bio",
+      "handle": "@coach_neto",
+      "foto": "netohalter.png",
+      "foto_clara": true,
+      "cupom": "15% OFF no plano trimestral com o cupom COMECE15, até 05/11."
+    }
+  ]
+}
