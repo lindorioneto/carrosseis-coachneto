@@ -3,7 +3,7 @@
 Identidade @coach_neto: preto, laranja #FF6D00, branco, chevron e grade."""
 import base64, html, json, pathlib
 
-from brand import C, W, H, GRAPHICS, ILUSTRA, MARCA, aplicar_cor
+from brand import C, W, H, GRAPHICS, ILUSTRA, FOTOS_SVG, MARCA, aplicar_cor
 
 BASE = pathlib.Path(__file__).parent
 FONTS = BASE / "fonts"
@@ -217,9 +217,15 @@ def slide_html(s, i, total, meta):
     if s.get("ilustracao"):
         ilus = f'<div class="ilustra">{ILUSTRA[s["ilustracao"]]()}</div>'
     if s.get("foto"):
-        dados = base64.b64encode((BASE / "assets" / s["foto"]).read_bytes()).decode()
+        if s["foto"].startswith("svg:"):
+            # desenho vetorial no lugar da foto (ex.: "svg:joelho", em brand.FOTOS_SVG)
+            dados = base64.b64encode(FOTOS_SVG[s["foto"][4:]]().encode()).decode()
+            mime = "svg+xml"
+        else:
+            dados = base64.b64encode((BASE / "assets" / s["foto"]).read_bytes()).decode()
+            mime = "png"
         cls_foto = "foto clara" if s.get("foto_clara") else "foto"
-        ilus += f'<div class="{cls_foto}"><img src="data:image/png;base64,{dados}"></div>'
+        ilus += f'<div class="{cls_foto}"><img src="data:image/{mime};base64,{dados}"></div>'
 
     cls = "slide cta" if t == "cta" else "slide"
     if s.get("ilustracao"):
