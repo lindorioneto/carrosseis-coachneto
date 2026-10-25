@@ -1,0 +1,94 @@
+{
+  "slug": "013-artrose-nao-e-so-desgaste",
+  "cor": "roxo",
+  "legenda": "ARTROSE: ALÉM DO DESGASTE\n\nSemana nova, assunto novo: artrose. E começo desmontando a ideia mais comum sobre ela.\n\nArtrose não é só \"o joelho gastou\". É uma doença da articulação inteira: cartilagem, osso e os músculos em volta. Aparece mais no joelho, no quadril e nas mãos.\n\nO TAMANHO DO PROBLEMA\nSão 595 milhões de pessoas no mundo, e 61% são mulheres. A projeção é chegar a 1 bilhão em 2050.\n\nO PESO PESA NO JOELHO\nUm estudo mediu a carga no joelho de adultos com artrose enquanto caminhavam: cada 1 kg a menos no corpo tirou cerca de 4 kg de carga do joelho, a cada passo. Multiplica isso pelos milhares de passos do dia.\n\nMÚSCULO FRACO AUMENTA O RISCO\nUma revisão com 11 estudos e 46.819 pessoas mostrou que quadríceps fraco aumenta a chance de desenvolver artrose de joelho com sintomas: 85% a mais nas mulheres e 43% a mais nos homens.\n\nO quadríceps ajuda a absorver o impacto a cada passo. Fraco, ele deixa mais carga para a articulação.\n\nO QUE MAIS FUNCIONA\nA diretriz internacional de artrose (OARSI) coloca como tratamento de base, para todo mundo com artrose de joelho:\n• exercício estruturado, com fortalecimento muscular\n• controle do peso, quando há sobrepeso\n• entender a doença e como lidar com ela\n\nO QUE JÁ DÁ PARA FAZER\nFortalecer o quadríceps com carga que progride, escolher exercícios que o seu joelho tolera bem e treinar com regularidade. O efeito aparece em semanas, não em dias.\n\nNa quarta eu mostro quanto de força as pesquisas indicam que é preciso ganhar para a dor do joelho responder.\n\nSe você tem artrose ou dor no joelho, a consultoria on-line monta o treino de força com o exercício certo para o seu joelho. Link na bio — até 05/11 o plano trimestral sai com 15% off no cupom COMECE15.\n\n#musculacao #treino #academia #saude #artrose #osteoartrite #dornojoelho #joelho #fortalecimento #gruposespeciais",
+  "serie": "GRUPOS ESPECIAIS",
+  "edicao": "13",
+  "handle": "@coach_neto",
+  "slides": [
+    {
+      "tipo": "capa",
+      "eyebrow": "GRUPOS ESPECIAIS · 13",
+      "titulo": "[Artrose]\nAlém do desgaste",
+      "sub": "Na radiografia: o espaço da articulação diminui e surgem os “bicos de papagaio” nas bordas do osso.",
+      "foto": "svg:joelho"
+    },
+    {
+      "tipo": "conteudo",
+      "titulo": "O que é [artrose]",
+      "corpo": "Uma doença da articulação inteira: cartilagem, osso e os músculos em volta. Aparece mais no joelho, no quadril e nas mãos.",
+      "destaque": "São 595 milhões de pessoas no mundo, 61% mulheres. A projeção é chegar a 1 bilhão em 2050.",
+      "foto": "remadahalter.png"
+    },
+    {
+      "tipo": "dado",
+      "kicker": "O QUE O PESO FAZ COM O JOELHO",
+      "grafico": "carga",
+      "legenda": "Cada quilo a menos no corpo tira cerca de quatro quilos de carga do joelho, a cada passo.",
+      "nota": "Messier SP et al. Weight loss reduces knee-joint loads in overweight and obese older adults with knee osteoarthritis. Arthritis Rheum, 2005;52(7):2026-2032."
+    },
+    {
+      "tipo": "conteudo",
+      "titulo": "Músculo fraco [aumenta o risco]",
+      "corpo": "Revisão com 11 estudos e 46.819 pessoas: quadríceps fraco aumentou a chance de artrose de joelho com sintomas. 85% a mais nas mulheres, 43% a mais nos homens.",
+      "destaque": "O quadríceps ajuda a absorver o impacto a cada passo. Fraco, ele deixa mais carga para a articulação.",
+      "foto": "agachamento.png"
+    },
+    {
+      "tipo": "conteudo",
+      "titulo": "O que [mais funciona]",
+      "lista": [
+        "Exercício estruturado, com fortalecimento muscular",
+        "Controle do peso, quando há sobrepeso",
+        "Entender a doença e como lidar com ela"
+      ],
+      "destaque": "É o tratamento de base da diretriz internacional de artrose, recomendado para todo mundo com artrose de joelho.",
+      "foto": "barrafrente.png"
+    },
+    {
+      "tipo": "conteudo",
+      "titulo": "O que [já dá para fazer]",
+      "lista": [
+        "Fortalecer o quadríceps, com carga que progride",
+        "Escolher exercícios que o seu joelho tolera bem",
+        "Treinar com regularidade: o efeito aparece em semanas"
+      ],
+      "destaque": "Na quarta eu mostro quanto de força as pesquisas indicam que é preciso ganhar para a dor do joelho diminuir.",
+      "foto": "legpress.png"
+    },
+    {
+      "tipo": "referencia",
+      "titulo": "De onde vêm [esses números]",
+      "refs": [
+        {
+          "rot": "CARGA GLOBAL · GBD · 2023",
+          "txt": "Steinmetz JD et al. Global burden of osteoarthritis, 1990–2020 and projections to 2050. Lancet Rheumatol, 2023;5(9):e508-e522."
+        },
+        {
+          "rot": "PESO E JOELHO · 2005",
+          "txt": "Messier SP et al. Arthritis Rheum, 2005;52(7):2026-2032. Cerca de 4 kg de carga a menos por 1 kg perdido."
+        },
+        {
+          "rot": "METANÁLISE · 2022",
+          "txt": "Øiestad BE et al. Br J Sports Med, 2022;56(6):349-355. Quadríceps fraco e risco de artrose de joelho. Evidência de qualidade baixa, segundo os autores."
+        },
+        {
+          "rot": "DIRETRIZ · OARSI · 2019",
+          "txt": "Bannuru RR et al. OARSI guidelines for the non-surgical management of osteoarthritis. Osteoarthritis Cartilage, 2019;27(11):1578-1589."
+        }
+      ],
+      "aviso": "Conteúdo educativo. A prescrição é individual e deve considerar o grau da artrose, a dor, a medicação e a avaliação médica."
+    },
+    {
+      "tipo": "cta",
+      "metodo": "Método",
+      "titulo": "[Musculação]\nEstratégica",
+      "oferta": "Consultoria on-line: treino de força montado para quem tem artrose, com o exercício certo para o seu joelho e a progressão acompanhada de perto.",
+      "acao": "Link na bio",
+      "handle": "@coach_neto",
+      "foto": "netohalter.png",
+      "foto_clara": true,
+      "cupom": "15% OFF no plano trimestral com o cupom COMECE15, até 05/11."
+    }
+  ]
+}
