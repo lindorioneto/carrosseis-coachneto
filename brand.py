@@ -326,6 +326,7 @@ PALETAS = {
     "azul":    {"orange": "#5090C6", "orange2": "#93BDE0", "ember": "#1E3E5A"},
     "amarelo": {"orange": "#F2C53C", "orange2": "#F8E09A", "ember": "#6B5111"},
     "vinho":   {"orange": "#C2566A", "orange2": "#DD8E9C", "ember": "#5A1E29"},
+    "roxo":    {"orange": "#A983F2", "orange2": "#D3C1F8", "ember": "#3F2A6B"},
 }
 
 
@@ -548,3 +549,98 @@ def svg_osso(w=820, h=420):
 
 
 GRAPHICS["osso"] = svg_osso
+
+
+def svg_carga(w=820, h=380):
+    """Messier 2005: cada 1 kg perdido tira cerca de 4 kg de carga do joelho
+    a cada passo."""
+    x0 = 78
+    larg = (w - 190) - x0
+    linhas = [("PESO QUE SAI DO CORPO", 1, 76, False),
+              ("CARGA QUE SAI DO JOELHO, A CADA PASSO", 4, 214, True)]
+    out = []
+    for rot, kg, y, destaque in linhas:
+        wb = larg * kg / 4.0
+        cor = C["orange"] if destaque else C["ember"]
+        out.append(f'<text x="{x0}" y="{y-22}" fill="{C["dim"]}" font-family="Mono" '
+                   f'font-size="22" letter-spacing="2">{rot}</text>')
+        out.append(f'<rect x="{x0}" y="{y}" width="{wb:.1f}" height="66" fill="{cor}"/>')
+        txt = ("\u2248 " if destaque else "") + f"{kg} kg"
+        cv = C["white"] if destaque else C["muted"]
+        out.append(f'<text x="{x0+wb+20:.1f}" y="{y+47}" fill="{cv}" font-family="Archivo" '
+                   f'font-weight="800" font-size="40">{txt}</text>')
+    return f'''<svg viewBox="0 0 {w} {h}" width="100%">
+  {"".join(out)}
+  <text x="{x0}" y="{h-20}" fill="{C['dim']}" font-family="Mono" font-size="21"
+        letter-spacing="1">MEDIDO NA CAMINHADA, EM ADULTOS COM ARTROSE DE JOELHO</text>
+</svg>'''
+
+
+GRAPHICS["carga"] = svg_carga
+
+
+def svg_joelho(w=680, h=880):
+    """Joelho de frente, como numa radiografia, com sinais de artrose:
+    espaco articular reduzido de um lado e osteofitos nas bordas.
+    Desenho original, usado como foto da capa (slot de 680x880)."""
+    t = C["orange"]
+    osso = "#DCD7E8"
+    femur = ("M395 0 L398 220 C396 270 345 300 338 352 C334 386 344 412 368 420 "
+             "C392 426 422 424 436 410 C443 401 459 401 466 410 C480 424 512 425 534 419 "
+             "C556 412 568 392 564 360 C558 306 506 272 504 220 L506 0 Z")
+    canal_f = ("M426 0 L428 226 C430 258 440 278 451 288 C462 278 472 258 474 226 L476 0 Z")
+    tibia = ("M338 436 C356 428 408 427 434 430 C440 424 444 418 449 416 C453 422 455 428 457 430 "
+             "C461 424 465 420 469 420 C472 428 474 436 478 442 C500 447 540 447 568 448 "
+             "C574 474 560 504 528 524 C512 556 506 610 505 880 L408 880 C408 610 402 556 384 526 "
+             "C350 504 332 472 338 436 Z")
+    canal_t = "M432 610 C440 566 450 548 456 548 C462 548 472 566 480 610 L482 880 L430 880 Z"
+    fibula = ("M552 506 C570 494 594 501 593 524 C591 547 581 554 579 573 L574 880 "
+              "L558 880 L562 573 C555 554 543 526 552 506 Z")
+    return f"""<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {w} {h}" width="{w}" height="{h}">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="{osso}" stop-opacity=".55"/>
+      <stop offset=".5" stop-color="{osso}" stop-opacity=".22"/>
+      <stop offset="1" stop-color="{osso}" stop-opacity=".55"/>
+    </linearGradient>
+    <radialGradient id="mole" cx="67%" cy="50%" r="46%">
+      <stop offset="0" stop-color="#25222E" stop-opacity="1"/>
+      <stop offset="1" stop-color="#070707" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="fade" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#070707" stop-opacity="1"/>
+      <stop offset=".2" stop-color="#070707" stop-opacity="0"/>
+      <stop offset=".8" stop-color="#070707" stop-opacity="0"/>
+      <stop offset="1" stop-color="#070707" stop-opacity="1"/>
+    </linearGradient>
+    <filter id="brilho" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="5" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="{w}" height="{h}" fill="#070707"/>
+  <g transform="translate(-28 0)">
+  <ellipse cx="458" cy="450" rx="235" ry="560" fill="url(#mole)"/>
+  <g filter="url(#brilho)" stroke="{osso}" stroke-width="3" stroke-linejoin="round" stroke-opacity=".85">
+    <path d="{femur}" fill="url(#g)"/>
+    <path d="{tibia}" fill="url(#g)"/>
+    <path d="{fibula}" fill="url(#g)" stroke-width="2.5"/>
+  </g>
+  <path d="{canal_f}" fill="#070707" opacity=".28"/>
+  <path d="{canal_t}" fill="#070707" opacity=".28"/>
+  <ellipse cx="451" cy="368" rx="54" ry="46" fill="none" stroke="{osso}" stroke-width="2" opacity=".2"/>
+  <g fill="{t}" stroke="{t}" stroke-width="2" stroke-linejoin="round" filter="url(#brilho)">
+    <path d="M341 386 L318 404 L345 410 Z"/>
+    <path d="M339 438 L316 446 L339 455 Z"/>
+    <path d="M567 446 L588 440 L572 460 Z"/>
+  </g>
+  <g fill="none" stroke="{t}" stroke-width="5" stroke-linecap="round" filter="url(#brilho)">
+    <path d="M360 419 C388 426 420 424 434 411"/>
+    <path d="M355 431 C382 428 412 428 433 431"/>
+  </g>
+  </g>
+  <rect width="{w}" height="{h}" fill="url(#fade)"/>
+</svg>"""
+
+
+FOTOS_SVG = {"joelho": svg_joelho}
