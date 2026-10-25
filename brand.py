@@ -644,3 +644,31 @@ def svg_joelho(w=680, h=880):
 
 
 FOTOS_SVG = {"joelho": svg_joelho}
+
+
+def svg_limiar(w=820, h=330):
+    """Bartholdy 2017: ganho de forca do quadriceps de 30-40% e o necessario
+    para melhora provavel da dor e da funcao na artrose de joelho."""
+    x0, larg, y, alt = 70, 680, 130, 70
+    px = lambda v: x0 + larg * v / 50.0
+    out = [f'<rect x="{x0}" y="{y}" width="{px(30)-x0:.1f}" height="{alt}" fill="{C["ember"]}"/>',
+           f'<rect x="{px(30):.1f}" y="{y}" width="{px(40)-px(30):.1f}" height="{alt}" fill="{C["orange"]}"/>',
+           f'<rect x="{px(40):.1f}" y="{y}" width="{px(50)-px(40):.1f}" height="{alt}" fill="{C["orange2"]}"/>']
+    for v in (0, 10, 20, 30, 40, 50):
+        cor = C["white"] if v in (30, 40) else C["dim"]
+        out.append(f'<text x="{px(v):.1f}" y="{y+alt+40}" fill="{cor}" font-family="Mono" '
+                   f'font-size="24" text-anchor="middle">{v}%</text>')
+    out.append(f'<text x="{(x0+px(30))/2:.1f}" y="{y-24}" fill="{C["muted"]}" font-family="Mono" '
+               f'font-size="21" letter-spacing="1" text-anchor="middle">MELHORA POUCO PROVÁVEL</text>')
+    out.append(f'<text x="{(px(30)+px(50))/2:.1f}" y="{y-24}" fill="{C["orange"]}" font-family="Mono" '
+               f'font-size="21" letter-spacing="1" text-anchor="middle">A DOR RESPONDE</text>')
+    return f'''<svg viewBox="0 0 {w} {h}" width="100%">
+  <text x="{x0}" y="40" fill="{C['dim']}" font-family="Mono" font-size="21"
+        letter-spacing="2">GANHO DE FORÇA DO QUADRÍCEPS</text>
+  {"".join(out)}
+  <text x="{x0}" y="{h-12}" fill="{C['white']}" font-family="Archivo" font-weight="800"
+        font-size="30">A meta: 30% a 40% mais forte.</text>
+</svg>'''
+
+
+GRAPHICS["limiar"] = svg_limiar
