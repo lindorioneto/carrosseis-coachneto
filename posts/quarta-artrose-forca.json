@@ -1,0 +1,94 @@
+{
+  "slug": "014-forca-e-exercicios-artrose",
+  "cor": "roxo",
+  "legenda": "FORÇA E OS EXERCÍCIOS QUE FUNCIONAM NA ARTROSE DE JOELHO\n\nNa segunda eu mostrei o que é a artrose e que fortalecer o músculo está no centro do tratamento. Hoje: quanto de força e com quais exercícios.\n\nO NÚMERO QUE IMPORTA\nUma revisão com 45 ensaios e 4.699 pessoas com artrose de joelho cruzou o ganho de força com a melhora da dor. Resultado: o quadríceps precisa ficar entre 30% e 40% mais forte para a dor e a limitação melhorarem de forma provável. Abaixo de 30%, a melhora é pouco provável.\n\nOu seja: não basta \"fazer exercício\". Tem que ficar mais forte, e isso só acontece com carga que progride.\n\nCARGA CERTA, NÃO MÁXIMA\nNum estudo de 18 meses com 377 pessoas, treinar com carga muito alta (75% a 90% do máximo) não aliviou a dor mais do que treinar com carga bem mais leve. Não precisa levantar o máximo. Precisa progredir.\n\nOS EXERCÍCIOS QUE MAIS APARECEM NOS ESTUDOS\n• agachamento e leg press, na amplitude que o joelho tolera\n• cadeira extensora\n• abdução de quadril, como complemento\n\nExercícios em pé e sentados aliviaram a dor de forma parecida. E somar o quadril ao quadríceps ajudou na caminhada.\n\nCOMO MONTAR\nComeçar na amplitude e na carga que o joelho aceita, subir aos poucos semana a semana e acompanhar a força para saber se está chegando lá.\n\nNão existe exercício mágico para artrose. Existe o exercício certo para o seu joelho, feito com regularidade e progressão.\n\nNa sexta: os mitos que mais afastam quem tem artrose da musculação.\n\nConsultoria on-line: treino montado para o seu joelho, com progressão acompanhada de perto. Link na bio — até 05/11 o plano trimestral sai com 15% off no cupom COMECE15.\n\n#musculacao #treino #academia #saude #artrose #osteoartrite #dornojoelho #joelho #fortalecimento #gruposespeciais",
+  "serie": "GRUPOS ESPECIAIS",
+  "edicao": "14",
+  "handle": "@coach_neto",
+  "slides": [
+    {
+      "tipo": "capa",
+      "eyebrow": "GRUPOS ESPECIAIS · 14",
+      "titulo": "[Artrose no joelho]\nForça e exercícios",
+      "sub": "Quanto de força é preciso ganhar e quais exercícios aparecem nos estudos que deram certo.",
+      "foto": "avanco.png"
+    },
+    {
+      "tipo": "conteudo",
+      "titulo": "O número [que importa]",
+      "corpo": "Revisão com 45 ensaios e 4.699 pessoas com artrose de joelho: para a dor e a limitação melhorarem, o quadríceps precisa ficar entre 30% e 40% mais forte.",
+      "destaque": "Não basta fazer exercício. Tem que ficar mais forte, e isso só acontece com carga que progride.",
+      "foto": "agachamento.png"
+    },
+    {
+      "tipo": "dado",
+      "kicker": "QUANTO DE FORÇA O JOELHO PRECISA",
+      "grafico": "limiar",
+      "legenda": "Abaixo de 30% de ganho de força, a melhora na dor é pouco provável. Entre 30% e 40%, ela passa a ser provável.",
+      "nota": "Bartholdy C et al. The role of muscle strengthening in exercise therapy for knee osteoarthritis. Semin Arthritis Rheum, 2017;47(1):9-21."
+    },
+    {
+      "tipo": "conteudo",
+      "titulo": "Carga certa, [não máxima]",
+      "corpo": "Num estudo de 18 meses com 377 pessoas, treinar com carga muito alta (75% a 90% do máximo) não aliviou a dor mais do que treinar com carga bem mais leve.",
+      "destaque": "Não precisa levantar o máximo. Precisa progredir: a carga sobe conforme o joelho responde.",
+      "foto": "barrafrente.png"
+    },
+    {
+      "tipo": "conteudo",
+      "titulo": "Os exercícios [que mais aparecem]",
+      "lista": [
+        "Agachamento e leg press, na amplitude que o joelho tolera",
+        "Cadeira extensora",
+        "Abdução de quadril, como complemento"
+      ],
+      "destaque": "Exercícios em pé e sentados aliviaram a dor de forma parecida. Somar o quadril ao quadríceps ajudou na caminhada.",
+      "foto": "legpress.png"
+    },
+    {
+      "tipo": "conteudo",
+      "titulo": "Como [montar]",
+      "lista": [
+        "Começar na amplitude e na carga que o joelho aceita",
+        "Subir a carga aos poucos, semana a semana",
+        "Acompanhar a força para saber se está chegando lá"
+      ],
+      "destaque": "Não existe exercício mágico para artrose. Existe o exercício certo para o seu joelho, feito com regularidade e progressão.",
+      "foto": "atleta.png"
+    },
+    {
+      "tipo": "referencia",
+      "titulo": "De onde vêm [esses números]",
+      "refs": [
+        {
+          "rot": "METANÁLISE · 2017",
+          "txt": "Bartholdy C et al. Semin Arthritis Rheum, 2017;47(1):9-21. 45 ensaios, 4.699 pessoas. Ganho de força de 30–40% para melhora provável."
+        },
+        {
+          "rot": "ENSAIO START · 2021",
+          "txt": "Messier SP et al. JAMA, 2021;325(7):646-657. 377 pessoas, 18 meses. Carga alta não reduziu a dor mais que carga leve."
+        },
+        {
+          "rot": "EM PÉ X SENTADO · 2025",
+          "txt": "Fadil A et al. PLoS One, 2025;20(5):e0322475. Cadeia fechada e aberta com alívio de dor parecido. Certeza baixa."
+        },
+        {
+          "rot": "QUADRIL · 2020",
+          "txt": "Hislop AC et al. Br J Sports Med, 2020;54(5):263-271. Somar quadril ajudou na caminhada, a curto prazo. Certeza muito baixa."
+        }
+      ],
+      "aviso": "Conteúdo educativo. A prescrição é individual e deve considerar o grau da artrose, a dor, a medicação e a avaliação médica."
+    },
+    {
+      "tipo": "cta",
+      "metodo": "Método",
+      "titulo": "[Musculação]\nEstratégica",
+      "oferta": "Consultoria on-line: treino de força montado para o seu joelho, com os exercícios certos e a progressão acompanhada de perto.",
+      "acao": "Link na bio",
+      "handle": "@coach_neto",
+      "foto": "netohalter.png",
+      "foto_clara": true,
+      "cupom": "15% OFF no plano trimestral com o cupom COMECE15, até 05/11."
+    }
+  ]
+}
