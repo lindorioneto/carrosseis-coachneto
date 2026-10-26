@@ -1,0 +1,91 @@
+{
+  "slug": "015-mitos-e-verdades-artrose",
+  "cor": "roxo",
+  "legenda": "ARTROSE E MUSCULAÇÃO: 5 MITOS E VERDADES\n\nFechando a semana da artrose. Cinco frases que eu escuto de quem tem dor no joelho, e o que os estudos mostram sobre cada uma.\n\n1. \"MUSCULAÇÃO DESGASTA A CARTILAGEM\"\nMITO. Uma revisão de 9 ensaios com 702 pessoas avaliou a cartilagem por ressonância: exercício com carga no joelho não prejudicou a cartilagem. A cartilagem não tem vaso sanguíneo e se nutre com movimento e carga dosada.\n\n2. \"PERDER PESO ALIVIA O JOELHO\"\nVERDADE. Cada 1 kg a menos no corpo tira cerca de 4 kg de carga do joelho a cada passo. Em milhares de passos por dia, isso pesa.\n\n3. \"COM ARTROSE, O CERTO É REPOUSO\"\nMITO. A maior revisão sobre o tema reuniu 139 ensaios e 12.468 pessoas: exercício melhorou a dor e a função do joelho. A diretriz internacional coloca o exercício no tratamento de base.\n\n4. \"ARTROSE É COISA DE IDOSO\"\nMITO. No mundo, cerca de 15% das pessoas com mais de 30 anos já têm artrose. Quanto antes o músculo for fortalecido, melhor para o joelho.\n\n5. \"FORTALECER O QUADRÍCEPS PROTEGE O JOELHO\"\nVERDADE. Quadríceps fraco aumenta a chance de artrose de joelho com sintomas: 85% a mais nas mulheres e 43% a mais nos homens. E para a dor melhorar, a força precisa subir de 30% a 40%.\n\nA SEMANA EM UMA FRASE\nArtrose não é sentença de parar. É motivo para fortalecer, com o exercício certo para o seu joelho e carga que progride.\n\nNada aqui substitui a avaliação médica: a prescrição considera o grau da artrose, a dor e o seu histórico.\n\nConsultoria on-line: treino de força montado para o seu joelho, com progressão acompanhada de perto. Link na bio — até 05/11 o plano trimestral sai com 15% off no cupom COMECE15.\n\nSalva e manda para alguém que parou de treinar por causa do joelho.\n\n#musculacao #treino #academia #saude #artrose #osteoartrite #dornojoelho #joelho #mitoseverdades #gruposespeciais",
+  "serie": "GRUPOS ESPECIAIS",
+  "edicao": "15",
+  "handle": "@coach_neto",
+  "slides": [
+    {
+      "tipo": "capa",
+      "eyebrow": "GRUPOS ESPECIAIS · 15",
+      "titulo": "[Mito ou verdade?]\nArtrose",
+      "sub": "Cinco frases que eu escuto de quem tem dor no joelho, e o que os estudos mostram sobre cada uma.",
+      "foto": "professor.png"
+    },
+    {
+      "tipo": "mito",
+      "veredito": "MITO",
+      "fala": "Musculação desgasta a cartilagem",
+      "corpo": "Revisão de 9 ensaios com 702 pessoas avaliou a cartilagem por ressonância: exercício com carga no joelho não prejudicou a cartilagem.",
+      "destaque": "A cartilagem não tem vaso sanguíneo. Ela se nutre com movimento e carga dosada.",
+      "foto": "agachamento.png"
+    },
+    {
+      "tipo": "mito",
+      "veredito": "VERDADE",
+      "fala": "Perder peso alivia o joelho",
+      "corpo": "Cada 1 kg a menos no corpo tira cerca de 4 kg de carga do joelho, a cada passo.",
+      "destaque": "Em milhares de passos por dia, isso pesa.",
+      "foto": "remadahalter.png"
+    },
+    {
+      "tipo": "mito",
+      "veredito": "MITO",
+      "fala": "Com artrose, o certo é repouso",
+      "corpo": "A maior revisão sobre o tema reuniu 139 ensaios e 12.468 pessoas: exercício melhorou a dor e a função do joelho.",
+      "destaque": "A diretriz internacional coloca o exercício no tratamento de base da artrose.",
+      "foto": "legpress.png"
+    },
+    {
+      "tipo": "mito",
+      "veredito": "MITO",
+      "fala": "Artrose é coisa de idoso",
+      "corpo": "No mundo, cerca de 15% das pessoas com mais de 30 anos já têm artrose.",
+      "destaque": "Quanto antes o músculo for fortalecido, melhor para o joelho.",
+      "foto": "atleta.png"
+    },
+    {
+      "tipo": "mito",
+      "veredito": "VERDADE",
+      "fala": "Fortalecer o quadríceps protege o joelho",
+      "corpo": "Quadríceps fraco aumenta a chance de artrose de joelho com sintomas: 85% a mais nas mulheres e 43% a mais nos homens.",
+      "destaque": "E para a dor melhorar, a força precisa subir de 30% a 40%.",
+      "foto": "barrafrente.png"
+    },
+    {
+      "tipo": "referencia",
+      "titulo": "De onde vêm [esses números]",
+      "refs": [
+        {
+          "rot": "CARTILAGEM · 2019",
+          "txt": "Bricca A et al. Br J Sports Med, 2019;53(15):940-947. 9 ensaios, 702 pessoas, ressonância. Certeza baixa."
+        },
+        {
+          "rot": "EXERCÍCIO · COCHRANE · 2024",
+          "txt": "Lawford BJ et al. Exercise for osteoarthritis of the knee. Cochrane Database Syst Rev, 2024;CD004376. 139 ensaios, 12.468 pessoas."
+        },
+        {
+          "rot": "PESO E QUADRÍCEPS",
+          "txt": "Messier SP et al. Arthritis Rheum, 2005;52(7):2026-2032. Øiestad BE et al. Br J Sports Med, 2022;56(6):349-355. Bartholdy C et al. Semin Arthritis Rheum, 2017;47(1):9-21."
+        },
+        {
+          "rot": "CARGA GLOBAL · GBD · 2023",
+          "txt": "Steinmetz JD et al. Lancet Rheumatol, 2023;5(9):e508-e522."
+        }
+      ],
+      "aviso": "Conteúdo educativo. A prescrição é individual e deve considerar o grau da artrose, a dor, a medicação e a avaliação médica."
+    },
+    {
+      "tipo": "cta",
+      "metodo": "Método",
+      "titulo": "[Musculação]\nEstratégica",
+      "oferta": "Consultoria on-line: treino de força montado para o seu joelho, com o exercício certo e a progressão acompanhada de perto.",
+      "acao": "Link na bio",
+      "handle": "@coach_neto",
+      "foto": "netohalter.png",
+      "foto_clara": true,
+      "cupom": "15% OFF no plano trimestral com o cupom COMECE15, até 05/11."
+    }
+  ]
+}
