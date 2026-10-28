@@ -8,10 +8,22 @@ Fluxo em três etapas, como a Meta exige:
 
 O token vem da variável de ambiente IG_TOKEN (Secret do repositório).
 As imagens são servidas pelo raw.githubusercontent.com deste próprio repositório.
+
+TRAVA CONTRA POST DUPLICADO
+Antes de publicar, este script confere duas coisas, nesta ordem:
+  1. publicado.json, o registro no próprio repositório de tudo que já foi ao ar;
+  2. os posts recentes da conta no Instagram, comparando o título da legenda.
+Se qualquer uma das duas disser que o carrossel já saiu, ele não publica de novo
+e encerra com sucesso. Depois de publicar, grava o slug em publicado.json e dá
+push, para que qualquer execução posterior (inclusive um cron atrasado) veja que
+o trabalho já foi feito. Isso existe porque em 26/10/2026 o post saiu duas vezes:
+a publicação manual das 16h18 e o cron atrasado das 20h21 fizeram o mesmo post.
 """
+import datetime
 import json
 import os
 import pathlib
+import subprocess
 import sys
 import time
 import urllib.error
@@ -52,10 +64,107 @@ def esperar_container(cid, limite=24):
     sys.exit("ERRO: tempo esgotado esperando a Meta processar a mídia.")
 
 
+# ---------------------------------------------------------------- trava
+REGISTRO = BASE / "publicado.json"
+IDENT = ["-c", "user.name=coachneto-bot", "-c", "user.email=actions@github.com"]
+
+
+def git(*args):
+    return subprocess.run(["git", "-C", str(BASE), *args],
+                          capture_output=True, text=True)
+
+
+def chamar_tolerante(metodo, caminho, **params):
+    """Como chamar(), mas devolve None em vez de abortar quando a API falha."""
+    try:
+        return chamar(metodo, caminho, **params)
+    except SystemExit:
+        return None
+
+
+def ler_registro():
+    if not REGISTRO.exists():
+        return []
+    try:
+        dados = json.loads(REGISTRO.read_text(encoding="utf-8"))
+        return dados if isinstance(dados, list) else []
+    except json.JSONDecodeError:
+        print("AVISO: publicado.json esta ilegivel; tratando como vazio.")
+        return []
+
+
+def titulo(legenda):
+    """A primeira linha nao vazia da legenda, que e o titulo do carrossel."""
+    for linha in (legenda or "").splitlines():
+        if linha.strip():
+            return " ".join(linha.strip().lower().split())
+    return ""
+
+
+def no_registro(slug):
+    for item in ler_registro():
+        if item.get("slug") == slug:
+            return item
+    return None
+
+
+def no_instagram(legenda):
+    """Procura o mesmo titulo entre os posts recentes da conta.
+
+    Falha fechada de proposito: se a API nao responder, o script aborta em vez
+    de publicar no escuro. Um post que nao saiu se resolve rodando de novo; um
+    post duplicado tem de ser apagado na mao.
+    """
+    alvo = titulo(legenda)
+    if not alvo:
+        return None
+    r = chamar_tolerante("GET", "me/media", fields="id,caption,timestamp", limit="15")
+    if r is None:
+        sys.exit("ERRO: nao consegui listar os posts recentes para conferir duplicata. "
+                 "Nada foi publicado. Rode de novo quando a API do Instagram responder.")
+    for m in r.get("data", []):
+        if titulo(m.get("caption")) == alvo:
+            return m
+    return None
+
+
+def gravar_registro(slug, post, media_id):
+    itens = ler_registro()
+    itens.append({
+        "slug": slug,
+        "post": str(post),
+        "data": datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%d"),
+        "quando": datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
+        "media_id": media_id,
+        "run": os.environ.get("GITHUB_RUN_ID", ""),
+    })
+    REGISTRO.write_text(json.dumps(itens, ensure_ascii=False, indent=2) + "\n",
+                        encoding="utf-8")
+    git("add", "publicado.json")
+    if git("diff", "--cached", "--quiet").returncode == 0:
+        return
+    git(*IDENT, "commit", "-m", f"registro: {slug} publicado no Instagram")
+    for tentativa in range(4):
+        if git("push").returncode == 0:
+            print("Registro gravado em publicado.json.")
+            return
+        git(*IDENT, "pull", "--rebase", "--autostash")
+    print("AVISO: publiquei, mas nao consegui dar push em publicado.json. "
+          "A conferencia no Instagram ainda protege contra duplicata.")
+
+
 def main():
     post = pathlib.Path(sys.argv[1])
     dados = json.loads(post.read_text(encoding="utf-8"))
     slug = dados["slug"]
+    ensaio = os.environ.get("MODO") == "ensaio"
+
+    if not ensaio:
+        feito = no_registro(slug)
+        if feito:
+            print(f"JA PUBLICADO: {slug} saiu em {feito.get('quando', feito.get('data'))} "
+                  f"(media {feito.get('media_id')}). Nao vou publicar de novo.")
+            return
 
     repo = os.environ.get("GITHUB_REPOSITORY")
     ref = os.environ.get("MEDIA_REF", "main")
@@ -69,6 +178,14 @@ def main():
 
     quem = chamar("GET", "me", fields="user_id,username")
     print(f"Conta autenticada: @{quem.get('username')}")
+
+    if not ensaio:
+        igual = no_instagram(dados["legenda"])
+        if igual:
+            print(f"JA PUBLICADO: a conta ja tem um post com este titulo "
+                  f"(media {igual.get('id')}, de {igual.get('timestamp')}). "
+                  f"Nao vou publicar de novo.")
+            return
 
     filhos = []
     for img in imagens:
@@ -84,12 +201,13 @@ def main():
                        children=",".join(filhos), caption=dados["legenda"])
     esperar_container(carrossel["id"])
 
-    if os.environ.get("MODO") == "ensaio":
+    if ensaio:
         print("Modo ensaio: container pronto, publicação NÃO efetuada.")
         return
 
     pub = chamar("POST", "me/media_publish", creation_id=carrossel["id"])
     print(f"PUBLICADO. id da mídia: {pub.get('id')}")
+    gravar_registro(slug, post, pub.get("id"))
 
 
 if __name__ == "__main__":
