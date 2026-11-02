@@ -672,3 +672,87 @@ def svg_limiar(w=820, h=330):
 
 
 GRAPHICS["limiar"] = svg_limiar
+
+
+def svg_quedas(w=820, h=430):
+    """Moreland 2004: com pernas fracas, a chance de cair quase dobra
+    (OR 1,76). Comparacao direta: pernas fortes x pernas fracas."""
+    base, esc, bw = 330, 120.0, 210
+    barras = [("PERNAS FORTES", 1.0, 150, False, "1×"),
+              ("PERNAS FRACAS", 1.76, 460, True, "1,8×")]
+    out = []
+    for rot, v, x, destaque, txt in barras:
+        alt = v * esc
+        cor = C["orange"] if destaque else C["ember"]
+        out.append(f'<rect x="{x}" y="{base-alt:.0f}" width="{bw}" height="{alt:.0f}" fill="{cor}"/>')
+        cv = C["white"] if destaque else C["muted"]
+        out.append(f'<text x="{x+bw/2}" y="{base-alt-22:.0f}" fill="{cv}" font-family="Archivo" '
+                   f'font-weight="800" font-size="56" text-anchor="middle">{txt}</text>')
+        out.append(f'<text x="{x+bw/2}" y="{base+44}" fill="{cv}" font-family="Mono" '
+                   f'font-size="24" letter-spacing="2" text-anchor="middle">{rot}</text>')
+    return f'''<svg viewBox="0 0 {w} {h}" width="100%">
+  <line x1="110" y1="{base}" x2="{w-110}" y2="{base}" stroke="{C['line']}" stroke-width="2"/>
+  {"".join(out)}
+  <text x="{w/2}" y="{h-8}" fill="{C['dim']}" font-family="Mono" font-size="21"
+        letter-spacing="2" text-anchor="middle">CHANCE DE CAIR</text>
+</svg>'''
+
+
+GRAPHICS["quedas"] = svg_quedas
+
+
+def svg_quadril(w=680, h=880):
+    """Quadril de frente, como numa radiografia, com fratura do colo do femur
+    marcada na cor do ciclo. Desenho original para capa (slot 680x880)."""
+    t = C["orange"]
+    osso = "#DCD7E8"
+    asa = ("M300 132 C360 66 500 44 588 74 C618 86 628 122 610 152 C590 192 560 232 520 270 "
+           "C496 294 470 310 448 316 C418 320 380 314 350 300 C320 282 300 252 292 212 "
+           "C286 178 288 150 300 132 Z")
+    ramo = ("M338 352 C306 420 262 468 222 480 C198 490 188 522 210 542 C252 562 304 524 336 470 "
+            "C350 440 356 400 352 370 Z")
+    femur = ("M382 398 C400 442 430 472 452 500 C442 540 430 560 448 582 C456 604 452 660 452 880 "
+             "L542 880 C542 700 550 600 562 542 C578 502 598 470 592 430 C588 404 562 394 540 400 "
+             "C510 406 482 400 464 388 Z")
+    return f"""<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {w} {h}" width="{w}" height="{h}">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="{osso}" stop-opacity=".5"/>
+      <stop offset=".5" stop-color="{osso}" stop-opacity=".2"/>
+      <stop offset="1" stop-color="{osso}" stop-opacity=".5"/>
+    </linearGradient>
+    <radialGradient id="mole" cx="62%" cy="50%" r="50%">
+      <stop offset="0" stop-color="#25222E" stop-opacity="1"/>
+      <stop offset="1" stop-color="#070707" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="fade" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#070707" stop-opacity="1"/>
+      <stop offset=".14" stop-color="#070707" stop-opacity="0"/>
+      <stop offset=".84" stop-color="#070707" stop-opacity="0"/>
+      <stop offset="1" stop-color="#070707" stop-opacity="1"/>
+    </linearGradient>
+    <filter id="brilho" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="5" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="{w}" height="{h}" fill="#070707"/>
+  <ellipse cx="430" cy="440" rx="270" ry="560" fill="url(#mole)"/>
+  <g filter="url(#brilho)" stroke="{osso}" stroke-width="3" stroke-linejoin="round" stroke-opacity=".85">
+    <path d="{asa}" fill="url(#g)"/>
+    <path d="{ramo}" fill="url(#g)"/>
+    <path d="{femur}" fill="url(#g)"/>
+    <circle cx="420" cy="372" r="58" fill="#1E1C25" stroke="none"/>
+    <circle cx="420" cy="372" r="58" fill="url(#g)"/>
+  </g>
+  <ellipse cx="262" cy="490" rx="34" ry="22" fill="#070707" opacity=".55"/>
+  <path d="M356 352 A66 66 0 0 1 486 352" fill="none" stroke="{osso}" stroke-width="3" opacity=".55"/>
+  <path d="M488 520 C492 620 494 740 494 880" fill="none" stroke="#070707" stroke-width="34" opacity=".25"/>
+  <g fill="none" stroke="{t}" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" filter="url(#brilho)">
+    <path d="M472 390 L460 410 L474 424 L454 444 L466 458 L448 478"/>
+  </g>
+  <rect width="{w}" height="{h}" fill="url(#fade)"/>
+</svg>"""
+
+
+FOTOS_SVG["quadril"] = svg_quadril
