@@ -1,0 +1,104 @@
+{
+  "slug": "017-treino-contra-quedas",
+  "cor": "laranja",
+  "legenda": "TREINO CONTRA QUEDAS: EXERCÍCIOS, SÉRIES E INTENSIDADE\n\nNa segunda eu mostrei que pernas fracas quase dobram a chance de cair. Hoje é a parte prática: o que treinar, quantas séries por semana e com que carga.\n\nO QUE MAIS REDUZ QUEDAS\nUma revisão Cochrane com 108 ensaios e mais de 23 mil idosos comparou os tipos de exercício. Juntar força, equilíbrio e exercícios funcionais reduziu as quedas em 34%. Só equilíbrio e funcional, 24%. Tai chi, 19%. Todos ajudam, e a força junto com o equilíbrio é a combinação mais forte.\n\nOS MELHORES EXERCÍCIOS\nO programa Otago, um dos mais testados em idosos, reduziu as quedas em 32% numa revisão com 7 ensaios e 1.503 pessoas. A base de força dele: frente e trás da coxa (na academia, cadeira extensora e mesa flexora), lateral do quadril (abdução), panturrilha e ponta do pé, e sentar e levantar da cadeira.\n\nEQUILÍBRIO: OS EXERCÍCIOS\nFicar em uma perna só, um pé na frente do outro (parado e andando), andar de lado e na ponta dos pés, subir e descer degrau. Equilíbrio só melhora quando é desafiado, sempre com apoio por perto.\n\nSÉRIES E INTENSIDADE\nNuma revisão com 25 ensaios em idosos de 60 a 90 anos, os maiores ganhos de força vieram com 2 sessões por semana, 2 a 3 séries por exercício, de 7 a 9 repetições, com carga de 70% a 79% do máximo, aquela em que as últimas repetições pesam. Exemplo: 3 séries de 8 na extensora, na segunda e na sexta, somam 6 séries na semana. A carga não começa aí: sobe aos poucos, depois que o movimento está seguro.\n\nQUANTO POR SEMANA\nProgramas que desafiaram o equilíbrio e somaram mais de 3 horas de exercício por semana reduziram as quedas em 39%. A diretriz mundial pede pelo menos 3 sessões por semana, por 12 semanas ou mais.\n\nNa sexta tem mitos e verdades sobre quedas.\n\nTem alguém da família nessa fase? A consultoria on-line monta o treino de força e equilíbrio para o caso dela, com a progressão acompanhada. Link na bio — até 05/11 o plano trimestral sai com 15% off no cupom COMECE15.\n\n#musculacao #treino #academia #saude #idosos #quedas #equilibrio #terceiraidade #envelhecimentoativo #gruposespeciais",
+  "serie": "GRUPOS ESPECIAIS",
+  "edicao": "17",
+  "handle": "@coach_neto",
+  "slides": [
+    {
+      "tipo": "capa",
+      "eyebrow": "GRUPOS ESPECIAIS · 17",
+      "titulo": "[Treino contra quedas]\nSéries e intensidade",
+      "sub": "Quais exercícios, quantas séries por semana e com que carga, segundo os estudos.",
+      "foto": "idosaavanco.png"
+    },
+    {
+      "tipo": "dado",
+      "kicker": "O QUE MAIS REDUZ AS QUEDAS",
+      "grafico": "combinacao",
+      "legenda": "Todos os tipos reduziram as quedas. Somar força ao equilíbrio e aos exercícios funcionais foi o que mais reduziu: 34%.",
+      "nota": "Sherrington C et al. Exercise for preventing falls in older people living in the community. Cochrane Database Syst Rev, 2019;1:CD012424. 108 ensaios."
+    },
+    {
+      "tipo": "conteudo",
+      "titulo": "Os melhores [exercícios]",
+      "lista": [
+        "Cadeira extensora e mesa flexora: frente e trás da coxa",
+        "Abdução de quadril: lateral do quadril",
+        "Panturrilha e ponta do pé: tornozelo firme",
+        "Sentar e levantar da cadeira"
+      ],
+      "destaque": "São a base do programa Otago, um dos mais testados em idosos: reduziu as quedas em 32%.",
+      "foto": "idosacadeira.png"
+    },
+    {
+      "tipo": "conteudo",
+      "titulo": "Equilíbrio: [os exercícios]",
+      "lista": [
+        "Ficar em uma perna só",
+        "Um pé na frente do outro, parado e andando",
+        "Andar de lado e na ponta dos pés",
+        "Subir e descer degrau"
+      ],
+      "destaque": "Equilíbrio só melhora quando é desafiado. Sempre com apoio por perto.",
+      "foto": "idosadegrau.png"
+    },
+    {
+      "tipo": "conteudo",
+      "titulo": "Séries e [intensidade]",
+      "lista": [
+        "Musculação 2 vezes por semana",
+        "2 a 3 séries por exercício, de 7 a 9 repetições cada",
+        "Carga de 70% a 79% do máximo: as últimas repetições pesam"
+      ],
+      "destaque": "Exemplo: 3 séries de 8 na extensora, na segunda e na sexta, somam 6 séries na semana.",
+      "foto": "idosodesenvolvimento.png"
+    },
+    {
+      "tipo": "dado",
+      "kicker": "UMA SEMANA CONTRA QUEDAS",
+      "grafico": "semanaqueda",
+      "legenda": "Programas com equilíbrio desafiado e mais de 3 horas por semana reduziram as quedas em 39%.",
+      "nota": "Sherrington C et al. Exercise to prevent falls in older adults: an updated systematic review and meta-analysis. Br J Sports Med, 2017;51(24):1750-1758."
+    },
+    {
+      "tipo": "referencia",
+      "titulo": "De onde vêm [esses números]",
+      "refs": [
+        {
+          "rot": "REVISÃO COCHRANE · 2019",
+          "txt": "Sherrington C et al. Cochrane Database Syst Rev, 2019;1:CD012424."
+        },
+        {
+          "rot": "PROGRAMA OTAGO · 2010",
+          "txt": "Thomas S et al. Age Ageing, 2010;39(6):681-687. Quedas: −32%."
+        },
+        {
+          "rot": "DOSE E EQUILÍBRIO · 2017",
+          "txt": "Sherrington C et al. Br J Sports Med, 2017;51(24):1750-1758."
+        },
+        {
+          "rot": "DOSE DE MUSCULAÇÃO · 2015",
+          "txt": "Borde R et al. Sports Med, 2015;45(12):1693-1720."
+        },
+        {
+          "rot": "DIRETRIZ MUNDIAL · 2022",
+          "txt": "Montero-Odasso M et al. Age Ageing, 2022;51(9):afac205."
+        }
+      ],
+      "aviso": "Conteúdo educativo. A prescrição é individual e deve considerar histórico de quedas, medicação, visão e avaliação médica."
+    },
+    {
+      "tipo": "cta",
+      "metodo": "Método",
+      "titulo": "[Musculação]\nEstratégica",
+      "oferta": "Consultoria on-line: treino de força e equilíbrio com séries, carga e progressão ajustadas para quem quer envelhecer sem medo de cair.",
+      "acao": "Link na bio",
+      "handle": "@coach_neto",
+      "foto": "netohalter.png",
+      "foto_clara": true,
+      "cupom": "15% OFF no plano trimestral com o cupom COMECE15, até 05/11."
+    }
+  ]
+}
