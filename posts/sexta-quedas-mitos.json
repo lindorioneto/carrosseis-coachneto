@@ -1,0 +1,94 @@
+{
+  "slug": "018-mitos-e-verdades-musculacao-idosos",
+  "cor": "laranja",
+  "legenda": "MUSCULAÇÃO PARA IDOSOS: 5 MITOS E VERDADES\n\nFechando a semana das quedas. Cinco frases que eu escuto sobre idoso e musculação, e o que os estudos mostram sobre cada uma.\n\n1. \"IDOSO SÓ PODE TREINAR LEVE\"\nMITO. Numa revisão com 25 ensaios em pessoas de 60 a 90 anos, os maiores ganhos de força vieram com carga de 70% a 79% do máximo. Começar leve está certo. Mas a carga precisa subir para a força subir.\n\n2. \"MUSCULAÇÃO DEIXA O DIA A DIA MAIS FÁCIL\"\nVERDADE. A maior revisão sobre musculação em idosos reuniu 121 ensaios e 6.700 pessoas. A força aumentou bastante, e levantar da cadeira ficou mais fácil. A melhora chegou a tarefas como tomar banho e preparar a comida.\n\n3. \"DEPOIS DOS 80, NÃO ADIANTA MAIS TREINAR\"\nMITO. Num estudo com 100 idosos de casa de repouso, com média de 87 anos e até 98, 10 semanas de musculação mais que dobraram a força (+113%). A velocidade da caminhada e a força para subir escada também melhoraram.\n\n4. \"FORÇA COM EQUILÍBRIO REDUZ QUEDAS\"\nVERDADE. Numa revisão Cochrane com 108 ensaios, juntar força, equilíbrio e exercícios funcionais reduziu as quedas em 34%. Por isso o treino de força para idoso inclui exercícios de equilíbrio.\n\n5. \"MUSCULAÇÃO É PERIGOSA PARA IDOSO\"\nMITO. Nos 121 ensaios da revisão, eventos graves foram raros e nenhum foi ligado diretamente ao treino. A associação norte-americana de força e condicionamento (NSCA) aponta que a maior parte das lesões vem de técnica ruim e exercício mal escolhido. Por isso o acompanhamento faz diferença.\n\nA SEMANA EM UMA FRASE\nNunca é tarde para ficar mais forte. E perna forte com equilíbrio treinado é a melhor proteção contra quedas.\n\nNada aqui substitui a avaliação médica: a prescrição considera histórico de quedas, medicação, visão e condição de saúde.\n\nConsultoria on-line: treino de força e equilíbrio montado para o caso de quem você cuida, com a progressão acompanhada de perto. Link na bio.\n\nSalva e manda para alguém que acha que já passou da idade de treinar.\n\n#musculacao #treino #academia #saude #idosos #quedas #treinodeforca #terceiraidade #mitoseverdades #gruposespeciais",
+  "serie": "GRUPOS ESPECIAIS",
+  "edicao": "18",
+  "handle": "@coach_neto",
+  "slides": [
+    {
+      "tipo": "capa",
+      "eyebrow": "GRUPOS ESPECIAIS · 18",
+      "titulo": "[Mito ou verdade?]\nMusculação para idosos",
+      "sub": "Cinco frases que eu escuto sobre idoso e musculação, e o que os estudos mostram sobre cada uma.",
+      "foto": "idosaremada.png"
+    },
+    {
+      "tipo": "mito",
+      "veredito": "MITO",
+      "fala": "Idoso só pode treinar leve",
+      "corpo": "Revisão com 25 ensaios em pessoas de 60 a 90 anos: os maiores ganhos de força vieram com carga de 70% a 79% do máximo.",
+      "destaque": "Começar leve está certo. Mas a carga precisa subir para a força subir.",
+      "foto": "idosarosca.png"
+    },
+    {
+      "tipo": "mito",
+      "veredito": "VERDADE",
+      "fala": "Musculação deixa o dia a dia mais fácil",
+      "corpo": "121 ensaios e 6.700 idosos: a força aumentou bastante, e levantar da cadeira ficou mais fácil.",
+      "destaque": "A melhora chegou a tarefas como tomar banho e preparar a comida.",
+      "foto": "idosoagachamento.png"
+    },
+    {
+      "tipo": "mito",
+      "veredito": "MITO",
+      "fala": "Depois dos 80, não adianta mais treinar",
+      "corpo": "100 idosos de casa de repouso, média de 87 anos e até 98: 10 semanas de musculação mais que dobraram a força (+113%).",
+      "destaque": "A velocidade da caminhada e a força para subir escada também melhoraram.",
+      "foto": "idosodesenvolvimento.png"
+    },
+    {
+      "tipo": "mito",
+      "veredito": "VERDADE",
+      "fala": "Força com equilíbrio reduz quedas",
+      "corpo": "Revisão Cochrane com 108 ensaios: juntar força, equilíbrio e exercícios funcionais reduziu as quedas em 34%.",
+      "destaque": "Por isso o treino de força para idoso inclui exercícios de equilíbrio.",
+      "foto": "idosoequilibrio.png"
+    },
+    {
+      "tipo": "mito",
+      "veredito": "MITO",
+      "fala": "Musculação é perigosa para idoso",
+      "corpo": "Nos 121 ensaios, eventos graves foram raros e nenhum foi ligado diretamente ao treino.",
+      "destaque": "A maior parte das lesões vem de técnica ruim e exercício mal escolhido. Por isso o acompanhamento faz diferença.",
+      "foto": "idosadegrau.png"
+    },
+    {
+      "tipo": "referencia",
+      "titulo": "De onde vêm [esses números]",
+      "refs": [
+        {
+          "rot": "DOSE DE MUSCULAÇÃO · 2015",
+          "txt": "Borde R et al. Sports Med, 2015;45(12):1693-1720. 25 ensaios."
+        },
+        {
+          "rot": "MUSCULAÇÃO EM IDOSOS · COCHRANE · 2009",
+          "txt": "Liu CJ, Latham NK. Cochrane Database Syst Rev, 2009;(3):CD002759. Eventos adversos pouco registrados."
+        },
+        {
+          "rot": "IDOSOS DE 72 A 98 ANOS · 1994",
+          "txt": "Fiatarone MA et al. N Engl J Med, 1994;330(25):1769-1775."
+        },
+        {
+          "rot": "QUEDAS · COCHRANE · 2019",
+          "txt": "Sherrington C et al. Cochrane Database Syst Rev, 2019;1:CD012424."
+        },
+        {
+          "rot": "POSICIONAMENTO NSCA · 2019",
+          "txt": "Fragala MS et al. J Strength Cond Res, 2019;33(8):2019-2052."
+        }
+      ],
+      "aviso": "Conteúdo educativo. A prescrição é individual e deve considerar histórico de quedas, medicação, visão e avaliação médica."
+    },
+    {
+      "tipo": "cta",
+      "metodo": "Método",
+      "titulo": "[Musculação]\nEstratégica",
+      "oferta": "Consultoria on-line: treino de força e equilíbrio montado para o caso de quem você cuida, com a progressão acompanhada de perto.",
+      "acao": "Link na bio",
+      "handle": "@coach_neto",
+      "foto": "netohalter.png",
+      "foto_clara": true
+    }
+  ]
+}
