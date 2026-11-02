@@ -1,0 +1,94 @@
+{
+  "slug": "016-quedas-nao-e-azar",
+  "cor": "laranja",
+  "legenda": "FRAQUEZA MUSCULAR X QUEDAS EM IDOSOS\n\nSemana nova, assunto novo: quedas em idosos. E começo pelo que quase ninguém diz: boa parte do risco de cair está em algo que dá para treinar.\n\nO TAMANHO DO PROBLEMA\nQuedas são a segunda maior causa de morte por lesão não intencional no mundo, atrás só dos acidentes de trânsito. Foram cerca de 842 mil mortes em 2023, e 71% delas em pessoas com 60 anos ou mais.\n\nUma revisão com 104 estudos mostrou que cerca de 1 em cada 4 idosos no mundo sofre quedas. Nas Américas, 28%.\n\nPERNA FRACA PESA NO RISCO\nPense em dois idosos da mesma idade. Uma revisão sobre fraqueza muscular e quedas mostrou que o de pernas fracas tem quase o dobro de chance de cair do que o de pernas fortes.\n\nOS FATORES QUE SE TREINAM\nA Organização Mundial da Saúde lista equilíbrio, força e marcha (o jeito de andar) entre os fatores de risco. Idade não se muda. Força, equilíbrio e marcha mudam com treino.\n\nO CICLO DO MEDO\nQuem cai, ou tem medo de cair, costuma se movimentar menos. Menos movimento enfraquece as pernas, piora o equilíbrio e aumenta o risco de cair de novo. O caminho para quebrar esse ciclo não é parar. É treinar com segurança.\n\nO QUE A DIRETRIZ RECOMENDA\nA diretriz mundial de prevenção de quedas recomenda exercícios de equilíbrio e funcionais, junto com musculação que progride, pelo menos 3 vezes por semana, por 12 semanas ou mais.\n\nNa quarta eu mostro quanto o exercício reduz as quedas e qual combinação funciona melhor.\n\nTem um pai, uma mãe ou avó nessa fase? A consultoria on-line monta o treino de força e equilíbrio para o caso dela. Link na bio — até 05/11 o plano trimestral sai com 15% off no cupom COMECE15.\n\n#musculacao #treino #academia #saude #idosos #quedas #equilibrio #terceiraidade #envelhecimentoativo #gruposespeciais",
+  "serie": "GRUPOS ESPECIAIS",
+  "edicao": "16",
+  "handle": "@coach_neto",
+  "slides": [
+    {
+      "tipo": "capa",
+      "eyebrow": "GRUPOS ESPECIAIS · 16",
+      "titulo": "[Fraqueza muscular]\nx\nQuedas em idosos",
+      "sub": "Cerca de 1 em cada 4 idosos cai. Boa parte do risco está em algo que dá para treinar.",
+      "foto": "idosojoelho.png"
+    },
+    {
+      "tipo": "conteudo",
+      "titulo": "O tamanho [do problema]",
+      "corpo": "Quedas são a segunda maior causa de morte por lesão não intencional no mundo: cerca de 842 mil mortes em 2023. 71% delas em pessoas com 60 anos ou mais.",
+      "destaque": "Cerca de 1 em cada 4 idosos no mundo sofre quedas. Nas Américas, 28%.",
+      "foto": "idosarosca.png"
+    },
+    {
+      "tipo": "dado",
+      "kicker": "PERNAS FORTES X PERNAS FRACAS",
+      "grafico": "quedas",
+      "legenda": "Dois idosos da mesma idade: o de pernas fracas tem quase o dobro de chance de cair.",
+      "nota": "Moreland JD et al. Muscle weakness and falls in older adults: a systematic review and meta-analysis. J Am Geriatr Soc, 2004;52(7):1121-1129."
+    },
+    {
+      "tipo": "conteudo",
+      "titulo": "Os fatores [que se treinam]",
+      "lista": [
+        "Força das pernas",
+        "Equilíbrio",
+        "Marcha, o jeito de andar"
+      ],
+      "destaque": "Idade não se muda. Força, equilíbrio e marcha mudam com treino.",
+      "foto": "idosoequilibrio.png"
+    },
+    {
+      "tipo": "conteudo",
+      "titulo": "O ciclo [do medo]",
+      "corpo": "Quem cai, ou tem medo de cair, costuma se movimentar menos. Menos movimento enfraquece as pernas, piora o equilíbrio e aumenta o risco de cair de novo.",
+      "destaque": "O caminho para quebrar esse ciclo não é parar. É treinar com segurança.",
+      "foto": "idosoagachamento.png"
+    },
+    {
+      "tipo": "conteudo",
+      "titulo": "O que a diretriz [recomenda]",
+      "lista": [
+        "Exercícios de equilíbrio e funcionais, como levantar da cadeira",
+        "Musculação com carga que progride",
+        "Pelo menos 3 vezes por semana, por 12 semanas ou mais"
+      ],
+      "destaque": "Na quarta eu mostro quanto o exercício reduz as quedas e qual combinação funciona melhor.",
+      "foto": "idosacadeira.png"
+    },
+    {
+      "tipo": "referencia",
+      "titulo": "De onde vêm [esses números]",
+      "refs": [
+        {
+          "rot": "OMS · FICHA SOBRE QUEDAS",
+          "txt": "Organização Mundial da Saúde. Falls — fact sheet. Cerca de 842 mil mortes em 2023; 71% em pessoas com 60 anos ou mais."
+        },
+        {
+          "rot": "PREVALÊNCIA · 2022",
+          "txt": "Salari N et al. Global prevalence of falls in the older adults. J Orthop Surg Res, 2022;17:334. 104 estudos; 26,5% no mundo."
+        },
+        {
+          "rot": "FRAQUEZA E QUEDAS · 2004",
+          "txt": "Moreland JD et al. J Am Geriatr Soc, 2004;52(7):1121-1129. Pernas fracas: chance de cair 1,76 vez maior."
+        },
+        {
+          "rot": "DIRETRIZ MUNDIAL · 2022",
+          "txt": "Montero-Odasso M et al. World guidelines for falls prevention and management for older adults. Age Ageing, 2022;51(9):afac205."
+        }
+      ],
+      "aviso": "Conteúdo educativo. A prescrição é individual e deve considerar histórico de quedas, medicação, visão e avaliação médica."
+    },
+    {
+      "tipo": "cta",
+      "metodo": "Método",
+      "titulo": "[Musculação]\nEstratégica",
+      "oferta": "Consultoria on-line: treino de força e equilíbrio montado para quem quer envelhecer sem medo de cair, com a progressão acompanhada de perto.",
+      "acao": "Link na bio",
+      "handle": "@coach_neto",
+      "foto": "netohalter.png",
+      "foto_clara": true,
+      "cupom": "15% OFF no plano trimestral com o cupom COMECE15, até 05/11."
+    }
+  ]
+}
