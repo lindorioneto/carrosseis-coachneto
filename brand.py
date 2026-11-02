@@ -756,3 +756,71 @@ def svg_quadril(w=680, h=880):
 
 
 FOTOS_SVG["quadril"] = svg_quadril
+
+
+def svg_combinacao(w=820, h=470):
+    """Cochrane 2019 (Sherrington): reducao na taxa de quedas por tipo de
+    exercicio. Combinado (equilibrio + funcional + forca) -34%; equilibrio e
+    funcional -24%; tai chi -19%."""
+    x0, esc = 40, 15.0
+    barras = [("FORÇA + EQUILÍBRIO + FUNCIONAL", 34, True),
+              ("EQUILÍBRIO E FUNCIONAL", 24, False),
+              ("TAI CHI", 19, False)]
+    out = []
+    y = 40
+    for rot, v, destaque in barras:
+        cv = C["white"] if destaque else C["muted"]
+        out.append(f'<text x="{x0}" y="{y}" fill="{cv}" font-family="Mono" font-size="23" '
+                   f'letter-spacing="2">{rot}</text>')
+        larg = v * esc
+        cor = C["orange"] if destaque else C["ember"]
+        out.append(f'<rect x="{x0}" y="{y+18}" width="{larg:.0f}" height="66" fill="{cor}"/>')
+        out.append(f'<text x="{x0+larg+20:.0f}" y="{y+72}" fill="{cv}" font-family="Archivo" '
+                   f'font-weight="800" font-size="58">\u2212{v}%</text>')
+        y += 140
+    return f'''<svg viewBox="0 0 {w} {h}" width="100%">
+  {"".join(out)}
+  <text x="{x0}" y="{h-10}" fill="{C['dim']}" font-family="Mono" font-size="21"
+        letter-spacing="2">REDUÇÃO NO NÚMERO DE QUEDAS</text>
+</svg>'''
+
+
+GRAPHICS["combinacao"] = svg_combinacao
+
+
+def svg_semanaqueda(w=820, h=440):
+    """Uma semana possivel contra quedas: forca 2x (Borde 2015), equilibrio
+    desafiado em quase todos os dias e mais de 3 h na semana (Sherrington 2017),
+    pelo menos 3 sessoes (diretriz mundial 2022)."""
+    dias = ["SEG", "TER", "QUA", "QUI", "SEX", "SAB", "DOM"]
+    minutos = ["60'", "15'", "60'", "15'", "60'", "", ""]
+    linhas = [("FORÇA", {0, 4}, C["orange"]),
+              ("EQUILÍBRIO", {0, 1, 2, 3, 4}, C["orange2"]),
+              ("FUNCIONAL", {2}, C["ember"])]
+    x0, rotw = 30, 200
+    cel = (w - 20 - x0 - rotw) / 7.0
+    out = []
+    for i, d in enumerate(dias):
+        x = x0 + rotw + i * cel
+        out.append(f'<text x="{x+cel/2:.1f}" y="40" fill="{C["muted"]}" font-family="Mono" '
+                   f'font-size="21" letter-spacing="1" text-anchor="middle">{d}</text>')
+        out.append(f'<text x="{x+cel/2:.1f}" y="318" fill="{C["white"]}" font-family="Archivo" '
+                   f'font-weight="800" font-size="30" text-anchor="middle">{minutos[i]}</text>')
+    y = 64
+    for rot, ativos, cor in linhas:
+        out.append(f'<text x="{x0}" y="{y+42}" fill="{C["white"]}" font-family="Mono" '
+                   f'font-size="22" letter-spacing="2">{rot}</text>')
+        for i in range(7):
+            x = x0 + rotw + i * cel
+            c = cor if i in ativos else C["line"]
+            out.append(f'<rect x="{x+3:.1f}" y="{y}" width="{cel-6:.1f}" height="64" fill="{c}"/>')
+        y += 76
+    return f'''<svg viewBox="0 0 {w} {h}" width="100%">
+  {"".join(out)}
+  <line x1="{x0}" y1="350" x2="{w-20}" y2="350" stroke="{C['line']}" stroke-width="2"/>
+  <text x="{x0}" y="410" fill="{C['white']}" font-family="Archivo" font-weight="800"
+        font-size="36">3h30 na semana, em 5 dias.</text>
+</svg>'''
+
+
+GRAPHICS["semanaqueda"] = svg_semanaqueda
