@@ -17,6 +17,11 @@ on:
 permissions:
   contents: write
 
+# Uma publicacao por vez, compartilhada com o agendado.yml.
+concurrency:
+  group: instagram
+  cancel-in-progress: false
+
 jobs:
   publicar:
     runs-on: ubuntu-latest
