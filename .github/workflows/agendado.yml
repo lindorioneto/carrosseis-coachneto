@@ -9,8 +9,21 @@ name: Publicar pela agenda
 # O portao de aprovacao e a agenda: so entra em agenda.json post que o Lindorio
 # ja aprovou, slide por slide, na conversa. Nada chega aqui sem esse "ok".
 #
-# Publicar so acontece no horario agendado (event_name == schedule). Se alguem
-# rodar este workflow pelo botao, ele apenas gera as artes, sem publicar.
+# QUEM DISPARA (desde 04/11/2026)
+# O gatilho principal e EXTERNO: o cron-job.org chama a API do GitHub
+# (workflow_dispatch com publicar=sim) seg/qua/sex as 11h de Cuiaba. Motivo: desde
+# o fim de outubro o agendador do proprio GitHub (schedule) passou a disparar com
+# 4 a 8 horas de atraso, ou nem disparar - problema do GitHub, relatado por
+# varios usuarios, nao deste repositorio. Ate 23/10 ele rodava 15-30 min depois
+# do horario; em 26/10, 28/10, 30/10, 02/11 e 04/11 rodou so a noite ou nao rodou.
+# O schedule abaixo continua como reserva.
+#
+# Publicar so acontece no schedule ou num disparo com publicar=sim. Se alguem
+# rodar este workflow pelo botao sem mudar nada, ele apenas gera as artes.
+#
+# Rodar mais de uma vez no mesmo dia nao duplica: as execucoes entram em fila
+# (concurrency), cada uma atualiza o repositorio antes de publicar, e o
+# publicar.py confere publicado.json e os posts recentes da conta.
 
 on:
   schedule:
@@ -29,9 +42,20 @@ on:
     - cron: "17 18 * * 1,3,5"
     - cron: "43 20 * * 1,3,5"
   workflow_dispatch:
+    inputs:
+      publicar:
+        description: "sim = publica o post do dia no Instagram | nao = so gera as artes"
+        required: false
+        default: "nao"
 
 permissions:
   contents: write
+
+# Uma publicacao por vez, compartilhada com o publicar.yml. Quem chega depois
+# espera a anterior terminar (e ai ve que o post ja saiu).
+concurrency:
+  group: instagram
+  cancel-in-progress: false
 
 jobs:
   gerar:
@@ -91,12 +115,16 @@ jobs:
           fi
           echo "sha=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
 
+      - name: Atualizar o registro de publicados
+        if: steps.hoje.outputs.post != '' && (github.event_name == 'schedule' || inputs.publicar == 'sim')
+        run: git pull --rebase --autostash origin main || true
+
       - name: Esperar o CDN do GitHub servir as artes
-        if: steps.hoje.outputs.post != '' && github.event_name == 'schedule'
+        if: steps.hoje.outputs.post != '' && (github.event_name == 'schedule' || inputs.publicar == 'sim')
         run: sleep 30
 
       - name: Publicar no Instagram
-        if: steps.hoje.outputs.post != '' && github.event_name == 'schedule'
+        if: steps.hoje.outputs.post != '' && (github.event_name == 'schedule' || inputs.publicar == 'sim')
         env:
           IG_TOKEN: ${{ secrets.IG_TOKEN }}
           MEDIA_REF: ${{ steps.media.outputs.sha }}
