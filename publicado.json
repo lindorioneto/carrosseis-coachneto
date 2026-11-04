@@ -22,5 +22,13 @@
     "quando": "2026-11-02T23:04:03Z",
     "media_id": "18642853804028549",
     "run": "41542134598"
+  },
+  {
+    "slug": "017-treino-contra-quedas",
+    "post": "posts/quarta-quedas-exercicios.json",
+    "data": "2026-11-04",
+    "quando": "2026-11-04T16:43:24Z",
+    "media_id": "18119393149797092",
+    "run": "41869877791"
   }
 ]
