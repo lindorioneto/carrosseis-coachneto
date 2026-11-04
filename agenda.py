@@ -7,7 +7,7 @@ A agenda vive em agenda.json e so recebe posts ja aprovados pelo Lindorio:
 
 A data e a de Cuiaba (UTC-4, sem horario de verao desde 2019), nao a do
 runner do GitHub (UTC). O cron do GitHub chega a atrasar 4 a 8 horas: em 02/11
-o post das 11h30 so saiu as 19h. Se a data fosse em UTC, uma execucao depois
+o post das 11h so saiu as 19h. Se a data fosse em UTC, uma execucao depois
 das 20h de Cuiaba ja cairia no dia seguinte e o post do dia ficaria sem sair.
 """
 import datetime
