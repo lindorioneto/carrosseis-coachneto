@@ -824,3 +824,35 @@ def svg_semanaqueda(w=820, h=440):
 
 
 GRAPHICS["semanaqueda"] = svg_semanaqueda
+
+
+def svg_gestacao(w=820, h=600):
+    """Prevett 2025 (Br J Sports Med): programas com musculacao na gestacao
+    (90% junto com aerobico) reduziram a chance de hipertensao gestacional
+    (OR 0,42), humor perinatal (0,48), diabetes gestacional (0,62) e bebe
+    grande demais (macrossomia, 0,67)."""
+    x0, esc = 40, 9.5
+    barras = [("HIPERTENSÃO GESTACIONAL", 58, True),
+              ("DEPRESSÃO E ANSIEDADE", 52, False),
+              ("DIABETES GESTACIONAL", 38, False),
+              ("BEBÊ GRANDE DEMAIS", 33, False)]
+    out = []
+    y = 40
+    for rot, v, destaque in barras:
+        cv = C["white"] if destaque else C["muted"]
+        out.append(f'<text x="{x0}" y="{y}" fill="{cv}" font-family="Mono" font-size="23" '
+                   f'letter-spacing="2">{rot}</text>')
+        larg = v * esc
+        cor = C["orange"] if destaque else C["ember"]
+        out.append(f'<rect x="{x0}" y="{y+18}" width="{larg:.0f}" height="60" fill="{cor}"/>')
+        out.append(f'<text x="{x0+larg+20:.0f}" y="{y+68}" fill="{cv}" font-family="Archivo" '
+                   f'font-weight="800" font-size="54">−{v}%</text>')
+        y += 132
+    return f'''<svg viewBox="0 0 {w} {h}" width="100%">
+  {"".join(out)}
+  <text x="{x0}" y="{h-10}" fill="{C['dim']}" font-family="Mono" font-size="21"
+        letter-spacing="2">REDUÇÃO NA CHANCE DE CADA PROBLEMA</text>
+</svg>'''
+
+
+GRAPHICS["gestacao"] = svg_gestacao
