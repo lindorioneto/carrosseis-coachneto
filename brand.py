@@ -856,3 +856,68 @@ def svg_gestacao(w=820, h=600):
 
 
 GRAPHICS["gestacao"] = svg_gestacao
+
+
+def svg_trimestres(w=820, h=560):
+    """O que muda no treino em cada trimestre (orientacao pratica com base no
+    ACOG 2020 e na diretriz canadense 2019)."""
+    blocos = [("1º TRIMESTRE", ["Mantém a rotina de treino.",
+                                "Ajusta o volume pelo enjoo e pelo cansaço."]),
+              ("2º TRIMESTRE", ["Sai o deitado de barriga para cima:",
+                                "banco inclinado, sentada ou em pé."]),
+              ("3º TRIMESTRE", ["Mais apoio e estabilidade,",
+                                "carga e amplitude que o corpo aceita."])]
+    out = []
+    y = 20
+    for i, (rot, linhas) in enumerate(blocos):
+        out.append(f'<rect x="20" y="{y}" width="10" height="150" fill="{C["orange"]}"/>')
+        out.append(f'<text x="56" y="{y+40}" fill="{C["orange"]}" font-family="Mono" font-size="26" '
+                   f'letter-spacing="3">{rot}</text>')
+        for k, t in enumerate(linhas):
+            out.append(f'<text x="56" y="{y+88+k*42}" fill="{C["white"]}" font-family="Archivo" '
+                       f'font-weight="700" font-size="33">{t}</text>')
+        y += 182
+    return f'''<svg viewBox="0 0 {w} {h}" width="100%">
+  {"".join(out)}
+</svg>'''
+
+
+GRAPHICS["trimestres"] = svg_trimestres
+
+
+def svg_semanagestante(w=820, h=440):
+    """Exemplo de semana dentro da diretriz canadense 2019: 150 min ou mais,
+    em 3 dias ou mais, juntando musculacao e aerobico, e assoalho pelvico
+    todos os dias."""
+    dias = ["SEG", "TER", "QUA", "QUI", "SEX", "SAB", "DOM"]
+    minutos = ["40'", "30'", "40'", "30'", "40'", "", ""]
+    linhas = [("MUSCULAÇÃO", {0, 2, 4}, C["orange"]),
+              ("AERÓBICO", {1, 3}, C["orange2"]),
+              ("ASSOALHO", {0, 1, 2, 3, 4, 5, 6}, C["ember"])]
+    x0, rotw = 30, 200
+    cel = (w - 20 - x0 - rotw) / 7.0
+    out = []
+    for i, d in enumerate(dias):
+        x = x0 + rotw + i * cel
+        out.append(f'<text x="{x+cel/2:.1f}" y="40" fill="{C["muted"]}" font-family="Mono" '
+                   f'font-size="21" letter-spacing="1" text-anchor="middle">{d}</text>')
+        out.append(f'<text x="{x+cel/2:.1f}" y="318" fill="{C["white"]}" font-family="Archivo" '
+                   f'font-weight="800" font-size="30" text-anchor="middle">{minutos[i]}</text>')
+    y = 64
+    for rot, ativos, cor in linhas:
+        out.append(f'<text x="{x0}" y="{y+42}" fill="{C["white"]}" font-family="Mono" '
+                   f'font-size="22" letter-spacing="2">{rot}</text>')
+        for i in range(7):
+            x = x0 + rotw + i * cel
+            c = cor if i in ativos else C["line"]
+            out.append(f'<rect x="{x+3:.1f}" y="{y}" width="{cel-6:.1f}" height="64" fill="{c}"/>')
+        y += 76
+    return f'''<svg viewBox="0 0 {w} {h}" width="100%">
+  {"".join(out)}
+  <line x1="{x0}" y1="350" x2="{w-20}" y2="350" stroke="{C['line']}" stroke-width="2"/>
+  <text x="{x0}" y="410" fill="{C['white']}" font-family="Archivo" font-weight="800"
+        font-size="36">3 horas na semana, em 5 dias.</text>
+</svg>'''
+
+
+GRAPHICS["semanagestante"] = svg_semanagestante
