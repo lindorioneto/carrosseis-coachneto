@@ -1,0 +1,89 @@
+{
+  "slug": "020-como-treinar-na-gravidez",
+  "cor": "verde",
+  "legenda": "MUSCULAÇÃO NA GRAVIDEZ: COMO TREINAR\n\nNa segunda eu mostrei por que a musculação faz parte da recomendação para gestantes. Hoje é a parte prática: quais exercícios, qual intensidade e o que muda em cada trimestre.\n\nOS EXERCÍCIOS\nPernas e glúteos: agachamento apoiado, cadeira extensora, abdução de quadril e panturrilha. Tronco e braços: remada sentada, supino na máquina sentada, rosca bíceps e tríceps na polia. Assoalho pélvico: elevação pélvica em isometria e exercício de Kegel. Máquinas e exercícios sentados ou apoiados dão estabilidade conforme a barriga cresce.\n\nA INTENSIDADE\nModerada: você consegue conversar durante a série. Respire durante todo o movimento, sem prender o ar.\n\nO QUE MUDA EM CADA TRIMESTRE\n1º trimestre: mantém a rotina e ajusta o volume pelo enjoo e pelo cansaço.\n2º trimestre: sai o exercício deitada de barriga para cima, que vira banco inclinado, sentada ou em pé.\n3º trimestre: mais apoio e estabilidade, com a carga e a amplitude que o corpo aceita.\n\nOS CUIDADOS\nBeber água e evitar calor excessivo. Deixar de lado esportes de contato e atividades com risco de queda. Fazer os exercícios do assoalho pélvico todo dia. Sangramento, tontura, falta de ar fora do normal ou contrações: pausar e falar com o obstetra.\n\nUMA SEMANA POSSÍVEL\nMusculação na segunda, quarta e sexta, aeróbico leve na terça e na quinta, e assoalho pélvico todo dia. Somando, são 3 horas na semana, acima dos 150 minutos que a diretriz recomenda.\n\nNa sexta tem mitos e verdades sobre musculação na gravidez.\n\nEstá grávida ou conhece alguém que está? A consultoria on-line monta o treino de força para cada trimestre, com acompanhamento de perto. Link na bio.\n\n#musculacao #gravidez #gestante #treinonagravidez #gruposespeciais",
+  "serie": "GRUPOS ESPECIAIS",
+  "edicao": "20",
+  "handle": "@coach_neto",
+  "slides": [
+    {
+      "tipo": "capa",
+      "eyebrow": "GRUPOS ESPECIAIS · 20",
+      "titulo": "[Musculação na gravidez]\nComo treinar",
+      "sub": "Exercícios, intensidade e o que muda em cada trimestre.",
+      "foto": "gestmartelo.png"
+    },
+    {
+      "tipo": "conteudo",
+      "titulo": "Os [exercícios]",
+      "lista": [
+        "Pernas: agachamento apoiado, cadeira extensora, abdução de quadril e panturrilha",
+        "Tronco e braços: remada sentada, supino na máquina sentada, rosca bíceps e tríceps na polia",
+        "Assoalho pélvico: elevação pélvica em isometria e exercício de Kegel"
+      ],
+      "destaque": "Máquinas e exercícios sentados ou apoiados dão estabilidade conforme a barriga cresce.",
+      "foto": "gestextensora.png"
+    },
+    {
+      "tipo": "conteudo",
+      "titulo": "A [intensidade]",
+      "corpo": "Moderada: você consegue conversar durante a série.",
+      "destaque": "Respire durante todo o movimento. Não prenda o ar.",
+      "foto": "gestpeito.png"
+    },
+    {
+      "tipo": "dado",
+      "kicker": "O QUE MUDA EM CADA TRIMESTRE",
+      "grafico": "trimestres",
+      "legenda": "O treino acompanha a gestação: muda a posição e o apoio, a musculação continua.",
+      "nota": "American College of Obstetricians and Gynecologists. Committee Opinion 804. Obstet Gynecol, 2020;135(4):e178-e188."
+    },
+    {
+      "tipo": "conteudo",
+      "titulo": "Os [cuidados]",
+      "lista": [
+        "Beber água e evitar calor excessivo",
+        "Sem esportes de contato ou risco de queda",
+        "Assoalho pélvico todo dia"
+      ],
+      "destaque": "Sangramento, tontura, falta de ar fora do normal ou contrações: pausar e falar com o obstetra.",
+      "foto": "gestabducao.png"
+    },
+    {
+      "tipo": "dado",
+      "kicker": "UMA SEMANA POSSÍVEL",
+      "grafico": "semanagestante",
+      "legenda": "Musculação 3 vezes, aeróbico leve 2 vezes e assoalho pélvico todo dia: acima dos 150 minutos da diretriz.",
+      "nota": "Mottola MF et al. 2019 Canadian guideline for physical activity throughout pregnancy. Br J Sports Med, 2018;52(21):1339-1346."
+    },
+    {
+      "tipo": "referencia",
+      "titulo": "De onde vêm [essas orientações]",
+      "refs": [
+        {
+          "rot": "DIRETRIZ CANADENSE · 2019",
+          "txt": "Mottola MF et al. Br J Sports Med, 2018;52(21):1339-1346. 150 min/semana, aeróbico e musculação, assoalho pélvico."
+        },
+        {
+          "rot": "ACOG · 2020",
+          "txt": "Committee Opinion 804. Obstet Gynecol, 2020;135(4):e178-e188. Posição, intensidade e sinais de alerta."
+        },
+        {
+          "rot": "MUSCULAÇÃO NA GESTAÇÃO · 2025",
+          "txt": "Prevett C et al. Br J Sports Med, 2025. 50 estudos, 47.619 gestantes."
+        }
+      ],
+      "aviso": "Conteúdo educativo. O exercício na gestação depende da liberação do obstetra e considera contraindicações, histórico e a fase da gravidez."
+    },
+    {
+      "tipo": "cta",
+      "metodo": "Método",
+      "titulo": "[Musculação]\nEstratégica",
+      "oferta": "Consultoria on-line: treino de força ajustado a cada trimestre da gestação, com acompanhamento de perto.",
+      "acao": "Link na bio",
+      "handle": "@coach_neto",
+      "foto": "netohalter.png",
+      "foto_clara": true
+    }
+  ]
+}
