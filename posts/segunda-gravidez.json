@@ -1,0 +1,85 @@
+{
+  "slug": "019-musculacao-na-gravidez",
+  "cor": "verde",
+  "legenda": "MUSCULAÇÃO NA GRAVIDEZ: PODE E DEVE\n\nSemana nova, assunto novo: musculação na gestação. Ainda tem muita gestante ouvindo que precisa parar de treinar. A ciência diz o contrário.\n\nO QUE DIZEM AS DIRETRIZES\nA diretriz canadense de atividade física na gestação recomenda que toda gestante sem contraindicação se mantenha ativa: pelo menos 150 minutos por semana, em 3 dias ou mais, juntando exercício aeróbico e musculação.\n\nO QUE A MUSCULAÇÃO REDUZ\nUma revisão de 2025 reuniu 50 estudos com mais de 47 mil gestantes. Os programas com musculação reduziram a chance de:\n• hipertensão na gestação: 58%\n• depressão e ansiedade na gestação e no pós-parto: 52%\n• diabetes gestacional: 38%\n• bebê grande demais: 33%\nNa maioria desses programas a musculação vinha junto com o aeróbico, como as diretrizes recomendam.\n\nBOM PARA O BEBÊ TAMBÉM\nQuando a mãe treina, o bebê também se beneficia: diminui a chance de ele nascer grande demais, um dos fatores que complicam o parto. E as diretrizes concluem que, com a liberação do obstetra, o exercício na gestação é seguro para a mãe e para o bebê.\n\nQUANTO JÁ FAZ DIFERENÇA\nNuma revisão com 106 estudos, cerca de 140 minutos por semana de exercício moderado, como uma caminhada rápida, já reduziram em 25% a chance de diabetes gestacional, pressão alta e pré-eclâmpsia.\n\nE O ASSOALHO PÉLVICO\nA diretriz também orienta exercícios para o assoalho pélvico, que podem ser feitos todo dia para reduzir o risco de perder urina.\n\nANTES DE COMEÇAR\nQuem avalia se existe alguma contraindicação é o obstetra. Com a liberação, o treino se ajusta a cada fase da gestação.\n\nNa quarta eu mostro como treinar: exercícios, intensidade e o que muda em cada trimestre.\n\nEstá grávida ou conhece alguém que está? A consultoria on-line monta o treino de força para cada fase da gestação, com acompanhamento de perto. Link na bio.\n\n#musculacao #gravidez #gestante #treinonagravidez #gruposespeciais",
+  "serie": "GRUPOS ESPECIAIS",
+  "edicao": "19",
+  "handle": "@coach_neto",
+  "slides": [
+    {
+      "tipo": "capa",
+      "eyebrow": "GRUPOS ESPECIAIS · 19",
+      "titulo": "[Musculação na gravidez]\nPode e deve",
+      "sub": "As diretrizes recomendam treino de força durante a gestação. E os estudos mostram por quê.",
+      "foto": "gestagachamento.png"
+    },
+    {
+      "tipo": "conteudo",
+      "titulo": "O que dizem [as diretrizes]",
+      "lista": [
+        "Toda gestante sem contraindicação deve se manter ativa",
+        "Pelo menos 150 minutos por semana, em 3 dias ou mais",
+        "Juntando exercício aeróbico e musculação"
+      ],
+      "destaque": "A musculação não é só permitida na gravidez. Ela faz parte da recomendação.",
+      "foto": "gestremada.png"
+    },
+    {
+      "tipo": "dado",
+      "kicker": "O QUE A MUSCULAÇÃO REDUZ NA GESTAÇÃO",
+      "grafico": "gestacao",
+      "legenda": "50 estudos, mais de 47 mil gestantes: os programas com musculação reduziram a chance de complicações comuns da gravidez.",
+      "nota": "Prevett C et al. Resistance training in pregnancy: systematic review and meta-analysis of pregnancy, delivery, fetal and pelvic floor outcomes. Br J Sports Med, 2025."
+    },
+    {
+      "tipo": "conteudo",
+      "titulo": "Bom para [o bebê também]",
+      "corpo": "Quando a mãe treina, o bebê também se beneficia: diminui a chance de ele nascer grande demais, um dos fatores que complicam o parto.",
+      "destaque": "Com a liberação do obstetra, treinar na gestação é seguro para a mãe e para o bebê.",
+      "foto": "gestpanturrilha.png"
+    },
+    {
+      "tipo": "conteudo",
+      "titulo": "Quanto já faz [diferença]",
+      "corpo": "Revisão com 106 estudos: cerca de 140 minutos por semana de exercício moderado já reduziram em 25% a chance de diabetes gestacional, pressão alta e pré-eclâmpsia.",
+      "destaque": "Somar exercícios para o assoalho pélvico, todo dia, ajuda a reduzir o risco de perder urina.",
+      "foto": "gestrosca.png"
+    },
+    {
+      "tipo": "conteudo",
+      "titulo": "Antes de [começar]",
+      "corpo": "Quem avalia se existe alguma contraindicação é o obstetra. Com a liberação, o treino se ajusta a cada fase da gestação.",
+      "destaque": "Na quarta eu mostro como treinar: exercícios, intensidade e o que muda em cada trimestre.",
+      "foto": "gestelevacao.png"
+    },
+    {
+      "tipo": "referencia",
+      "titulo": "De onde vêm [esses números]",
+      "refs": [
+        {
+          "rot": "DIRETRIZ CANADENSE · 2019",
+          "txt": "Mottola MF et al. Br J Sports Med, 2018;52(21):1339-1346. Exercício sem aumento de aborto, parto prematuro ou baixo peso."
+        },
+        {
+          "rot": "MUSCULAÇÃO NA GESTAÇÃO · 2025",
+          "txt": "Prevett C et al. Br J Sports Med, 2025. 50 estudos, 47.619 gestantes; 90% dos programas junto com aeróbico."
+        },
+        {
+          "rot": "DOSE E COMPLICAÇÕES · 2018",
+          "txt": "Davenport MH et al. Br J Sports Med, 2018;52(21):1367-1375. 106 estudos."
+        }
+      ],
+      "aviso": "Conteúdo educativo. O exercício na gestação depende da liberação do obstetra e considera contraindicações, histórico e a fase da gravidez."
+    },
+    {
+      "tipo": "cta",
+      "metodo": "Método",
+      "titulo": "[Musculação]\nEstratégica",
+      "oferta": "Consultoria on-line: treino de força ajustado a cada fase da gestação, com acompanhamento de perto.",
+      "acao": "Link na bio",
+      "handle": "@coach_neto",
+      "foto": "netohalter.png",
+      "foto_clara": true
+    }
+  ]
+}
