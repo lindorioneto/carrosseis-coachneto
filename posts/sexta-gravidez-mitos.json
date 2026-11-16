@@ -1,0 +1,94 @@
+{
+  "slug": "021-mitos-e-verdades-gravidez",
+  "cor": "verde",
+  "legenda": "MUSCULAÇÃO NA GRAVIDEZ: 5 MITOS E VERDADES\n\nFechando a semana da gestação. Cinco frases que mais circulam na internet sobre treino na gravidez, e o que os estudos mostram sobre cada uma.\n\n1. \"GRÁVIDA NÃO PODE FAZER MUSCULAÇÃO\"\nMITO. Uma revisão de 2025 reuniu 50 estudos e mais de 47 mil gestantes: os programas com musculação reduziram a chance de pressão alta, diabetes gestacional e depressão. A diretriz recomenda juntar musculação e aeróbico durante toda a gestação.\n\n2. \"TREINAR AJUDA A CONTROLAR O GANHO DE PESO\"\nVERDADE. Numa revisão com 84 estudos e mais de 21 mil gestantes, o exercício reduziu em 32% a chance de ganhar peso demais na gestação.\n\n3. \"O CORAÇÃO NÃO PODE PASSAR DE 140 BATIMENTOS\"\nMITO. Esse limite veio de uma recomendação de 1985 e foi retirado em 1994. Hoje as diretrizes não usam um limite fixo de batimentos. O guia é o esforço: moderado é quando dá para conversar durante a série.\n\n4. \"EXERCÍCIO FAZ BEM PARA A CABEÇA TAMBÉM\"\nVERDADE. Nos estudos reunidos pela diretriz canadense, o exercício reduziu em 67% a chance de depressão durante a gestação.\n\n5. \"QUEM NÃO TREINAVA NÃO PODE COMEÇAR NA GRAVIDEZ\"\nMITO. A diretriz recomenda que toda gestante sem contraindicação seja ativa, inclusive quem era sedentária. O caminho é começar leve e aumentar aos poucos, com a liberação do obstetra.\n\nA SEMANA EM UMA FRASE\nMusculação na gravidez não é risco, é cuidado: com a liberação do obstetra e o treino certo para cada fase, mãe e bebê ganham.\n\nNada aqui substitui o acompanhamento do pré-natal: a prescrição considera contraindicações, histórico e a fase da gestação.\n\nConsultoria on-line: treino de força ajustado a cada trimestre, com acompanhamento de perto. Link na bio.\n\nSalva e manda para uma amiga grávida.\n\n#musculacao #gravidez #gestante #mitoseverdades #gruposespeciais",
+  "serie": "GRUPOS ESPECIAIS",
+  "edicao": "21",
+  "handle": "@coach_neto",
+  "slides": [
+    {
+      "tipo": "capa",
+      "eyebrow": "GRUPOS ESPECIAIS · 21",
+      "titulo": "[Mito ou verdade?]\nMusculação na gravidez",
+      "sub": "Cinco frases que mais circulam na internet, e o que os estudos mostram sobre cada uma.",
+      "foto": "gesttriceps.png"
+    },
+    {
+      "tipo": "mito",
+      "veredito": "MITO",
+      "fala": "Grávida não pode fazer musculação",
+      "corpo": "Revisão de 2025, 50 estudos e mais de 47 mil gestantes: os programas com musculação reduziram a chance de pressão alta, diabetes gestacional e depressão.",
+      "destaque": "A diretriz recomenda juntar musculação e aeróbico durante toda a gestação.",
+      "foto": "gestremada.png"
+    },
+    {
+      "tipo": "mito",
+      "veredito": "VERDADE",
+      "fala": "Treinar ajuda a controlar o ganho de peso",
+      "corpo": "Revisão com 84 estudos e mais de 21 mil gestantes: o exercício reduziu em 32% a chance de ganhar peso demais na gestação.",
+      "destaque": "Ganho de peso dentro do esperado é bom para a mãe e para o bebê.",
+      "foto": "gestpanturrilha.png"
+    },
+    {
+      "tipo": "mito",
+      "veredito": "MITO",
+      "fala": "O coração não pode passar de 140 batimentos",
+      "corpo": "Esse limite veio de uma recomendação de 1985 e foi retirado em 1994. Hoje as diretrizes não usam limite fixo de batimentos.",
+      "destaque": "O guia é o esforço: moderado é quando dá para conversar durante a série.",
+      "foto": "gestrosca.png"
+    },
+    {
+      "tipo": "mito",
+      "veredito": "VERDADE",
+      "fala": "Exercício faz bem para a cabeça também",
+      "corpo": "Nos estudos reunidos pela diretriz canadense, o exercício reduziu em 67% a chance de depressão durante a gestação.",
+      "destaque": "Cuidar do corpo também é cuidar do humor.",
+      "foto": "gestelevacao.png"
+    },
+    {
+      "tipo": "mito",
+      "veredito": "MITO",
+      "fala": "Quem não treinava não pode começar na gravidez",
+      "corpo": "A diretriz recomenda que toda gestante sem contraindicação seja ativa, inclusive quem era sedentária.",
+      "destaque": "O caminho é começar leve e aumentar aos poucos, com a liberação do obstetra.",
+      "foto": "gestextensora.png"
+    },
+    {
+      "tipo": "referencia",
+      "titulo": "De onde vêm [esses números]",
+      "refs": [
+        {
+          "rot": "MUSCULAÇÃO NA GESTAÇÃO · 2025",
+          "txt": "Prevett C et al. Br J Sports Med, 2025. 50 estudos, 47.619 gestantes."
+        },
+        {
+          "rot": "GANHO DE PESO · 2018",
+          "txt": "Ruchat SM et al. Br J Sports Med, 2018;52(21):1347-1356. 84 estudos."
+        },
+        {
+          "rot": "DEPRESSÃO · 2018",
+          "txt": "Davenport MH et al. Br J Sports Med, 2018;52(21):1376-1385."
+        },
+        {
+          "rot": "DIRETRIZ CANADENSE · 2019",
+          "txt": "Mottola MF et al. Br J Sports Med, 2018;52(21):1339-1346."
+        },
+        {
+          "rot": "LIMITE DE 140 BPM",
+          "txt": "ACOG, recomendação de 1985; limite retirado em 1994."
+        }
+      ],
+      "aviso": "Conteúdo educativo. O exercício na gestação depende da liberação do obstetra e considera contraindicações, histórico e a fase da gravidez."
+    },
+    {
+      "tipo": "cta",
+      "metodo": "Método",
+      "titulo": "[Musculação]\nEstratégica",
+      "oferta": "Consultoria on-line: treino de força ajustado a cada trimestre da gestação, com acompanhamento de perto.",
+      "acao": "Link na bio",
+      "handle": "@coach_neto",
+      "foto": "netohalter.png",
+      "foto_clara": true
+    }
+  ]
+}
